@@ -48,7 +48,16 @@ public class headerEntity {
     public static Map<String, String> getHeader_4() {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
+        map.put("x-line-ts-type", "EVENT");
+        map.put("x-line-ts-version", "4.7.4");
+        map.put("x-line-ts-platform", "ANDROID");
+        map.put("content-type", "charset=utf-8");
         map.put("user-agent", "Line/14.21.1");
+        map.put("x-line-application", "ANDROID	14.21.1	Android OS	12");
+        map.put("x-lal", "zh-Hans_CN");
+        map.put("x-lpv", "1");
+        map.put("content-length", "531");
+        map.put("accept-encoding", "gzip");
         return map;
     }
 
