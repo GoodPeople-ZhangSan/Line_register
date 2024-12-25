@@ -4,7 +4,7 @@ public class urlEntity {
     private static final String Host_1 = "https://firebaseinstallations.googleapis.com/v1/projects/jp-naver-line/installations";
     private static final String Host_2 = "https://ly.my.sentry.io/api/6/envelope/";
     private static final String Host_3 = "https://cix.line-apps.com/R4?";
-    private static final String Host_4 = "https://legy.line-apps.com/api/v4/TalkService.do";
+    private static final String Host_4 = "https://legy.line-apps.com";
     private static final String Host_5 = "android.apis.google.com";
 
     public static String getUrl_1() {
@@ -26,11 +26,11 @@ public class urlEntity {
     }
 
     public static String getUrl_4() {
-        return Host_4;
+        return Host_4 + "tr/event";
     }
 
     public static String getUrl_5() {
-        return Host_5;
+        return Host_4 + "/api/v4/TalkService.do";
     }
 
 

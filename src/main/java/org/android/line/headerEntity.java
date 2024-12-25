@@ -49,6 +49,14 @@ public class headerEntity {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
         map.put("user-agent", "Line/14.21.1");
+        return map;
+    }
+
+
+    public static Map<String, String> getHeader_5() {
+        // 创建header内容
+        Map<String, String> map = new HashMap<>();
+        map.put("user-agent", "Line/14.21.1");
         map.put("x-line-application", "ANDROID	14.21.1	Android OS	12");
         map.put("x-lal", "zh-Hans_CN");
         map.put("x-lpv", "1");
