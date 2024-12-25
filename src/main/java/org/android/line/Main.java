@@ -26,12 +26,10 @@ public class Main {
 
         // 发送第四次请求-event
         System.out.println("发送第四次请求");
-        OkhttpUtils.doPost(urlEntity.getUrl_4(), headerEntity.getHeader_4(), bodyEntity.getBody_4());
-
-
-
-
-
+//        OkhttpUtils.doPost(urlEntity.getUrl_4(), headerEntity.getHeader_4(), bodyEntity.getBody_4());
+        adbDevices adbDevices = new adbDevices();
+        System.out.println(adbDevices.getAndroid_id());
+        System.out.println(adbDevices.getTdid());
 
 
         // 发送第五次请求-TalkServices.do

@@ -46,18 +46,21 @@ public class bodyEntity {
                 body, MediaType.get("application/x-sentry-envelope"));
     }
 
-    public static String bytesToHex(byte[] bytes) {
-        StringBuilder hexString = new StringBuilder();
-        for (byte b : bytes) {
-            // 将每个字节转换为两位十六进制数，并添加到StringBuilder中
-            // %02X 表示大写十六进制，且不足两位时前面补0
-            hexString.append(String.format("%02X", b));
-        }
-        return hexString.toString();
-    }
-
     public static RequestBody getBody_4() {
-        return null;
+        long toTime_1 = System.currentTimeMillis();
+        String toTime_2 = String.valueOf(System.currentTimeMillis() + 1000);
+
+        String body = "{\"tdid\":\"n4919442860f222b4ece05da2646681c8\",\"tcid\":\"900072b76bab38678508373fb70b9c60\",\"tsid\":\"line\"," +
+                "\"timestamp\":" + toTime_1 +
+                ",\"events\":[{\"aName\":\"LINE\",\"aVer\":\"14.21.1\",\"pName\":\"ANDROID\",\"pVer\":\"12\",\"mVer\":\"4.7.4\",\"lang\":\"zh\",\"c\":\"CN\",\"mcc\":\"\",\"mnc\":\"\",\"model\":\"Pixel 5\",\"brand\":\"Google\",\"type\":\"S\"," +
+                "\"timestamp\":" + toTime_2 +
+                ",\"startTime\":" + toTime_2 +
+                ",\"sessionTime\":0,\"seq\":1},{\"type\":\"R\",\"timestamp\":" + toTime_2 +
+                ",\"startTime\":" + toTime_2 +
+                ",\"sessionTime\":" + toTime_2 +
+                ",\"aVer\":\"14.21.1\",\"pVer\":\"12\",\"mVer\":\"4.7.4\",\"c\":\"CN\",\"seq\":2}]}";
+        return RequestBody.create(
+                body, MediaType.parse("charset=utf-8"));
     }
 
     public static RequestBody getBody_5() {

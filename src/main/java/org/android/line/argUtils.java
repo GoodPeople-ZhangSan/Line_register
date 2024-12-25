@@ -3,9 +3,11 @@ package org.android.line;
 import org.json.JSONException;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.time.Instant;
 import java.util.Base64;
 import java.nio.ByteBuffer;
+import java.util.Random;
 import java.util.UUID;
 
 public class argUtils {
@@ -101,7 +103,51 @@ public class argUtils {
             System.out.println("获取Key失败");
         }
 
-        System.out.println("获取到的Key为："+hexString.toString());
+        System.out.println("获取到的Key为：" + hexString.toString());
         return hexString.toString();
+    }
+
+    // md5加密方法
+    public static String toMD5(String input) {
+        try {
+            // 获取MD5算法的MessageDigest实例
+            MessageDigest md = MessageDigest.getInstance("MD5");
+
+            // 将输入字符串转换为字节数组，并计算哈希值
+            byte[] messageDigest = md.digest(input.getBytes());
+
+            // 创建一个StringBuilder来存储十六进制表示
+            StringBuilder hexString = new StringBuilder();
+
+            // 将每个字节转换为两位十六进制数
+            for (byte b : messageDigest) {
+                String hex = Integer.toHexString(0xff & b);
+                if (hex.length() == 1) {
+                    hexString.append('0');
+                }
+                hexString.append(hex);
+            }
+
+            // 返回最终的十六进制字符串
+            return hexString.toString();
+
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // 随机生成指定长度的字母+数字
+    public static String generateRandomString(int length) {
+        String CHARACTERS = "abcdefghijklmnopqrstuvwxyz0123456789";
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder(length);
+
+        for (int i = 0; i < length; i++) {
+            // 从字符集中随机选择一个字符
+            int index = random.nextInt(CHARACTERS.length());
+            sb.append(CHARACTERS.charAt(index));
+        }
+
+        return sb.toString();
     }
 }
