@@ -26,7 +26,7 @@ public class urlEntity {
     }
 
     public static String getUrl_4() {
-        return Host_4 + "tr/event";
+        return Host_4 + "/tr/event";
     }
 
     public static String getUrl_5() {

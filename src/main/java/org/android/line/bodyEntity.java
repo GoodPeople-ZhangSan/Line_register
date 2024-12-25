@@ -47,10 +47,21 @@ public class bodyEntity {
     }
 
     public static RequestBody getBody_4() {
+        // 准备时间戳
         long toTime_1 = System.currentTimeMillis();
         String toTime_2 = String.valueOf(System.currentTimeMillis() + 1000);
 
-        String body = "{\"tdid\":\"n4919442860f222b4ece05da2646681c8\",\"tcid\":\"900072b76bab38678508373fb70b9c60\",\"tsid\":\"line\"," +
+        // 准备 tdid tcid
+        adbDevices adbDevices = new adbDevices();
+        System.out.println("生成的android_id：" + adbDevices.getAndroid_id());
+        System.out.println("生成的did：" + adbDevices.getDid());
+        System.out.println("生成的tdid：" + adbDevices.getTdid());
+        System.out.println("生成的tcid：" + adbDevices.getTcid());
+
+        // 准备body
+        String body = "{\"tdid\":\"" + adbDevices.getTdid() +
+                "\",\"tcid\":\"" + adbDevices.getTcid() +
+                "\",\"tsid\":\"line\"," +
                 "\"timestamp\":" + toTime_1 +
                 ",\"events\":[{\"aName\":\"LINE\",\"aVer\":\"14.21.1\",\"pName\":\"ANDROID\",\"pVer\":\"12\",\"mVer\":\"4.7.4\",\"lang\":\"zh\",\"c\":\"CN\",\"mcc\":\"\",\"mnc\":\"\",\"model\":\"Pixel 5\",\"brand\":\"Google\",\"type\":\"S\"," +
                 "\"timestamp\":" + toTime_2 +
