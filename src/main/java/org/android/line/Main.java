@@ -33,6 +33,8 @@ public class Main {
         OkhttpUtils.doPost(urlEntity.getUrl_4(), headerEntity.getHeader_4(), bodyEntity.getBody_4());
 //        HttpClientUtils.sendPostWithJson(urlEntity.getUrl_4(), headerEntity.getHeader_4(), result);
 
+        System.out.println("结束");
+
 //        bodyEntity.getBody_4();
     }
 
