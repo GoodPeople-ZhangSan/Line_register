@@ -64,32 +64,6 @@ public class bodyEntity {
         return RequestBody.create(
                 result, MediaType.parse("application/x-thrift; charset=UTF-8"));
 
-
-//        // 创建body内容
-//        Pair pair = new Pair();
-//        pair.setKey("notifyInstalled");
-//        pair.setValue("6debb812abee207db354b4c01dc5cff4");
-//        pair.setDevices("ANDROID 14.21.1");
-//        pair.setOs("Android OS 12");
-//
-//        // 用于存储序列化后的数据
-//        String result = null;
-//        try {
-//            // 序列化到ByteArrayOutputStream
-//            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//            TIOStreamTransport transportOut = new TIOStreamTransport(baos);
-//            TProtocol protocolOut = new TBinaryProtocol(transportOut);
-//            pair.write(protocolOut);
-//            // 确保所有数据都被写入
-////            protocolOut.flush();
-//            System.out.println("序列化后的Thrift数据：" +transportOut);
-//
-////            result = String.valueOf(tp.readBinary());
-////            System.out.println("序列化后的Thrift数据：" + result);
-//        } catch (Exception e) {
-//            System.out.println("序列化Thrift异常");
-//        }
-
     }
 
     public static RequestBody getBody_3() {
