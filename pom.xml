@@ -52,6 +52,12 @@
             <version>3.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version> <!-- 请根据需要选择最新版本 -->
+        </dependency>
+
 
 
     </dependencies>

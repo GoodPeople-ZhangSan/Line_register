@@ -42,7 +42,6 @@ public class OkhttpUtils {
             Response resultResponse = client.newCall(request).execute();
             System.out.println(resultResponse.toString());
             System.out.println(resultResponse.headers().toString());
-            System.out.println(resultResponse.body().toString());
 
             // 判断是否zip
             if (resultResponse.isSuccessful() && "gzip".equalsIgnoreCase(resultResponse.header("Content-Encoding"))) {

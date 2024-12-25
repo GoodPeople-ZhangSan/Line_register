@@ -27,7 +27,7 @@ public class headerEntity {
         Map<String, String> map = new HashMap<>();
         map.put("User-Agent", "sentry.java.android/7.17.0");
         map.put("X-Sentry-Auth", "Sentry sentry_version=7,sentry_client=sentry.java.android/7.17.0,sentry_key=033c95ffe2c00cfec4ff887ac0a3bf1c");
-        map.put("Content-Encoding", "gzip");
+//        map.put("Content-Encoding", "gzip");
         map.put("Content-Type", "application/x-sentry-envelope");
         map.put("Accept", "application/json");
         map.put("Connection", "close");
