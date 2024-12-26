@@ -8,6 +8,9 @@ public class DevicesEntity {
     // 设置一些固定值
     public final String gcm_ver = "244738029";
     public final String app_ver = "142110270";
+    public final String cert = "89396DC419292473972813922867E6973D6F5C50";
+    public final String appid = "1:4586549225:android:9581cf5057737b34";
+    public final String app_ver_name = "14.21.1";
 
 
     // Fid 在register3也使用了
@@ -43,6 +46,12 @@ public class DevicesEntity {
 
         // 设置fid
         setFid(ArgUtils.getFid());
+
+        // 输出
+        System.out.println("生成的android_id：" + getAndroid_id());
+        System.out.println("生成的did：" + getDid());
+        System.out.println("生成的tdid：" + getTdid());
+        System.out.println("生成的tcid：" + getTcid());
     }
 
     public String getDid() {

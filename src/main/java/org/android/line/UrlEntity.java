@@ -15,13 +15,13 @@ public class UrlEntity {
         return Host_2;
     }
 
-    public static String getUrl_3() {
+    public static String getUrl_3(String app_ver_name) {
         /*
         :path: /R4?type=Android_OS&version=14.21.1&regions=--CN&carrier=&time=1734678913&key=f9e44c154400ccca9a5e50a5144a5679
         :authority: cix.line-apps.com
          */
         String toTime = String.valueOf(System.currentTimeMillis() / 1000);
-        String host = Host_3 + "type=Android_OS&version=14.21.1&regions=--CN&carrier=&time=" + toTime + "&key=" + ArgUtils.get_key(toTime);
+        String host = Host_3 + "type=Android_OS&version=" + app_ver_name + "&regions=--CN&carrier=&time=" + toTime + "&key=" + ArgUtils.get_key(toTime,app_ver_name);
         return host;
     }
 

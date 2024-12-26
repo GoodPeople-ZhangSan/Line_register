@@ -50,14 +50,15 @@ public class ArgUtils {
     }
 
 
-    public static String get_Envelope_3() throws JSONException {
+    public static String get_Envelope_3(String app_ver_name, String app_ver) throws JSONException {
         // 创建当前时间
         String nowTime = get_ToTime();
         // 创建数据
         return "{\"sid\":\"" + getUUID() + "\"," +
                 "\"did\":\"" + getUUID() + "\",\"init\":true," +
                 "\"started\":\"" + nowTime + "\",\"status\":\"ok\",\"errors\":0,\"timestamp\":\"" +
-                nowTime + "\",\"attrs\":{\"release\":\"jp.naver.line.android@14.21.1+142110270\",\"environment\":\"production\"}}";
+                nowTime + "\",\"attrs\":{\"release\":\"jp.naver.line.android@" +
+                app_ver_name + "+" + app_ver + "\",\"environment\":\"production\"}}";
     }
 
     public static String get_ToTime() {
@@ -70,8 +71,8 @@ public class ArgUtils {
     }
 
     // 用于获取第三次请求 R4中的 key
-    public static String get_key(String timeStamp) {
-        String verify_str = "Android_OS14.21.1--CN";
+    public static String get_key(String timeStamp, String app_ver_name) {
+        String verify_str = "Android_OS" + app_ver_name + "--CN";
         String all_str = verify_str + "" + timeStamp;
         // 用于存放md5后的byte
         byte[] key_byte = new byte[0];

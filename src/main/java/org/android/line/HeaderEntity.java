@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HeaderEntity {
-    public static Map<String, String> getHeader_1() {
+    public static Map<String, String> getHeader_1(String cert) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
         map.put("Content-Type", "application/json");
@@ -13,7 +13,7 @@ public class HeaderEntity {
         map.put("Cache-Control", "no-cache");
         map.put("X-Android-Package", "jp.naver.line.android");
         map.put("x-firebase-client", "H4sIAAAAAAAAAKtWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA");
-        map.put("X-Android-Cert", "89396DC419292473972813922867E6973D6F5C50");
+        map.put("X-Android-Cert", cert);
         map.put("x-goog-api-key", "AIzaSyBGRb2sEaaXjsKH6ea6f2xSiUeG4D8vaCY");
         map.put("User-Agent", "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 5 Build/SQ3A.220705.003.A1)");
         map.put("Host", "firebaseinstallations.googleapis.com");
@@ -37,23 +37,23 @@ public class HeaderEntity {
     }
 
 
-    public static Map<String, String> getHeader_3() {
+    public static Map<String, String> getHeader_3(String app_ver_name) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
-        map.put("user-agent", "Line/14.21.1");
+        map.put("user-agent", "Line/" + app_ver_name);
         map.put("accept-encoding", "gzip");
         return map;
     }
 
-    public static Map<String, String> getHeader_4() {
+    public static Map<String, String> getHeader_4(String app_ver_name) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
         map.put("x-line-ts-type", "EVENT");
         map.put("x-line-ts-version", "4.7.4");
         map.put("x-line-ts-platform", "ANDROID");
         map.put("content-type", "charset=utf-8");
-        map.put("user-agent", "Line/14.21.1");
-        map.put("x-line-application", "ANDROID	14.21.1	Android OS	12");
+        map.put("user-agent", "Line/" + app_ver_name);
+        map.put("x-line-application", "ANDROID	" + app_ver_name + "	Android OS	12");
         map.put("x-lal", "zh-Hans_CN");
         map.put("x-lpv", "1");
         map.put("accept-encoding", "gzip");
@@ -61,11 +61,11 @@ public class HeaderEntity {
     }
 
 
-    public static Map<String, String> getHeader_5() {
+    public static Map<String, String> getHeader_5(String app_ver_name) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
-        map.put("user-agent", "Line/14.21.1");
-        map.put("x-line-application", "ANDROID	14.21.1	Android OS	12");
+        map.put("user-agent", "Line/" + app_ver_name);
+        map.put("x-line-application", "ANDROID	" + app_ver_name + "	Android OS	12");
         map.put("x-lal", "zh-Hans_CN");
         map.put("x-lpv", "1");
         map.put("content-type", "application/x-thrift");
