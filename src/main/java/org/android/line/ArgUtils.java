@@ -10,7 +10,7 @@ import java.nio.ByteBuffer;
 import java.util.Random;
 import java.util.UUID;
 
-public class argUtils {
+public class ArgUtils {
     // 用于生成fid时所需的运算值
     private static final byte f232672a = Byte.parseByte("01110000", 2);
     private static final byte f232673b = Byte.parseByte("00001111", 2);

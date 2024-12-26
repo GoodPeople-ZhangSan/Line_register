@@ -9,7 +9,7 @@ public class Main {
         // 进入Line，开始初始化
         System.out.println("进入Line，开始初始化");
         // 准备 tdid tcid 等一些参数
-        devicesEntity devicesEntity = new devicesEntity();
+        DevicesEntity devicesEntity = new DevicesEntity();
 
         System.out.println("发送第一次请求");
         // 发送第一次请求-installations
@@ -35,7 +35,7 @@ public class Main {
 //        OkhttpUtils.doPost(urlEntity.getUrl_5(), headerEntity.getHeader_5(), bodyEntity.getBody_5(adbDevices));
 
         System.out.println("发送第六次请求");
-        OkhttpUtils.doPost(urlEntity.getUrl_6(), headerEntity.getHeader_6(), bodyEntity.getBody_6(devicesEntity));
+        OkhttpUtils.doPost(UrlEntity.getUrl_6(), HeaderEntity.getHeader_6(devicesEntity), BodyEntity.getBody_6(devicesEntity));
 
 
         System.out.println("结束");

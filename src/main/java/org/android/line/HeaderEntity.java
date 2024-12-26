@@ -3,7 +3,7 @@ package org.android.line;
 import java.util.HashMap;
 import java.util.Map;
 
-public class headerEntity {
+public class HeaderEntity {
     public static Map<String, String> getHeader_1() {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
@@ -56,7 +56,6 @@ public class headerEntity {
         map.put("x-line-application", "ANDROID	14.21.1	Android OS	12");
         map.put("x-lal", "zh-Hans_CN");
         map.put("x-lpv", "1");
-        map.put("content-length", "531");
         map.put("accept-encoding", "gzip");
         return map;
     }
@@ -74,18 +73,17 @@ public class headerEntity {
         return map;
     }
 
-    public static Map<String, String> getHeader_6() {
+    public static Map<String, String> getHeader_6(DevicesEntity devicesEntity) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
-        map.put("Authorization", "AidLogin 4317700272594290259:3067086532290113193");
+        map.put("Authorization", "AidLogin 3893309659413393401:3209926037022420383");
         map.put("app", "jp.naver.line.android");
-        map.put("gcm_ver", "212423054");
-        map.put("User-Agent", "Android-GCM/1.5 (redfin SQ3A.220705.003.A1)");
-        map.put("content-length", "811");
+        map.put("gcm_ver", devicesEntity.gcm_ver);
+        map.put("app_ver", devicesEntity.app_ver);
+        map.put("User-Agent", "com.google.android.gms/" + devicesEntity.gcm_ver + " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)");
+        map.put("accept-encoding", "gzip, deflate, br");
         map.put("content-type", "application/x-www-form-urlencoded");
-        map.put("Host", "android.apis.google.com");
-        map.put("Connection", "Keep-Alive");
-        map.put("Accept-Encoding", "gzip");
+        map.put("priority", "u=1, i");
         return map;
     }
 }

@@ -4,7 +4,11 @@ import org.json.JSONObject;
 
 import java.util.UUID;
 
-public class devicesEntity {
+public class DevicesEntity {
+    // 设置一些固定值
+    public final String gcm_ver = "244738029";
+    public final String app_ver = "142110270";
+
     // android_id
     private String android_id;
     // did
@@ -19,13 +23,13 @@ public class devicesEntity {
     private String installations_auth;
 
 
-    public devicesEntity() {
+    public DevicesEntity() {
         // 设置android_id
-        String randomAndroidId = argUtils.generateRandomString(16);
+        String randomAndroidId = ArgUtils.generateRandomString(16);
         setAndroid_id(randomAndroidId);
 
         // 设置 did
-        setDid(argUtils.toMD5(randomAndroidId));
+        setDid(ArgUtils.toMD5(randomAndroidId));
 
         // 设置 tdid，在event请求中使用时需要在开头加上  "n"
         setTdid("n" + getDid());

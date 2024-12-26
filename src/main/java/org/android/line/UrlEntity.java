@@ -1,6 +1,6 @@
 package org.android.line;
 
-public class urlEntity {
+public class UrlEntity {
     private static final String Host_1 = "https://firebaseinstallations.googleapis.com/v1/projects/jp-naver-line/installations";
     private static final String Host_2 = "https://ly.my.sentry.io/api/6/envelope/";
     private static final String Host_3 = "https://cix.line-apps.com/R4?";
@@ -21,7 +21,7 @@ public class urlEntity {
         :authority: cix.line-apps.com
          */
         String toTime = String.valueOf(System.currentTimeMillis() / 1000);
-        String host = Host_3 + "type=Android_OS&version=14.21.1&regions=--CN&carrier=&time=" + toTime + "&key=" + argUtils.get_key(toTime);
+        String host = Host_3 + "type=Android_OS&version=14.21.1&regions=--CN&carrier=&time=" + toTime + "&key=" + ArgUtils.get_key(toTime);
         return host;
     }
 
