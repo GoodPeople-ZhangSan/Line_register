@@ -1,6 +1,7 @@
 package org.android.line;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Main {
     // 用于发送请求
@@ -13,7 +14,10 @@ public class Main {
 
         System.out.println("发送第一次请求");
         // 发送第一次请求-installations
-//        OkhttpUtils.doPost(urlEntity.getUrl_1(), headerEntity.getHeader_1(), bodyEntity.getBody_1());
+//        String requestBody_1 = OkhttpUtils.doPost(urlEntity.getUrl_1(), headerEntity.getHeader_1(), bodyEntity.getBody_1());
+        // 提取body中的token，返回作用于后续X-Google-Firebase-Installations-Auth使用
+//        adbDevices.setInstallations_auth(requestBody_1);
+
 
         System.out.println("发送第二次请求");
         // 发送第二次请求-envelope

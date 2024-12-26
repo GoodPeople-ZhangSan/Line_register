@@ -11,22 +11,24 @@ public class OkhttpUtils {
     private static final OkHttpClient client = new OkHttpClient();
 
     // post请求
-    public static void doPost(String url, Map<String, String> heardMap, RequestBody body) {
+    public static String doPost(String url, Map<String, String> heardMap, RequestBody body) {
         // 创建Request请求
         Request.Builder requestbuilder = new Request.Builder().url(url).post(body);
         // 后续执行
-        requestAll(requestbuilder, heardMap);
+        String requestBody = requestAll(requestbuilder, heardMap);
+        return requestBody;
     }
 
     // Get请求
-    public static void doGet(String url, Map<String, String> heardMap) {
+    public static String doGet(String url, Map<String, String> heardMap) {
         // 创建Request请求
         Request.Builder requestbuilder = new Request.Builder().url(url).get();
         // 后续执行
-        requestAll(requestbuilder, heardMap);
+        String requestBody = requestAll(requestbuilder, heardMap);
+        return requestBody;
     }
 
-    public static void requestAll(Request.Builder requestbuilder, Map<String, String> heardMap) {
+    public static String requestAll(Request.Builder requestbuilder, Map<String, String> heardMap) {
         // 遍历Map内容，增加请求头
         for (Map.Entry<String, String> stringObjectEntry : heardMap.entrySet()) {
             requestbuilder.addHeader(stringObjectEntry.getKey(), stringObjectEntry.getValue());
@@ -35,7 +37,7 @@ public class OkhttpUtils {
         // 准备发送请求
         Request request = requestbuilder.build();
         // 用于存储 返回值body
-        String resultBody;
+        String resultBody = "";
 
         // 发送请求并获取响应
         try {
@@ -57,6 +59,8 @@ public class OkhttpUtils {
         } catch (IOException e) {
             System.out.println("异常：" + e);
         }
+        return resultBody;
+
     }
 
     // 用于解压GZIP
