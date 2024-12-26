@@ -24,7 +24,6 @@ public class ArgUtils {
 
     // 生成第一次请求所需body中内容fid
     public static String getFid() {
-
         UUID randomUUID = getUUID();
         ByteBuffer wrap = ByteBuffer.wrap(new byte[17]);
         wrap.putLong(randomUUID.getMostSignificantBits());

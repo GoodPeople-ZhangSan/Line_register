@@ -9,6 +9,9 @@ public class DevicesEntity {
     public final String gcm_ver = "244738029";
     public final String app_ver = "142110270";
 
+
+    // Fid 在register3也使用了
+    private String fid;
     // android_id
     private String android_id;
     // did
@@ -37,6 +40,9 @@ public class DevicesEntity {
         // 设置 tcid
         String replaceAll = UUID.nameUUIDFromBytes(getTdid().getBytes()).toString().replaceAll("-", "");
         setTcid(replaceAll);
+
+        // 设置fid
+        setFid(ArgUtils.getFid());
     }
 
     public String getDid() {
@@ -88,4 +94,13 @@ public class DevicesEntity {
         // 赋值
         this.installations_auth = authTokenObject_token;
     }
+
+    public String getFid() {
+        return fid;
+    }
+
+    public void setFid(String fid) {
+        this.fid = fid;
+    }
+
 }

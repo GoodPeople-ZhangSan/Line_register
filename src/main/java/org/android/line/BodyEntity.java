@@ -10,10 +10,10 @@ import okhttp3.RequestBody;
 
 
 public class BodyEntity {
-    public static RequestBody getBody_1() throws JSONException {
+    public static RequestBody getBody_1(DevicesEntity devicesEntity) throws JSONException {
         // 创建body内容
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("fid", ArgUtils.getFid());
+        jsonObject.put("fid", devicesEntity.getFid());
         jsonObject.put("appId", "1:4586549225:android:9581cf5057737b34");
         jsonObject.put("authVersion", "FIS_v2");
         jsonObject.put("sdkVersion", "a:18.0.0");
@@ -80,11 +80,11 @@ public class BodyEntity {
         RequestBody requestBody = new FormBody.Builder()
                 .add("X-subtype", "4586549225")
                 .add("sender", "4586549225")
-                .add("X-app_ver", "142110270")
+                .add("X-app_ver", devicesEntity.app_ver)
                 .add("X-osv", "32")
                 .add("X-cliv", "fcm-24.0.3")
-                .add("X-gmsv", "212423054")
-                .add("X-appid", "elLhk0LoQYu8QjZIYjmdYS")
+                .add("X-gmsv", devicesEntity.gcm_ver)
+                .add("X-appid", devicesEntity.getFid())
                 .add("X-scope", "*")
                 .add("X-Goog-Firebase-Installations-Auth", "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NDU4NjU0OTIyNTphbmRyb2lkOjk1ODFjZjUwNTc3MzdiMzQiLCJleHAiOjE3MzUyODM3MTUsImZpZCI6ImVsTGhrMExvUVl1OFFqWklZam1kWVMiLCJwcm9qZWN0TnVtYmVyIjo0NTg2NTQ5MjI1fQ.AB2LPV8wRQIgLbety__8j3PuwA90iAxjNLAEN24CFOTQtQHvAG81CG8CIQDAuT_nMoNTXyatkK_ilkDToBREK8h8m1vUogcPeAd-GQ")
                 .add("X-gmp_app_id", "1%3A4586549225%3Aandroid%3A9581cf5057737b34")
@@ -92,9 +92,9 @@ public class BodyEntity {
                 .add("X-app_ver_name", "14.21.1")
                 .add("app", "jp.naver.line.android")
                 .add("device", "4317700272594290259")
-                .add("app_ver", "142110270")
+                .add("app_ver", devicesEntity.app_ver)
                 .add("info", "Y48DEYzm00cYUE1VIFLpkGhCCUnjPRk")
-                .add("gcm_ver", "212423054")
+                .add("gcm_ver", devicesEntity.gcm_ver)
                 .add("plat", "0")
                 .add("cert", "89396dc419292473972813922867e6973d6f5c50")
                 .add("target_ver", "34")

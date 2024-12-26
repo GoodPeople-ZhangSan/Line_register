@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("发送第一次请求");
         // 发送第一次请求-installations
-//        String requestBody_1 = OkhttpUtils.doPost(urlEntity.getUrl_1(), headerEntity.getHeader_1(), bodyEntity.getBody_1());
+//        String requestBody_1 = OkhttpUtils.doPost(urlEntity.getUrl_1(), headerEntity.getHeader_1(), bodyEntity.getBody_1(devicesEntity));
         // 提取body中的token，返回作用于后续X-Google-Firebase-Installations-Auth使用
 //        adbDevices.setInstallations_auth(requestBody_1);
 
