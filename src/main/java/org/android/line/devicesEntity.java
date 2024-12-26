@@ -4,7 +4,7 @@ import org.json.JSONObject;
 
 import java.util.UUID;
 
-public class AdbDevices {
+public class devicesEntity {
     // android_id
     private String android_id;
     // did
@@ -19,7 +19,7 @@ public class AdbDevices {
     private String installations_auth;
 
 
-    public AdbDevices() {
+    public devicesEntity() {
         // 设置android_id
         String randomAndroidId = argUtils.generateRandomString(16);
         setAndroid_id(randomAndroidId);

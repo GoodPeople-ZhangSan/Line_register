@@ -37,20 +37,20 @@ public class bodyEntity {
                 body, MediaType.get("application/x-sentry-envelope"));
     }
 
-    public static RequestBody getBody_4(AdbDevices adbDevices) {
+    public static RequestBody getBody_4(devicesEntity devicesEntity) {
         // 准备时间戳
         long toTime_1 = System.currentTimeMillis();
         String toTime_2 = String.valueOf(System.currentTimeMillis() + 1000);
 
 
-        System.out.println("生成的android_id：" + adbDevices.getAndroid_id());
-        System.out.println("生成的did：" + adbDevices.getDid());
-        System.out.println("生成的tdid：" + adbDevices.getTdid());
-        System.out.println("生成的tcid：" + adbDevices.getTcid());
+        System.out.println("生成的android_id：" + devicesEntity.getAndroid_id());
+        System.out.println("生成的did：" + devicesEntity.getDid());
+        System.out.println("生成的tdid：" + devicesEntity.getTdid());
+        System.out.println("生成的tcid：" + devicesEntity.getTcid());
 
         // 准备body
-        String body = "{\"tdid\":\"" + adbDevices.getTdid() +
-                "\",\"tcid\":\"" + adbDevices.getTcid() +
+        String body = "{\"tdid\":\"" + devicesEntity.getTdid() +
+                "\",\"tcid\":\"" + devicesEntity.getTcid() +
                 "\",\"tsid\":\"line\"," +
                 "\"timestamp\":" + toTime_1 +
                 ",\"events\":[{\"aName\":\"LINE\",\"aVer\":\"14.21.1\",\"pName\":\"ANDROID\",\"pVer\":\"12\",\"mVer\":\"4.7.4\",\"lang\":\"zh\",\"c\":\"CN\",\"mcc\":\"\",\"mnc\":\"\",\"model\":\"Pixel 5\",\"brand\":\"Google\",\"type\":\"S\"," +
@@ -64,9 +64,9 @@ public class bodyEntity {
                 body, MediaType.parse("charset=utf-8"));
     }
 
-    public static RequestBody getBody_5(AdbDevices adbDevices) {
+    public static RequestBody getBody_5(devicesEntity devicesEntity) {
         byte[] byteArray1 = {(byte) 0x82, 0x21, 0x01, 0x0f, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x79, 0x49, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x65, 0x64, 0x28, 0x20};
-        byte[] byteArray2 = adbDevices.getDid().getBytes();
+        byte[] byteArray2 = devicesEntity.getDid().getBytes();
         byte[] byteArray3 = {0x18, 0x1d, 0x41, 0x4e, 0x44, 0x52, 0x4f, 0x49, 0x44, 0x09, 0x31, 0x34, 0x2e, 0x32, 0x31, 0x2e, 0x31, 0x09, 0x41, 0x6e, 0x64, 0x72, 0x6f, 0x69, 0x64, 0x20, 0x4f, 0x53, 0x09, 0x31, 0x32, 0x00};
         byte[] result = Bytes.concat(byteArray1, byteArray2, byteArray3);
         System.out.println("生成的第五次请求的body为：" + new String(result));
@@ -75,7 +75,7 @@ public class bodyEntity {
                 result, MediaType.parse("application/x-thrift"));
     }
 
-    public static RequestBody getBody_6(AdbDevices adbDevices) {
+    public static RequestBody getBody_6(devicesEntity devicesEntity) {
         // 创建body内容
         RequestBody requestBody = new FormBody.Builder()
                 .add("X-subtype", "4586549225")
