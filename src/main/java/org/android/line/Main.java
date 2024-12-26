@@ -28,14 +28,15 @@ public class Main {
 
         // 发送第四次请求-event
         System.out.println("发送第四次请求");
-        OkhttpUtils.doPost(UrlEntity.getUrl_4(), HeaderEntity.getHeader_4(devicesEntity.app_ver_name), BodyEntity.getBody_4(devicesEntity.getTdid(),devicesEntity.getTcid(),devicesEntity.app_ver_name));
+        OkhttpUtils.doPost(UrlEntity.getUrl_4(), HeaderEntity.getHeader_4(devicesEntity.app_ver_name), BodyEntity.getBody_4(devicesEntity.getTdid(), devicesEntity.getTcid(), devicesEntity.app_ver_name));
 
         // 发送第五次请求-TalkServices.do
         System.out.println("发送第五次请求");
         OkhttpUtils.doPost(UrlEntity.getUrl_5(), HeaderEntity.getHeader_5(devicesEntity.app_ver_name), BodyEntity.getBody_5(devicesEntity.getDid().getBytes()));
 
+        // 发送第六次请求-register3
         System.out.println("发送第六次请求");
-        OkhttpUtils.doPost(UrlEntity.getUrl_6(), HeaderEntity.getHeader_6(devicesEntity.app_ver,devicesEntity.gcm_ver), BodyEntity.getBody_6(devicesEntity));
+        OkhttpUtils.doPost(UrlEntity.getUrl_6(), HeaderEntity.getHeader_6(devicesEntity.app_ver, devicesEntity.gcm_ver), BodyEntity.getBody_6(devicesEntity));
 
 
         System.out.println("结束");

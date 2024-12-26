@@ -11,7 +11,11 @@ public class DevicesEntity {
     public final String cert = "89396DC419292473972813922867E6973D6F5C50";
     public final String appid = "1:4586549225:android:9581cf5057737b34";
     public final String app_ver_name = "14.21.1";
-
+    public final String subtype = "4586549225";
+    public final String x_osv ="32";
+    public final String x_cliv ="fcm-24.0.3";
+    public final String app_name_hash ="R1dAH9Ui7M-ynoznwBdw01tLxhI";
+    public final String target_ver ="34";
 
     // Fid 在register3也使用了
     private String fid;
@@ -49,6 +53,7 @@ public class DevicesEntity {
 
         // 输出
         System.out.println("生成的android_id：" + getAndroid_id());
+        System.out.println("生成的fid：" + getFid());
         System.out.println("生成的did：" + getDid());
         System.out.println("生成的tdid：" + getTdid());
         System.out.println("生成的tcid：" + getTcid());

@@ -73,17 +73,17 @@ public class BodyEntity {
     public static RequestBody getBody_6(DevicesEntity devicesEntity) {
         // 创建body内容
         RequestBody requestBody = new FormBody.Builder()
-                .add("X-subtype", "4586549225")
-                .add("sender", "4586549225")
+                .add("X-subtype", devicesEntity.subtype)
+                .add("sender", devicesEntity.subtype)
                 .add("X-app_ver", devicesEntity.app_ver)
-                .add("X-osv", "32")
-                .add("X-cliv", "fcm-24.0.3")
+                .add("X-osv", devicesEntity.x_osv)
+                .add("X-cliv", devicesEntity.x_cliv)
                 .add("X-gmsv", devicesEntity.gcm_ver)
                 .add("X-appid", devicesEntity.getFid())
                 .add("X-scope", "*")
-                .add("X-Goog-Firebase-Installations-Auth", "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NDU4NjU0OTIyNTphbmRyb2lkOjk1ODFjZjUwNTc3MzdiMzQiLCJleHAiOjE3MzUyODM3MTUsImZpZCI6ImVsTGhrMExvUVl1OFFqWklZam1kWVMiLCJwcm9qZWN0TnVtYmVyIjo0NTg2NTQ5MjI1fQ.AB2LPV8wRQIgLbety__8j3PuwA90iAxjNLAEN24CFOTQtQHvAG81CG8CIQDAuT_nMoNTXyatkK_ilkDToBREK8h8m1vUogcPeAd-GQ")
+                .add("X-Goog-Firebase-Installations-Auth", devicesEntity.getInstallations_auth())
                 .add("X-gmp_app_id", devicesEntity.appid)
-                .add("X-firebase-app-name-hash", "R1dAH9Ui7M-ynoznwBdw01tLxhI")
+                .add("X-firebase-app-name-hash", devicesEntity.app_name_hash)
                 .add("X-app_ver_name", devicesEntity.app_ver_name)
                 .add("app", "jp.naver.line.android")
                 .add("device", "4317700272594290259")
@@ -92,7 +92,7 @@ public class BodyEntity {
                 .add("gcm_ver", devicesEntity.gcm_ver)
                 .add("plat", "0")
                 .add("cert", devicesEntity.cert)
-                .add("target_ver", "34")
+                .add("target_ver", devicesEntity.target_ver)
                 .build();
         return requestBody;
     }

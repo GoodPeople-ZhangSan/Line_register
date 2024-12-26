@@ -32,9 +32,7 @@ public class ArgUtils {
         byte b12 = array[0];
         array[16] = b12;
         array[0] = (byte) ((b12 & f232673b) | f232672a);
-        String result = Base64.getUrlEncoder().encodeToString(array).substring(0, 22);
-        System.out.println("生成的fid为：" + result);
-        return result;
+        return Base64.getUrlEncoder().encodeToString(array).substring(0, 22);
     }
 
     // 生成第二次请求所需body中内容
