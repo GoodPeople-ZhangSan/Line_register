@@ -12,10 +12,16 @@ public class DevicesEntity {
     public final String appid = "1:4586549225:android:9581cf5057737b34";
     public final String app_ver_name = "14.21.1";
     public final String subtype = "4586549225";
-    public final String x_osv ="32";
-    public final String x_cliv ="fcm-24.0.3";
-    public final String app_name_hash ="R1dAH9Ui7M-ynoznwBdw01tLxhI";
-    public final String target_ver ="34";
+    public final String x_osv = "32";
+    public final String x_cliv = "fcm-24.0.3";
+    public final String app_name_hash = "R1dAH9Ui7M-ynoznwBdw01tLxhI";
+    public final String target_ver = "34";
+
+    // Google注册初始值，一个手机一个
+    public final String google_android_id = "3893309659413393401";
+    public final String google_security_token = "3209926037022420383";
+    public final String info = "M7C2F_SYAuoTUE1VIFLpkGgyUckxPhk";
+
 
     // Fid 在register3也使用了
     private String fid;
@@ -28,7 +34,8 @@ public class DevicesEntity {
     // tcid
     private String tcid;
 
-
+    // Authorization
+    private String Authorization;
     // X-Goog-Firebase-Installations-Auth
     private String installations_auth;
 
@@ -51,7 +58,11 @@ public class DevicesEntity {
         // 设置fid
         setFid(ArgUtils.getFid());
 
+        // 设置 Authorization
+        setAuthorization(google_android_id + ":" + google_security_token);
+
         // 输出
+        System.out.println("生成的setAuthorization：" + getAuthorization());
         System.out.println("生成的android_id：" + getAndroid_id());
         System.out.println("生成的fid：" + getFid());
         System.out.println("生成的did：" + getDid());
@@ -115,6 +126,14 @@ public class DevicesEntity {
 
     public void setFid(String fid) {
         this.fid = fid;
+    }
+
+    public String getAuthorization() {
+        return Authorization;
+    }
+
+    public void setAuthorization(String authorization) {
+        Authorization = authorization;
     }
 
 }
