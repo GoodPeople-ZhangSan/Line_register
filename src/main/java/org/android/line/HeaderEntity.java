@@ -73,14 +73,14 @@ public class HeaderEntity {
         return map;
     }
 
-    public static Map<String, String> getHeader_6(DevicesEntity devicesEntity) {
+    public static Map<String, String> getHeader_6(String app_ver, String gcm_ver) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
         map.put("Authorization", "AidLogin 3893309659413393401:3209926037022420383");
         map.put("app", "jp.naver.line.android");
-        map.put("gcm_ver", devicesEntity.gcm_ver);
-        map.put("app_ver", devicesEntity.app_ver);
-        map.put("User-Agent", "com.google.android.gms/" + devicesEntity.gcm_ver + " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)");
+        map.put("gcm_ver", gcm_ver);
+        map.put("app_ver", app_ver);
+        map.put("User-Agent", "com.google.android.gms/" + gcm_ver + " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)");
         map.put("accept-encoding", "gzip, deflate, br");
         map.put("content-type", "application/x-www-form-urlencoded");
         map.put("priority", "u=1, i");
