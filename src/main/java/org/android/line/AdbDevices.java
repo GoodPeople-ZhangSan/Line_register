@@ -2,7 +2,7 @@ package org.android.line;
 
 import java.util.UUID;
 
-public class adbDevices {
+public class AdbDevices {
     // android_id
     private String android_id;
 
@@ -14,7 +14,7 @@ public class adbDevices {
     // tcid
     private String tcid;
 
-    public adbDevices() {
+    public AdbDevices() {
         // 设置android_id
         String randomAndroidId = argUtils.generateRandomString(16);
         setAndroid_id(randomAndroidId);

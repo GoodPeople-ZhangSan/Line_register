@@ -1,10 +1,6 @@
 package org.android.line;
 
-import org.android.thrift.Pair;
-import org.apache.thrift.protocol.TBinaryProtocol;
-import org.apache.thrift.protocol.TProtocol;
-import org.apache.thrift.transport.TIOStreamTransport;
-import org.apache.thrift.transport.TTransport;
+import com.google.common.primitives.Bytes;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -12,17 +8,12 @@ import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
-import java.io.ByteArrayOutputStream;
-import java.util.Arrays;
-
-import static org.android.line.argUtils.getFid;
 
 public class bodyEntity {
     public static RequestBody getBody_1() throws JSONException {
-
         // 创建body内容
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("fid", getFid());
+        jsonObject.put("fid", argUtils.getFid());
         jsonObject.put("appId", "1:4586549225:android:9581cf5057737b34");
         jsonObject.put("authVersion", "FIS_v2");
         jsonObject.put("sdkVersion", "a:18.0.0");
@@ -46,13 +37,12 @@ public class bodyEntity {
                 body, MediaType.get("application/x-sentry-envelope"));
     }
 
-    public static RequestBody getBody_4() {
+    public static RequestBody getBody_4(AdbDevices adbDevices) {
         // 准备时间戳
         long toTime_1 = System.currentTimeMillis();
         String toTime_2 = String.valueOf(System.currentTimeMillis() + 1000);
 
-        // 准备 tdid tcid
-        adbDevices adbDevices = new adbDevices();
+
         System.out.println("生成的android_id：" + adbDevices.getAndroid_id());
         System.out.println("生成的did：" + adbDevices.getDid());
         System.out.println("生成的tdid：" + adbDevices.getTdid());
@@ -74,18 +64,41 @@ public class bodyEntity {
                 body, MediaType.parse("charset=utf-8"));
     }
 
-    public static RequestBody getBody_5() {
-        byte[] byteArray = {(byte) 0x82, 0x21, 0x01, 0x0f, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x79, 0x49, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x65, 0x64, 0x28, 0x20, 0x34, 0x39, 0x31, 0x39, 0x34, 0x34, 0x32, 0x38, 0x36, 0x30, 0x66, 0x32, 0x32, 0x32, 0x62, 0x34, 0x65, 0x63, 0x65, 0x30, 0x35, 0x64, 0x61, 0x32, 0x36, 0x34, 0x36, 0x36, 0x38, 0x31, 0x63, 0x38, 0x18, 0x1d, 0x41, 0x4e, 0x44, 0x52, 0x4f, 0x49, 0x44, 0x09, 0x31, 0x34, 0x2e, 0x32, 0x31, 0x2e, 0x31, 0x09, 0x41, 0x6e, 0x64, 0x72, 0x6f, 0x69, 0x64, 0x20, 0x4f, 0x53, 0x09, 0x31, 0x32, 0x00};
-        String result = new String(byteArray);
-        System.out.println(result);
+    public static RequestBody getBody_5(AdbDevices adbDevices) {
+        byte[] byteArray1 = {(byte) 0x82, 0x21, 0x01, 0x0f, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x79, 0x49, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x65, 0x64, 0x28, 0x20};
+        byte[] byteArray2 = adbDevices.getDid().getBytes();
+        byte[] byteArray3 = {0x18, 0x1d, 0x41, 0x4e, 0x44, 0x52, 0x4f, 0x49, 0x44, 0x09, 0x31, 0x34, 0x2e, 0x32, 0x31, 0x2e, 0x31, 0x09, 0x41, 0x6e, 0x64, 0x72, 0x6f, 0x69, 0x64, 0x20, 0x4f, 0x53, 0x09, 0x31, 0x32, 0x00};
+        byte[] result = Bytes.concat(byteArray1, byteArray2, byteArray3);
+        System.out.println("生成的第五次请求的body为：" + new String(result));
 
         return RequestBody.create(
                 result, MediaType.parse("application/x-thrift"));
     }
 
-    public static RequestBody getBody_3() {
+    public static RequestBody getBody_6(AdbDevices adbDevices) {
         // 创建body内容
-        RequestBody requestBody = new FormBody.Builder().add("test", "test").build();
+        RequestBody requestBody = new FormBody.Builder()
+                .add("X-subtype", "4586549225")
+                .add("sender", "4586549225")
+                .add("X-app_ver", "142110270")
+                .add("X-osv", "32")
+                .add("X-cliv", "fcm-24.0.3")
+                .add("X-gmsv", "212423054")
+                .add("X-appid", "elLhk0LoQYu8QjZIYjmdYS")
+                .add("X-scope", "*")
+                .add("X-Goog-Firebase-Installations-Auth", "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NDU4NjU0OTIyNTphbmRyb2lkOjk1ODFjZjUwNTc3MzdiMzQiLCJleHAiOjE3MzUyODM3MTUsImZpZCI6ImVsTGhrMExvUVl1OFFqWklZam1kWVMiLCJwcm9qZWN0TnVtYmVyIjo0NTg2NTQ5MjI1fQ.AB2LPV8wRQIgLbety__8j3PuwA90iAxjNLAEN24CFOTQtQHvAG81CG8CIQDAuT_nMoNTXyatkK_ilkDToBREK8h8m1vUogcPeAd-GQ")
+                .add("X-gmp_app_id", "1%3A4586549225%3Aandroid%3A9581cf5057737b34")
+                .add("X-firebase-app-name-hash", "R1dAH9Ui7M-ynoznwBdw01tLxhI")
+                .add("X-app_ver_name", "14.21.1")
+                .add("app", "jp.naver.line.android")
+                .add("device", "4317700272594290259")
+                .add("app_ver", "142110270")
+                .add("info", "Y48DEYzm00cYUE1VIFLpkGhCCUnjPRk")
+                .add("gcm_ver", "212423054")
+                .add("plat", "0")
+                .add("cert", "89396dc419292473972813922867e6973d6f5c50")
+                .add("target_ver", "34")
+                .build();
         return requestBody;
     }
 }

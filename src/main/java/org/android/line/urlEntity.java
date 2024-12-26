@@ -5,7 +5,7 @@ public class urlEntity {
     private static final String Host_2 = "https://ly.my.sentry.io/api/6/envelope/";
     private static final String Host_3 = "https://cix.line-apps.com/R4?";
     private static final String Host_4 = "https://legy.line-apps.com";
-    private static final String Host_5 = "android.apis.google.com";
+    private static final String Host_5 = "https://android.apis.google.com";
 
     public static String getUrl_1() {
         return Host_1;
@@ -34,4 +34,7 @@ public class urlEntity {
     }
 
 
+    public static String getUrl_6() {
+        return Host_5 + "/c2dm/register3";
+    }
 }
