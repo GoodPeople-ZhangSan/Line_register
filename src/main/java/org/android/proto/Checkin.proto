@@ -1,0 +1,104 @@
+syntax = "proto3";
+
+message Checkin {
+  int32 a2 = 2;
+  string a3 = 3;
+  A4 a4 = 4;
+  string a6 = 6;
+  string a9 = 9;
+  string a10 = 10;
+  A11 a11 = 11;
+  string a12 = 12;
+  fixed64 a13 = 13;
+  int32 a14 = 14;
+  string a15 = 15;
+  string a16 = 16;
+  A18 a18 = 18;
+  string a19 = 19;
+  int32 a20 = 20;
+  int32 a22 = 22;
+  string a24 = 24;
+  int32 a26 = 26;
+  int32 a29 = 29;
+  int32 a30 = 30;
+  int32 a31 = 31;
+}
+
+
+message A4{
+  B1 b1 = 1;
+  int32 b2 = 2;
+  string b8 = 8;
+  int32 b9 = 9;
+  int32 b14 = 14;
+  B15 b15 = 15;
+  int32 b18 = 18;
+  string b19 = 19;
+  int32 b20 = 20;
+}
+
+message A18{
+  int32 g1 = 1;
+  int32 g2 = 2;
+  int32 g3 = 3;
+  int32 g4 = 4;
+  int32 g5 = 5;
+  int32 g6 = 6;
+  int32 g7 = 7;
+  int32 g8 = 8;
+  repeated string g9 = 9;
+  repeated string g10 = 10;
+  repeated string g11 = 11;
+  int32 g12 = 12;
+  int32 g13 = 13;
+  repeated string g14 = 14;
+  repeated string g15 = 15;
+  int32 g18 = 18;
+  int32 g19 = 19;
+  int32 g20 = 20;
+  int32 g21 = 21;
+  repeated G26 g26 = 26;
+  int32 g28 = 28;
+  string g29 = 29;
+  int32 g30 = 30;
+}
+
+message A11{
+}
+
+message B1{
+  string c1 = 1;
+  string c2 = 2;
+  string c3 = 3;
+  string c4 = 4;
+  string c5 = 5;
+  string c6 = 6;
+  int32 c7 = 7;
+  int32 c8 = 8;
+  string c9 = 9;
+  int32 c10 = 10;
+  string c11 = 11;
+  string c12 = 12;
+  string c13 = 13;
+  int32 c14 = 14;
+  repeated C15 c15 = 15;
+  string c19 = 19;
+}
+
+message B15{
+  int32 e1 = 1;
+  int32 e2 = 2;
+  string e3 = 3;
+  string e4 = 4;
+  int32 e5 = 5;
+}
+
+message C15{
+  int32  d1 = 1;
+  string d2 = 2;
+}
+
+message G26{
+  string h1 = 1;
+  int32 h2 = 2;
+}
