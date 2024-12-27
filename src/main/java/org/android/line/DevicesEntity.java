@@ -6,6 +6,7 @@ import java.util.UUID;
 
 public class DevicesEntity {
     // 一些手机版本的固定信息
+    public final String adbDevices = "16091FDD4000W9";
     public final String iPhoneVer = "12";
     public final String iPhoneMode = "Pixel 5";
     public final String iPhoneBuild = "SQ3A.220705.003.A1";
