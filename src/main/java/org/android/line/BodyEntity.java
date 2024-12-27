@@ -1,6 +1,7 @@
 package org.android.line;
 
 import com.google.common.primitives.Bytes;
+import org.android.proto.CheckinEntity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -97,7 +98,8 @@ public class BodyEntity {
         return requestBody;
     }
 
-    public static RequestBody getBody_7(byte[] byteArray) {
+    public static RequestBody getBody_7(DevicesEntity devicesEntity) {
+        byte[] byteArray = CheckinEntity.getCheckBodyProto(devicesEntity);
         System.out.println("生成的第五次请求的body为：" + new String(byteArray));
         return RequestBody.create(
                 byteArray, MediaType.parse("application/x-protobuffer"));

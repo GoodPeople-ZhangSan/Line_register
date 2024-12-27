@@ -19,8 +19,10 @@ public class Main {
     }
 
     private static void initializeGMS(DevicesEntity devicesEntity) {
+        BodyEntity.getBody_7(devicesEntity);
+
         // 发送GMS初始化第一次请求-Checkin
-        String requestBody_1 = OkhttpUtils.doPost(UrlEntity.getUrl_7(), HeaderEntity.getHeader_7(devicesEntity.iPhoneUA_1), BodyEntity.getBody_1(devicesEntity.getFid(), devicesEntity.appid));
+//        String requestBody_1 = OkhttpUtils.doPost(UrlEntity.getUrl_7(), HeaderEntity.getHeader_7(devicesEntity.iPhoneUA_1), BodyEntity.getBody_7(devicesEntity));
     }
 
     private static void initializeLine(DevicesEntity devicesEntity) {
