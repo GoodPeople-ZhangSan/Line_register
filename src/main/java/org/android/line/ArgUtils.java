@@ -148,4 +148,13 @@ public class ArgUtils {
 
         return sb.toString();
     }
+
+    // 将byte[] 转为 hex
+    public static String bytesToHex(byte[] bytes) {
+        StringBuilder sb = new StringBuilder();
+        for (byte b : bytes) {
+            sb.append(String.format("%02X", b)); // %02X 表示将字节格式化为两位大写的十六进制数
+        }
+        return sb.toString();
+    }
 }

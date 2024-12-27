@@ -50,7 +50,7 @@ public class Main {
 
         // 发送第六次请求-register3
         System.out.println("Line初始化-发送第六次请求");
-        OkhttpUtils.doPost(UrlEntity.getUrl_6(), HeaderEntity.getHeader_6(devicesEntity.app_ver, devicesEntity.gcm_ver, devicesEntity.iPhoneUA_2,devicesEntity.google_android_id+":"+devicesEntity.google_android_id), BodyEntity.getBody_6(devicesEntity));
+//        OkhttpUtils.doPost(UrlEntity.getUrl_6(), HeaderEntity.getHeader_6(devicesEntity.app_ver, devicesEntity.gcm_ver, devicesEntity.iPhoneUA_2,devicesEntity.google_android_id+":"+devicesEntity.google_android_id), BodyEntity.getBody_6(devicesEntity));
 
 
         System.out.println("结束");

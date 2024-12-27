@@ -1,31 +1,35 @@
 package org.android.proto;
 
+import org.android.line.ArgUtils;
 import org.android.line.DevicesEntity;
 
 import java.util.Arrays;
 
 public class CheckinEntity {
     public static byte[] getCheckBodyProto(DevicesEntity devicesEntity) {
+        // 构造一个空的 A11
+        CheckinBodyProto.A11.Builder a11 = CheckinBodyProto.A11.newBuilder();
+
         // 构造主 proto
         CheckinBodyProto.Checkin.Builder checkinBuild = CheckinBodyProto.Checkin.newBuilder();
         checkinBuild
                 .setA2(0)
                 .setA3("1-da39a3ee5e6b4b0d3255bfef95601890afd80709")
-                .setA4(null)
+//                .setA4(null)
                 .setA6("zh-Hans-CN")
-                .setA9(null)
-                .setA10(null)
-                .setA11("空的{}")
+//                .setA9(null)
+//                .setA10(null)
+                .setA11(a11)
                 .setA12("Asia/Shanghai")
                 .setA13(0)
                 .setA14(3)
-                .setA15(null)
-                .setA16(null)
-                .setA18(null)
+//                .setA15(null)
+//                .setA16(null)
+//                .setA18(null)
                 .setA19("wifi")
                 .setA20(0)
                 .setA22(0)
-                .setA24(null)
+//                .setA24(null)
                 .setA26(0)
                 .setA29(0)
                 .setA30(0)
@@ -38,6 +42,7 @@ public class CheckinEntity {
         //转换成字节数组
         byte[] checkinByteArray = checkin.toByteArray();
         System.out.println("CheckinBody-protobuf数据bytes[]:" + Arrays.toString(checkinByteArray));
+        System.out.println("CheckinBody-protobuf数据hex:" + ArgUtils.bytesToHex(checkinByteArray));
         System.out.println("CheckinBody-protobuf序列化大小: " + checkinByteArray.length);
         return checkinByteArray;
     }
