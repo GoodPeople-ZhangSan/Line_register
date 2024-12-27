@@ -1,6 +1,10 @@
 syntax = "proto3";
-option java_package = "org.android.proto";  // 生成的java文件的包名
-option java_outer_classname = "CheckinBodyProto"; // 生成的java文件的类名
+//生成 proto 文件所在包路径
+package org.android.proto;
+// 生成的java文件的包名
+option java_package = "org.android.proto";
+// 生成的java文件的类名
+option java_outer_classname = "CheckinBodyProto";
 
 
 message Checkin {
