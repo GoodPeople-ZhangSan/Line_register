@@ -5,6 +5,13 @@ import org.json.JSONObject;
 import java.util.UUID;
 
 public class DevicesEntity {
+    // 一些手机版本的固定信息
+    public final String iPhoneVer = "12";
+    public final String iPhoneMode = "Pixel 5";
+    public final String iPhoneBuild = "SQ3A.220705.003.A1";
+    public final String iPhoneUA_1 = "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 5 Build/SQ3A.220705.003.A1)";
+    public final String iPhoneUA_2 = " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)";
+
     // 设置一些固定值
     public final String gcm_ver = "244738029";
     public final String app_ver = "142110270";

@@ -6,6 +6,7 @@ public class UrlEntity {
     private static final String Host_3 = "https://cix.line-apps.com/R4?";
     private static final String Host_4 = "https://legy.line-apps.com";
     private static final String Host_5 = "https://android.apis.google.com";
+    private static final String Host_6 = "https://android.googleapis.com";
 
     public static String getUrl_1() {
         return Host_1;
@@ -21,7 +22,7 @@ public class UrlEntity {
         :authority: cix.line-apps.com
          */
         String toTime = String.valueOf(System.currentTimeMillis() / 1000);
-        String host = Host_3 + "type=Android_OS&version=" + app_ver_name + "&regions=--CN&carrier=&time=" + toTime + "&key=" + ArgUtils.get_key(toTime,app_ver_name);
+        String host = Host_3 + "type=Android_OS&version=" + app_ver_name + "&regions=--CN&carrier=&time=" + toTime + "&key=" + ArgUtils.get_key(toTime, app_ver_name);
         return host;
     }
 
@@ -36,5 +37,9 @@ public class UrlEntity {
 
     public static String getUrl_6() {
         return Host_5 + "/c2dm/register3";
+    }
+
+    public static String getUrl_7() {
+        return Host_6 + "/checkin";
     }
 }

@@ -96,4 +96,10 @@ public class BodyEntity {
                 .build();
         return requestBody;
     }
+
+    public static RequestBody getBody_7(byte[] byteArray) {
+        System.out.println("生成的第五次请求的body为：" + new String(byteArray));
+        return RequestBody.create(
+                byteArray, MediaType.parse("application/x-protobuffer"));
+    }
 }

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HeaderEntity {
-    public static Map<String, String> getHeader_1(String cert) {
+    public static Map<String, String> getHeader_1(String cert, String iPhoneUA_1) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
         map.put("Content-Type", "application/json");
@@ -15,7 +15,7 @@ public class HeaderEntity {
         map.put("x-firebase-client", "H4sIAAAAAAAAAKtWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA");
         map.put("X-Android-Cert", cert);
         map.put("x-goog-api-key", "AIzaSyBGRb2sEaaXjsKH6ea6f2xSiUeG4D8vaCY");
-        map.put("User-Agent", "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 5 Build/SQ3A.220705.003.A1)");
+        map.put("User-Agent", iPhoneUA_1);
         map.put("Host", "firebaseinstallations.googleapis.com");
         map.put("Connection", "Keep-Alive");
         map.put("Accept-Encoding", "gzip");
@@ -73,17 +73,29 @@ public class HeaderEntity {
         return map;
     }
 
-    public static Map<String, String> getHeader_6(String app_ver, String gcm_ver) {
+    public static Map<String, String> getHeader_6(String app_ver, String gcm_ver, String iPhoneUA_2, String Authorization) {
         // 创建header内容
         Map<String, String> map = new HashMap<>();
-        map.put("Authorization", "AidLogin 3893309659413393401:3209926037022420383");
+        map.put("Authorization", "AidLogin " + Authorization);
         map.put("app", "jp.naver.line.android");
         map.put("gcm_ver", gcm_ver);
         map.put("app_ver", app_ver);
-        map.put("User-Agent", "com.google.android.gms/" + gcm_ver + " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)");
+        map.put("User-Agent", "com.google.android.gms/" + gcm_ver + iPhoneUA_2);
         map.put("accept-encoding", "gzip, deflate, br");
         map.put("content-type", "application/x-www-form-urlencoded");
         map.put("priority", "u=1, i");
+        return map;
+    }
+
+    public static Map<String, String> getHeader_7(String iPhoneUA_1) {
+        // 创建header内容
+        Map<String, String> map = new HashMap<>();
+        map.put("Content-type", "application/x-protobuffer");
+        map.put("Content-encoding", "gzip");
+        map.put("Accept-encoding", "gzip");
+        map.put("User-Agent", iPhoneUA_1);
+        map.put("Host", "android.googleapis.com");
+        map.put("Connection", "Keep-Alive");
         return map;
     }
 }
