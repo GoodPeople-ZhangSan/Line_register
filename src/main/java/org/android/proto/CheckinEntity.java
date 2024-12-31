@@ -1,5 +1,6 @@
 package org.android.proto;
 
+import com.google.protobuf.Int32Value;
 import org.android.line.ArgUtils;
 import org.android.line.DevicesEntity;
 
@@ -10,26 +11,30 @@ public class CheckinEntity {
         // 构造一个空的 A11
         CheckinBodyProto.A11.Builder a11 = CheckinBodyProto.A11.newBuilder();
 
+        // 构造 B4
+        CheckinBodyProto.A4.Builder a4 = getProtoA4(devicesEntity);
+
+        CheckinBodyProto.A18.Builder a18 = CheckinBodyProto.A18.newBuilder();
+
         // 构造主 proto
         CheckinBodyProto.Checkin.Builder checkinBuild = CheckinBodyProto.Checkin.newBuilder();
-        checkinBuild
-                .setA2(0)
+        checkinBuild.setA2(0)
                 .setA3("1-da39a3ee5e6b4b0d3255bfef95601890afd80709")
-//                .setA4(null)
+                .setA4(a4)
                 .setA6("zh-Hans-CN")
-//                .setA9(null)
-//                .setA10(null)
+                .setA9("null")
+                .setA10("null")
                 .setA11(a11)
                 .setA12("Asia/Shanghai")
                 .setA13(0)
                 .setA14(3)
-//                .setA15(null)
-//                .setA16(null)
-//                .setA18(null)
+                .setA15("null")
+                .setA16("null")
+                .setA18(a18)
                 .setA19("wifi")
                 .setA20(0)
                 .setA22(0)
-//                .setA24(null)
+                .setA24("null")
                 .setA26(0)
                 .setA29(0)
                 .setA30(0)
@@ -45,5 +50,19 @@ public class CheckinEntity {
         System.out.println("CheckinBody-protobuf数据hex:" + ArgUtils.bytesToHex(checkinByteArray));
         System.out.println("CheckinBody-protobuf序列化大小: " + checkinByteArray.length);
         return checkinByteArray;
+    }
+
+    private static CheckinBodyProto.A4.Builder getProtoA4(DevicesEntity devicesEntity) {
+        // 构造 A4 中所需的 B1
+        CheckinBodyProto.B1.Builder b1 = CheckinBodyProto.B1.newBuilder();
+
+        // 构造 A4 中所需的 B15
+        CheckinBodyProto.B15.Builder b15 = CheckinBodyProto.B15.newBuilder();
+
+        // 构造需要返回的 A4
+        CheckinBodyProto.A4.Builder a4 = CheckinBodyProto.A4.newBuilder();
+
+
+        return a4;
     }
 }
