@@ -20,12 +20,12 @@ public final class CheckinBodyProto {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 a2 = 2 [default = 0];</code>
+     * <code>optional int32 a2 = 2;</code>
      * @return Whether the a2 field is set.
      */
     boolean hasA2();
     /**
-     * <code>optional int32 a2 = 2 [default = 0];</code>
+     * <code>optional int32 a2 = 2;</code>
      * @return The a2.
      */
     int getA2();
@@ -317,10 +317,6 @@ public final class CheckinBodyProto {
     int getA31();
   }
   /**
-   * <pre>
-   * required int32 value = 1 [(gogoproto.nullable) = false];
-   * </pre>
-   *
    * Protobuf type {@code org.android.proto.Checkin}
    */
   public static final class Checkin extends
@@ -368,7 +364,7 @@ public final class CheckinBodyProto {
     public static final int A2_FIELD_NUMBER = 2;
     private int a2_ = 0;
     /**
-     * <code>optional int32 a2 = 2 [default = 0];</code>
+     * <code>optional int32 a2 = 2;</code>
      * @return Whether the a2 field is set.
      */
     @java.lang.Override
@@ -376,7 +372,7 @@ public final class CheckinBodyProto {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>optional int32 a2 = 2 [default = 0];</code>
+     * <code>optional int32 a2 = 2;</code>
      * @return The a2.
      */
     @java.lang.Override
@@ -1614,10 +1610,6 @@ public final class CheckinBodyProto {
       return builder;
     }
     /**
-     * <pre>
-     * required int32 value = 1 [(gogoproto.nullable) = false];
-     * </pre>
-     *
      * Protobuf type {@code org.android.proto.Checkin}
      */
     public static final class Builder extends
@@ -2163,7 +2155,7 @@ public final class CheckinBodyProto {
 
       private int a2_ ;
       /**
-       * <code>optional int32 a2 = 2 [default = 0];</code>
+       * <code>optional int32 a2 = 2;</code>
        * @return Whether the a2 field is set.
        */
       @java.lang.Override
@@ -2171,7 +2163,7 @@ public final class CheckinBodyProto {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>optional int32 a2 = 2 [default = 0];</code>
+       * <code>optional int32 a2 = 2;</code>
        * @return The a2.
        */
       @java.lang.Override
@@ -2179,7 +2171,7 @@ public final class CheckinBodyProto {
         return a2_;
       }
       /**
-       * <code>optional int32 a2 = 2 [default = 0];</code>
+       * <code>optional int32 a2 = 2;</code>
        * @param value The a2 to set.
        * @return This builder for chaining.
        */
@@ -2191,7 +2183,7 @@ public final class CheckinBodyProto {
         return this;
       }
       /**
-       * <code>optional int32 a2 = 2 [default = 0];</code>
+       * <code>optional int32 a2 = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearA2() {
@@ -4116,6 +4108,10 @@ public final class CheckinBodyProto {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!getB1().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!getB15().isInitialized()) {
         memoizedIsInitialized = 0;
         return false;
@@ -4643,6 +4639,9 @@ public final class CheckinBodyProto {
           return false;
         }
         if (!hasB20()) {
+          return false;
+        }
+        if (!getB1().isInitialized()) {
           return false;
         }
         if (!getB15().isInitialized()) {
@@ -6247,27 +6246,263 @@ public final class CheckinBodyProto {
   public interface B1OrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.android.proto.B1)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return Whether the c1 field is set.
+     */
+    boolean hasC1();
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return The c1.
+     */
+    java.lang.String getC1();
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return The bytes for c1.
+     */
+    com.google.protobuf.ByteString
+        getC1Bytes();
+
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return Whether the c2 field is set.
+     */
+    boolean hasC2();
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return The c2.
+     */
+    java.lang.String getC2();
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return The bytes for c2.
+     */
+    com.google.protobuf.ByteString
+        getC2Bytes();
+
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return Whether the c3 field is set.
+     */
+    boolean hasC3();
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return The c3.
+     */
+    java.lang.String getC3();
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return The bytes for c3.
+     */
+    com.google.protobuf.ByteString
+        getC3Bytes();
+
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return Whether the c4 field is set.
+     */
+    boolean hasC4();
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return The c4.
+     */
+    java.lang.String getC4();
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return The bytes for c4.
+     */
+    com.google.protobuf.ByteString
+        getC4Bytes();
+
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return Whether the c5 field is set.
+     */
+    boolean hasC5();
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return The c5.
+     */
+    java.lang.String getC5();
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return The bytes for c5.
+     */
+    com.google.protobuf.ByteString
+        getC5Bytes();
+
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return Whether the c6 field is set.
+     */
+    boolean hasC6();
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return The c6.
+     */
+    java.lang.String getC6();
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return The bytes for c6.
+     */
+    com.google.protobuf.ByteString
+        getC6Bytes();
+
+    /**
+     * <code>required int32 c7 = 7;</code>
+     * @return Whether the c7 field is set.
+     */
+    boolean hasC7();
+    /**
+     * <code>required int32 c7 = 7;</code>
+     * @return The c7.
+     */
+    int getC7();
+
+    /**
+     * <code>required int32 c8 = 8;</code>
+     * @return Whether the c8 field is set.
+     */
+    boolean hasC8();
+    /**
+     * <code>required int32 c8 = 8;</code>
+     * @return The c8.
+     */
+    int getC8();
+
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return Whether the c9 field is set.
+     */
+    boolean hasC9();
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return The c9.
+     */
+    java.lang.String getC9();
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return The bytes for c9.
+     */
+    com.google.protobuf.ByteString
+        getC9Bytes();
+
+    /**
+     * <code>required int32 c10 = 10;</code>
+     * @return Whether the c10 field is set.
+     */
+    boolean hasC10();
+    /**
+     * <code>required int32 c10 = 10;</code>
+     * @return The c10.
+     */
+    int getC10();
+
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return Whether the c11 field is set.
+     */
+    boolean hasC11();
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return The c11.
+     */
+    java.lang.String getC11();
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return The bytes for c11.
+     */
+    com.google.protobuf.ByteString
+        getC11Bytes();
+
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return Whether the c12 field is set.
+     */
+    boolean hasC12();
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return The c12.
+     */
+    java.lang.String getC12();
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return The bytes for c12.
+     */
+    com.google.protobuf.ByteString
+        getC12Bytes();
+
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return Whether the c13 field is set.
+     */
+    boolean hasC13();
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return The c13.
+     */
+    java.lang.String getC13();
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return The bytes for c13.
+     */
+    com.google.protobuf.ByteString
+        getC13Bytes();
+
+    /**
+     * <code>required int32 c14 = 14;</code>
+     * @return Whether the c14 field is set.
+     */
+    boolean hasC14();
+    /**
+     * <code>required int32 c14 = 14;</code>
+     * @return The c14.
+     */
+    int getC14();
+
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    java.util.List<org.android.proto.CheckinBodyProto.C15> 
+        getC15List();
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    org.android.proto.CheckinBodyProto.C15 getC15(int index);
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    int getC15Count();
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    java.util.List<? extends org.android.proto.CheckinBodyProto.C15OrBuilder> 
+        getC15OrBuilderList();
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    org.android.proto.CheckinBodyProto.C15OrBuilder getC15OrBuilder(
+        int index);
+
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return Whether the c19 field is set.
+     */
+    boolean hasC19();
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return The c19.
+     */
+    java.lang.String getC19();
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return The bytes for c19.
+     */
+    com.google.protobuf.ByteString
+        getC19Bytes();
   }
   /**
-   * <pre>
-   *  required string c1 = 1;
-   *  required string c2 = 2;
-   *  required string c3 = 3;
-   *  required string c4 = 4;
-   *  required string c5 = 5;
-   *  required string c6 = 6;
-   *  required int32 c7 = 7;
-   *  required int32 c8 = 8;
-   *  required string c9 = 9;
-   *  required int32 c10 = 10;
-   *  required string c11 = 11;
-   *  required string c12 = 12;
-   *  required string c13 = 13;
-   *  required int32 c14 = 14;
-   *  repeated C15 c15 = 15;
-   *  required string c19 = 19;
-   * </pre>
-   *
    * Protobuf type {@code org.android.proto.B1}
    */
   public static final class B1 extends
@@ -6280,6 +6515,18 @@ public final class CheckinBodyProto {
       super(builder);
     }
     private B1() {
+      c1_ = "";
+      c2_ = "";
+      c3_ = "";
+      c4_ = "";
+      c5_ = "";
+      c6_ = "";
+      c9_ = "";
+      c11_ = "";
+      c12_ = "";
+      c13_ = "";
+      c15_ = java.util.Collections.emptyList();
+      c19_ = "";
     }
 
     @java.lang.Override
@@ -6302,6 +6549,663 @@ public final class CheckinBodyProto {
               org.android.proto.CheckinBodyProto.B1.class, org.android.proto.CheckinBodyProto.B1.Builder.class);
     }
 
+    private int bitField0_;
+    public static final int C1_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c1_ = "";
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return Whether the c1 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC1() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return The c1.
+     */
+    @java.lang.Override
+    public java.lang.String getC1() {
+      java.lang.Object ref = c1_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c1_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c1 = 1;</code>
+     * @return The bytes for c1.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC1Bytes() {
+      java.lang.Object ref = c1_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c1_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C2_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c2_ = "";
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return Whether the c2 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC2() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return The c2.
+     */
+    @java.lang.Override
+    public java.lang.String getC2() {
+      java.lang.Object ref = c2_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c2_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c2 = 2;</code>
+     * @return The bytes for c2.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC2Bytes() {
+      java.lang.Object ref = c2_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c2_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C3_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c3_ = "";
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return Whether the c3 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC3() {
+      return ((bitField0_ & 0x00000004) != 0);
+    }
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return The c3.
+     */
+    @java.lang.Override
+    public java.lang.String getC3() {
+      java.lang.Object ref = c3_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c3_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c3 = 3;</code>
+     * @return The bytes for c3.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC3Bytes() {
+      java.lang.Object ref = c3_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c3_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C4_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c4_ = "";
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return Whether the c4 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC4() {
+      return ((bitField0_ & 0x00000008) != 0);
+    }
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return The c4.
+     */
+    @java.lang.Override
+    public java.lang.String getC4() {
+      java.lang.Object ref = c4_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c4_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c4 = 4;</code>
+     * @return The bytes for c4.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC4Bytes() {
+      java.lang.Object ref = c4_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c4_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C5_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c5_ = "";
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return Whether the c5 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC5() {
+      return ((bitField0_ & 0x00000010) != 0);
+    }
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return The c5.
+     */
+    @java.lang.Override
+    public java.lang.String getC5() {
+      java.lang.Object ref = c5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c5_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c5 = 5;</code>
+     * @return The bytes for c5.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC5Bytes() {
+      java.lang.Object ref = c5_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c5_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C6_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c6_ = "";
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return Whether the c6 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC6() {
+      return ((bitField0_ & 0x00000020) != 0);
+    }
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return The c6.
+     */
+    @java.lang.Override
+    public java.lang.String getC6() {
+      java.lang.Object ref = c6_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c6_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c6 = 6;</code>
+     * @return The bytes for c6.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC6Bytes() {
+      java.lang.Object ref = c6_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c6_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C7_FIELD_NUMBER = 7;
+    private int c7_ = 0;
+    /**
+     * <code>required int32 c7 = 7;</code>
+     * @return Whether the c7 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC7() {
+      return ((bitField0_ & 0x00000040) != 0);
+    }
+    /**
+     * <code>required int32 c7 = 7;</code>
+     * @return The c7.
+     */
+    @java.lang.Override
+    public int getC7() {
+      return c7_;
+    }
+
+    public static final int C8_FIELD_NUMBER = 8;
+    private int c8_ = 0;
+    /**
+     * <code>required int32 c8 = 8;</code>
+     * @return Whether the c8 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC8() {
+      return ((bitField0_ & 0x00000080) != 0);
+    }
+    /**
+     * <code>required int32 c8 = 8;</code>
+     * @return The c8.
+     */
+    @java.lang.Override
+    public int getC8() {
+      return c8_;
+    }
+
+    public static final int C9_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c9_ = "";
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return Whether the c9 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC9() {
+      return ((bitField0_ & 0x00000100) != 0);
+    }
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return The c9.
+     */
+    @java.lang.Override
+    public java.lang.String getC9() {
+      java.lang.Object ref = c9_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c9_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c9 = 9;</code>
+     * @return The bytes for c9.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC9Bytes() {
+      java.lang.Object ref = c9_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c9_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C10_FIELD_NUMBER = 10;
+    private int c10_ = 0;
+    /**
+     * <code>required int32 c10 = 10;</code>
+     * @return Whether the c10 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC10() {
+      return ((bitField0_ & 0x00000200) != 0);
+    }
+    /**
+     * <code>required int32 c10 = 10;</code>
+     * @return The c10.
+     */
+    @java.lang.Override
+    public int getC10() {
+      return c10_;
+    }
+
+    public static final int C11_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c11_ = "";
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return Whether the c11 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC11() {
+      return ((bitField0_ & 0x00000400) != 0);
+    }
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return The c11.
+     */
+    @java.lang.Override
+    public java.lang.String getC11() {
+      java.lang.Object ref = c11_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c11_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c11 = 11;</code>
+     * @return The bytes for c11.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC11Bytes() {
+      java.lang.Object ref = c11_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c11_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C12_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c12_ = "";
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return Whether the c12 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC12() {
+      return ((bitField0_ & 0x00000800) != 0);
+    }
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return The c12.
+     */
+    @java.lang.Override
+    public java.lang.String getC12() {
+      java.lang.Object ref = c12_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c12_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c12 = 12;</code>
+     * @return The bytes for c12.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC12Bytes() {
+      java.lang.Object ref = c12_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c12_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C13_FIELD_NUMBER = 13;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c13_ = "";
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return Whether the c13 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC13() {
+      return ((bitField0_ & 0x00001000) != 0);
+    }
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return The c13.
+     */
+    @java.lang.Override
+    public java.lang.String getC13() {
+      java.lang.Object ref = c13_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c13_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c13 = 13;</code>
+     * @return The bytes for c13.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC13Bytes() {
+      java.lang.Object ref = c13_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c13_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int C14_FIELD_NUMBER = 14;
+    private int c14_ = 0;
+    /**
+     * <code>required int32 c14 = 14;</code>
+     * @return Whether the c14 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC14() {
+      return ((bitField0_ & 0x00002000) != 0);
+    }
+    /**
+     * <code>required int32 c14 = 14;</code>
+     * @return The c14.
+     */
+    @java.lang.Override
+    public int getC14() {
+      return c14_;
+    }
+
+    public static final int C15_FIELD_NUMBER = 15;
+    @SuppressWarnings("serial")
+    private java.util.List<org.android.proto.CheckinBodyProto.C15> c15_;
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<org.android.proto.CheckinBodyProto.C15> getC15List() {
+      return c15_;
+    }
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends org.android.proto.CheckinBodyProto.C15OrBuilder> 
+        getC15OrBuilderList() {
+      return c15_;
+    }
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    @java.lang.Override
+    public int getC15Count() {
+      return c15_.size();
+    }
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    @java.lang.Override
+    public org.android.proto.CheckinBodyProto.C15 getC15(int index) {
+      return c15_.get(index);
+    }
+    /**
+     * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+     */
+    @java.lang.Override
+    public org.android.proto.CheckinBodyProto.C15OrBuilder getC15OrBuilder(
+        int index) {
+      return c15_.get(index);
+    }
+
+    public static final int C19_FIELD_NUMBER = 19;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object c19_ = "";
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return Whether the c19 field is set.
+     */
+    @java.lang.Override
+    public boolean hasC19() {
+      return ((bitField0_ & 0x00004000) != 0);
+    }
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return The c19.
+     */
+    @java.lang.Override
+    public java.lang.String getC19() {
+      java.lang.Object ref = c19_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          c19_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string c19 = 19;</code>
+     * @return The bytes for c19.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getC19Bytes() {
+      java.lang.Object ref = c19_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        c19_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -6309,6 +7213,66 @@ public final class CheckinBodyProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
+      if (!hasC1()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC2()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC3()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC4()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC5()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC6()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC7()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC8()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC9()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC10()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC11()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC12()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC13()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC14()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasC19()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -6316,6 +7280,54 @@ public final class CheckinBodyProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, c1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, c2_);
+      }
+      if (((bitField0_ & 0x00000004) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, c3_);
+      }
+      if (((bitField0_ & 0x00000008) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, c4_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, c5_);
+      }
+      if (((bitField0_ & 0x00000020) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, c6_);
+      }
+      if (((bitField0_ & 0x00000040) != 0)) {
+        output.writeInt32(7, c7_);
+      }
+      if (((bitField0_ & 0x00000080) != 0)) {
+        output.writeInt32(8, c8_);
+      }
+      if (((bitField0_ & 0x00000100) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, c9_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        output.writeInt32(10, c10_);
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, c11_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, c12_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, c13_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        output.writeInt32(14, c14_);
+      }
+      for (int i = 0; i < c15_.size(); i++) {
+        output.writeMessage(15, c15_.get(i));
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 19, c19_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -6325,6 +7337,59 @@ public final class CheckinBodyProto {
       if (size != -1) return size;
 
       size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, c1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, c2_);
+      }
+      if (((bitField0_ & 0x00000004) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, c3_);
+      }
+      if (((bitField0_ & 0x00000008) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, c4_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, c5_);
+      }
+      if (((bitField0_ & 0x00000020) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, c6_);
+      }
+      if (((bitField0_ & 0x00000040) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, c7_);
+      }
+      if (((bitField0_ & 0x00000080) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, c8_);
+      }
+      if (((bitField0_ & 0x00000100) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, c9_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, c10_);
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, c11_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, c12_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, c13_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, c14_);
+      }
+      for (int i = 0; i < c15_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, c15_.get(i));
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(19, c19_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -6340,6 +7405,83 @@ public final class CheckinBodyProto {
       }
       org.android.proto.CheckinBodyProto.B1 other = (org.android.proto.CheckinBodyProto.B1) obj;
 
+      if (hasC1() != other.hasC1()) return false;
+      if (hasC1()) {
+        if (!getC1()
+            .equals(other.getC1())) return false;
+      }
+      if (hasC2() != other.hasC2()) return false;
+      if (hasC2()) {
+        if (!getC2()
+            .equals(other.getC2())) return false;
+      }
+      if (hasC3() != other.hasC3()) return false;
+      if (hasC3()) {
+        if (!getC3()
+            .equals(other.getC3())) return false;
+      }
+      if (hasC4() != other.hasC4()) return false;
+      if (hasC4()) {
+        if (!getC4()
+            .equals(other.getC4())) return false;
+      }
+      if (hasC5() != other.hasC5()) return false;
+      if (hasC5()) {
+        if (!getC5()
+            .equals(other.getC5())) return false;
+      }
+      if (hasC6() != other.hasC6()) return false;
+      if (hasC6()) {
+        if (!getC6()
+            .equals(other.getC6())) return false;
+      }
+      if (hasC7() != other.hasC7()) return false;
+      if (hasC7()) {
+        if (getC7()
+            != other.getC7()) return false;
+      }
+      if (hasC8() != other.hasC8()) return false;
+      if (hasC8()) {
+        if (getC8()
+            != other.getC8()) return false;
+      }
+      if (hasC9() != other.hasC9()) return false;
+      if (hasC9()) {
+        if (!getC9()
+            .equals(other.getC9())) return false;
+      }
+      if (hasC10() != other.hasC10()) return false;
+      if (hasC10()) {
+        if (getC10()
+            != other.getC10()) return false;
+      }
+      if (hasC11() != other.hasC11()) return false;
+      if (hasC11()) {
+        if (!getC11()
+            .equals(other.getC11())) return false;
+      }
+      if (hasC12() != other.hasC12()) return false;
+      if (hasC12()) {
+        if (!getC12()
+            .equals(other.getC12())) return false;
+      }
+      if (hasC13() != other.hasC13()) return false;
+      if (hasC13()) {
+        if (!getC13()
+            .equals(other.getC13())) return false;
+      }
+      if (hasC14() != other.hasC14()) return false;
+      if (hasC14()) {
+        if (getC14()
+            != other.getC14()) return false;
+      }
+      if (!getC15List()
+          .equals(other.getC15List())) return false;
+      if (hasC19() != other.hasC19()) return false;
+      if (hasC19()) {
+        if (!getC19()
+            .equals(other.getC19())) return false;
+      }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -6351,6 +7493,70 @@ public final class CheckinBodyProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasC1()) {
+        hash = (37 * hash) + C1_FIELD_NUMBER;
+        hash = (53 * hash) + getC1().hashCode();
+      }
+      if (hasC2()) {
+        hash = (37 * hash) + C2_FIELD_NUMBER;
+        hash = (53 * hash) + getC2().hashCode();
+      }
+      if (hasC3()) {
+        hash = (37 * hash) + C3_FIELD_NUMBER;
+        hash = (53 * hash) + getC3().hashCode();
+      }
+      if (hasC4()) {
+        hash = (37 * hash) + C4_FIELD_NUMBER;
+        hash = (53 * hash) + getC4().hashCode();
+      }
+      if (hasC5()) {
+        hash = (37 * hash) + C5_FIELD_NUMBER;
+        hash = (53 * hash) + getC5().hashCode();
+      }
+      if (hasC6()) {
+        hash = (37 * hash) + C6_FIELD_NUMBER;
+        hash = (53 * hash) + getC6().hashCode();
+      }
+      if (hasC7()) {
+        hash = (37 * hash) + C7_FIELD_NUMBER;
+        hash = (53 * hash) + getC7();
+      }
+      if (hasC8()) {
+        hash = (37 * hash) + C8_FIELD_NUMBER;
+        hash = (53 * hash) + getC8();
+      }
+      if (hasC9()) {
+        hash = (37 * hash) + C9_FIELD_NUMBER;
+        hash = (53 * hash) + getC9().hashCode();
+      }
+      if (hasC10()) {
+        hash = (37 * hash) + C10_FIELD_NUMBER;
+        hash = (53 * hash) + getC10();
+      }
+      if (hasC11()) {
+        hash = (37 * hash) + C11_FIELD_NUMBER;
+        hash = (53 * hash) + getC11().hashCode();
+      }
+      if (hasC12()) {
+        hash = (37 * hash) + C12_FIELD_NUMBER;
+        hash = (53 * hash) + getC12().hashCode();
+      }
+      if (hasC13()) {
+        hash = (37 * hash) + C13_FIELD_NUMBER;
+        hash = (53 * hash) + getC13().hashCode();
+      }
+      if (hasC14()) {
+        hash = (37 * hash) + C14_FIELD_NUMBER;
+        hash = (53 * hash) + getC14();
+      }
+      if (getC15Count() > 0) {
+        hash = (37 * hash) + C15_FIELD_NUMBER;
+        hash = (53 * hash) + getC15List().hashCode();
+      }
+      if (hasC19()) {
+        hash = (37 * hash) + C19_FIELD_NUMBER;
+        hash = (53 * hash) + getC19().hashCode();
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -6449,25 +7655,6 @@ public final class CheckinBodyProto {
       return builder;
     }
     /**
-     * <pre>
-     *  required string c1 = 1;
-     *  required string c2 = 2;
-     *  required string c3 = 3;
-     *  required string c4 = 4;
-     *  required string c5 = 5;
-     *  required string c6 = 6;
-     *  required int32 c7 = 7;
-     *  required int32 c8 = 8;
-     *  required string c9 = 9;
-     *  required int32 c10 = 10;
-     *  required string c11 = 11;
-     *  required string c12 = 12;
-     *  required string c13 = 13;
-     *  required int32 c14 = 14;
-     *  repeated C15 c15 = 15;
-     *  required string c19 = 19;
-     * </pre>
-     *
      * Protobuf type {@code org.android.proto.B1}
      */
     public static final class Builder extends
@@ -6500,6 +7687,29 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        c1_ = "";
+        c2_ = "";
+        c3_ = "";
+        c4_ = "";
+        c5_ = "";
+        c6_ = "";
+        c7_ = 0;
+        c8_ = 0;
+        c9_ = "";
+        c10_ = 0;
+        c11_ = "";
+        c12_ = "";
+        c13_ = "";
+        c14_ = 0;
+        if (c15Builder_ == null) {
+          c15_ = java.util.Collections.emptyList();
+        } else {
+          c15_ = null;
+          c15Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00004000);
+        c19_ = "";
         return this;
       }
 
@@ -6526,8 +7736,88 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public org.android.proto.CheckinBodyProto.B1 buildPartial() {
         org.android.proto.CheckinBodyProto.B1 result = new org.android.proto.CheckinBodyProto.B1(this);
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(org.android.proto.CheckinBodyProto.B1 result) {
+        if (c15Builder_ == null) {
+          if (((bitField0_ & 0x00004000) != 0)) {
+            c15_ = java.util.Collections.unmodifiableList(c15_);
+            bitField0_ = (bitField0_ & ~0x00004000);
+          }
+          result.c15_ = c15_;
+        } else {
+          result.c15_ = c15Builder_.build();
+        }
+      }
+
+      private void buildPartial0(org.android.proto.CheckinBodyProto.B1 result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.c1_ = c1_;
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.c2_ = c2_;
+          to_bitField0_ |= 0x00000002;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.c3_ = c3_;
+          to_bitField0_ |= 0x00000004;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.c4_ = c4_;
+          to_bitField0_ |= 0x00000008;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.c5_ = c5_;
+          to_bitField0_ |= 0x00000010;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.c6_ = c6_;
+          to_bitField0_ |= 0x00000020;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.c7_ = c7_;
+          to_bitField0_ |= 0x00000040;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.c8_ = c8_;
+          to_bitField0_ |= 0x00000080;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.c9_ = c9_;
+          to_bitField0_ |= 0x00000100;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.c10_ = c10_;
+          to_bitField0_ |= 0x00000200;
+        }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          result.c11_ = c11_;
+          to_bitField0_ |= 0x00000400;
+        }
+        if (((from_bitField0_ & 0x00000800) != 0)) {
+          result.c12_ = c12_;
+          to_bitField0_ |= 0x00000800;
+        }
+        if (((from_bitField0_ & 0x00001000) != 0)) {
+          result.c13_ = c13_;
+          to_bitField0_ |= 0x00001000;
+        }
+        if (((from_bitField0_ & 0x00002000) != 0)) {
+          result.c14_ = c14_;
+          to_bitField0_ |= 0x00002000;
+        }
+        if (((from_bitField0_ & 0x00008000) != 0)) {
+          result.c19_ = c19_;
+          to_bitField0_ |= 0x00004000;
+        }
+        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -6574,6 +7864,99 @@ public final class CheckinBodyProto {
 
       public Builder mergeFrom(org.android.proto.CheckinBodyProto.B1 other) {
         if (other == org.android.proto.CheckinBodyProto.B1.getDefaultInstance()) return this;
+        if (other.hasC1()) {
+          c1_ = other.c1_;
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        if (other.hasC2()) {
+          c2_ = other.c2_;
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        if (other.hasC3()) {
+          c3_ = other.c3_;
+          bitField0_ |= 0x00000004;
+          onChanged();
+        }
+        if (other.hasC4()) {
+          c4_ = other.c4_;
+          bitField0_ |= 0x00000008;
+          onChanged();
+        }
+        if (other.hasC5()) {
+          c5_ = other.c5_;
+          bitField0_ |= 0x00000010;
+          onChanged();
+        }
+        if (other.hasC6()) {
+          c6_ = other.c6_;
+          bitField0_ |= 0x00000020;
+          onChanged();
+        }
+        if (other.hasC7()) {
+          setC7(other.getC7());
+        }
+        if (other.hasC8()) {
+          setC8(other.getC8());
+        }
+        if (other.hasC9()) {
+          c9_ = other.c9_;
+          bitField0_ |= 0x00000100;
+          onChanged();
+        }
+        if (other.hasC10()) {
+          setC10(other.getC10());
+        }
+        if (other.hasC11()) {
+          c11_ = other.c11_;
+          bitField0_ |= 0x00000400;
+          onChanged();
+        }
+        if (other.hasC12()) {
+          c12_ = other.c12_;
+          bitField0_ |= 0x00000800;
+          onChanged();
+        }
+        if (other.hasC13()) {
+          c13_ = other.c13_;
+          bitField0_ |= 0x00001000;
+          onChanged();
+        }
+        if (other.hasC14()) {
+          setC14(other.getC14());
+        }
+        if (c15Builder_ == null) {
+          if (!other.c15_.isEmpty()) {
+            if (c15_.isEmpty()) {
+              c15_ = other.c15_;
+              bitField0_ = (bitField0_ & ~0x00004000);
+            } else {
+              ensureC15IsMutable();
+              c15_.addAll(other.c15_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.c15_.isEmpty()) {
+            if (c15Builder_.isEmpty()) {
+              c15Builder_.dispose();
+              c15Builder_ = null;
+              c15_ = other.c15_;
+              bitField0_ = (bitField0_ & ~0x00004000);
+              c15Builder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getC15FieldBuilder() : null;
+            } else {
+              c15Builder_.addAllMessages(other.c15_);
+            }
+          }
+        }
+        if (other.hasC19()) {
+          c19_ = other.c19_;
+          bitField0_ |= 0x00008000;
+          onChanged();
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -6581,6 +7964,51 @@ public final class CheckinBodyProto {
 
       @java.lang.Override
       public final boolean isInitialized() {
+        if (!hasC1()) {
+          return false;
+        }
+        if (!hasC2()) {
+          return false;
+        }
+        if (!hasC3()) {
+          return false;
+        }
+        if (!hasC4()) {
+          return false;
+        }
+        if (!hasC5()) {
+          return false;
+        }
+        if (!hasC6()) {
+          return false;
+        }
+        if (!hasC7()) {
+          return false;
+        }
+        if (!hasC8()) {
+          return false;
+        }
+        if (!hasC9()) {
+          return false;
+        }
+        if (!hasC10()) {
+          return false;
+        }
+        if (!hasC11()) {
+          return false;
+        }
+        if (!hasC12()) {
+          return false;
+        }
+        if (!hasC13()) {
+          return false;
+        }
+        if (!hasC14()) {
+          return false;
+        }
+        if (!hasC19()) {
+          return false;
+        }
         return true;
       }
 
@@ -6600,6 +8028,94 @@ public final class CheckinBodyProto {
               case 0:
                 done = true;
                 break;
+              case 10: {
+                c1_ = input.readBytes();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                c2_ = input.readBytes();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              case 26: {
+                c3_ = input.readBytes();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 26
+              case 34: {
+                c4_ = input.readBytes();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 34
+              case 42: {
+                c5_ = input.readBytes();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 42
+              case 50: {
+                c6_ = input.readBytes();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 50
+              case 56: {
+                c7_ = input.readInt32();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                c8_ = input.readInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 64
+              case 74: {
+                c9_ = input.readBytes();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 74
+              case 80: {
+                c10_ = input.readInt32();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 80
+              case 90: {
+                c11_ = input.readBytes();
+                bitField0_ |= 0x00000400;
+                break;
+              } // case 90
+              case 98: {
+                c12_ = input.readBytes();
+                bitField0_ |= 0x00000800;
+                break;
+              } // case 98
+              case 106: {
+                c13_ = input.readBytes();
+                bitField0_ |= 0x00001000;
+                break;
+              } // case 106
+              case 112: {
+                c14_ = input.readInt32();
+                bitField0_ |= 0x00002000;
+                break;
+              } // case 112
+              case 122: {
+                org.android.proto.CheckinBodyProto.C15 m =
+                    input.readMessage(
+                        org.android.proto.CheckinBodyProto.C15.PARSER,
+                        extensionRegistry);
+                if (c15Builder_ == null) {
+                  ensureC15IsMutable();
+                  c15_.add(m);
+                } else {
+                  c15Builder_.addMessage(m);
+                }
+                break;
+              } // case 122
+              case 154: {
+                c19_ = input.readBytes();
+                bitField0_ |= 0x00008000;
+                break;
+              } // case 154
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -6613,6 +8129,1287 @@ public final class CheckinBodyProto {
         } finally {
           onChanged();
         } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object c1_ = "";
+      /**
+       * <code>required string c1 = 1;</code>
+       * @return Whether the c1 field is set.
+       */
+      public boolean hasC1() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required string c1 = 1;</code>
+       * @return The c1.
+       */
+      public java.lang.String getC1() {
+        java.lang.Object ref = c1_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c1_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c1 = 1;</code>
+       * @return The bytes for c1.
+       */
+      public com.google.protobuf.ByteString
+          getC1Bytes() {
+        java.lang.Object ref = c1_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c1_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c1 = 1;</code>
+       * @param value The c1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC1(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c1 = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC1() {
+        c1_ = getDefaultInstance().getC1();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c1 = 1;</code>
+       * @param value The bytes for c1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC1Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c2_ = "";
+      /**
+       * <code>required string c2 = 2;</code>
+       * @return Whether the c2 field is set.
+       */
+      public boolean hasC2() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>required string c2 = 2;</code>
+       * @return The c2.
+       */
+      public java.lang.String getC2() {
+        java.lang.Object ref = c2_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c2_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c2 = 2;</code>
+       * @return The bytes for c2.
+       */
+      public com.google.protobuf.ByteString
+          getC2Bytes() {
+        java.lang.Object ref = c2_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c2_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c2 = 2;</code>
+       * @param value The c2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC2(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c2 = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC2() {
+        c2_ = getDefaultInstance().getC2();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c2 = 2;</code>
+       * @param value The bytes for c2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC2Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c3_ = "";
+      /**
+       * <code>required string c3 = 3;</code>
+       * @return Whether the c3 field is set.
+       */
+      public boolean hasC3() {
+        return ((bitField0_ & 0x00000004) != 0);
+      }
+      /**
+       * <code>required string c3 = 3;</code>
+       * @return The c3.
+       */
+      public java.lang.String getC3() {
+        java.lang.Object ref = c3_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c3_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c3 = 3;</code>
+       * @return The bytes for c3.
+       */
+      public com.google.protobuf.ByteString
+          getC3Bytes() {
+        java.lang.Object ref = c3_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c3_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c3 = 3;</code>
+       * @param value The c3 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC3(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c3_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c3 = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC3() {
+        c3_ = getDefaultInstance().getC3();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c3 = 3;</code>
+       * @param value The bytes for c3 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC3Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c3_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c4_ = "";
+      /**
+       * <code>required string c4 = 4;</code>
+       * @return Whether the c4 field is set.
+       */
+      public boolean hasC4() {
+        return ((bitField0_ & 0x00000008) != 0);
+      }
+      /**
+       * <code>required string c4 = 4;</code>
+       * @return The c4.
+       */
+      public java.lang.String getC4() {
+        java.lang.Object ref = c4_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c4_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c4 = 4;</code>
+       * @return The bytes for c4.
+       */
+      public com.google.protobuf.ByteString
+          getC4Bytes() {
+        java.lang.Object ref = c4_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c4_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c4 = 4;</code>
+       * @param value The c4 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC4(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c4_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c4 = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC4() {
+        c4_ = getDefaultInstance().getC4();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c4 = 4;</code>
+       * @param value The bytes for c4 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC4Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c4_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c5_ = "";
+      /**
+       * <code>required string c5 = 5;</code>
+       * @return Whether the c5 field is set.
+       */
+      public boolean hasC5() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>required string c5 = 5;</code>
+       * @return The c5.
+       */
+      public java.lang.String getC5() {
+        java.lang.Object ref = c5_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c5_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c5 = 5;</code>
+       * @return The bytes for c5.
+       */
+      public com.google.protobuf.ByteString
+          getC5Bytes() {
+        java.lang.Object ref = c5_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c5_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c5 = 5;</code>
+       * @param value The c5 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC5(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c5_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c5 = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC5() {
+        c5_ = getDefaultInstance().getC5();
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c5 = 5;</code>
+       * @param value The bytes for c5 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC5Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c5_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c6_ = "";
+      /**
+       * <code>required string c6 = 6;</code>
+       * @return Whether the c6 field is set.
+       */
+      public boolean hasC6() {
+        return ((bitField0_ & 0x00000020) != 0);
+      }
+      /**
+       * <code>required string c6 = 6;</code>
+       * @return The c6.
+       */
+      public java.lang.String getC6() {
+        java.lang.Object ref = c6_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c6_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c6 = 6;</code>
+       * @return The bytes for c6.
+       */
+      public com.google.protobuf.ByteString
+          getC6Bytes() {
+        java.lang.Object ref = c6_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c6_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c6 = 6;</code>
+       * @param value The c6 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC6(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c6_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c6 = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC6() {
+        c6_ = getDefaultInstance().getC6();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c6 = 6;</code>
+       * @param value The bytes for c6 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC6Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c6_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+
+      private int c7_ ;
+      /**
+       * <code>required int32 c7 = 7;</code>
+       * @return Whether the c7 field is set.
+       */
+      @java.lang.Override
+      public boolean hasC7() {
+        return ((bitField0_ & 0x00000040) != 0);
+      }
+      /**
+       * <code>required int32 c7 = 7;</code>
+       * @return The c7.
+       */
+      @java.lang.Override
+      public int getC7() {
+        return c7_;
+      }
+      /**
+       * <code>required int32 c7 = 7;</code>
+       * @param value The c7 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC7(int value) {
+
+        c7_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 c7 = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC7() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        c7_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int c8_ ;
+      /**
+       * <code>required int32 c8 = 8;</code>
+       * @return Whether the c8 field is set.
+       */
+      @java.lang.Override
+      public boolean hasC8() {
+        return ((bitField0_ & 0x00000080) != 0);
+      }
+      /**
+       * <code>required int32 c8 = 8;</code>
+       * @return The c8.
+       */
+      @java.lang.Override
+      public int getC8() {
+        return c8_;
+      }
+      /**
+       * <code>required int32 c8 = 8;</code>
+       * @param value The c8 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC8(int value) {
+
+        c8_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 c8 = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC8() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        c8_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c9_ = "";
+      /**
+       * <code>required string c9 = 9;</code>
+       * @return Whether the c9 field is set.
+       */
+      public boolean hasC9() {
+        return ((bitField0_ & 0x00000100) != 0);
+      }
+      /**
+       * <code>required string c9 = 9;</code>
+       * @return The c9.
+       */
+      public java.lang.String getC9() {
+        java.lang.Object ref = c9_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c9_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c9 = 9;</code>
+       * @return The bytes for c9.
+       */
+      public com.google.protobuf.ByteString
+          getC9Bytes() {
+        java.lang.Object ref = c9_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c9_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c9 = 9;</code>
+       * @param value The c9 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC9(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c9_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c9 = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC9() {
+        c9_ = getDefaultInstance().getC9();
+        bitField0_ = (bitField0_ & ~0x00000100);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c9 = 9;</code>
+       * @param value The bytes for c9 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC9Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c9_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+
+      private int c10_ ;
+      /**
+       * <code>required int32 c10 = 10;</code>
+       * @return Whether the c10 field is set.
+       */
+      @java.lang.Override
+      public boolean hasC10() {
+        return ((bitField0_ & 0x00000200) != 0);
+      }
+      /**
+       * <code>required int32 c10 = 10;</code>
+       * @return The c10.
+       */
+      @java.lang.Override
+      public int getC10() {
+        return c10_;
+      }
+      /**
+       * <code>required int32 c10 = 10;</code>
+       * @param value The c10 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC10(int value) {
+
+        c10_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 c10 = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC10() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        c10_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c11_ = "";
+      /**
+       * <code>required string c11 = 11;</code>
+       * @return Whether the c11 field is set.
+       */
+      public boolean hasC11() {
+        return ((bitField0_ & 0x00000400) != 0);
+      }
+      /**
+       * <code>required string c11 = 11;</code>
+       * @return The c11.
+       */
+      public java.lang.String getC11() {
+        java.lang.Object ref = c11_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c11_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c11 = 11;</code>
+       * @return The bytes for c11.
+       */
+      public com.google.protobuf.ByteString
+          getC11Bytes() {
+        java.lang.Object ref = c11_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c11_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c11 = 11;</code>
+       * @param value The c11 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC11(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c11_ = value;
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c11 = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC11() {
+        c11_ = getDefaultInstance().getC11();
+        bitField0_ = (bitField0_ & ~0x00000400);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c11 = 11;</code>
+       * @param value The bytes for c11 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC11Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c11_ = value;
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c12_ = "";
+      /**
+       * <code>required string c12 = 12;</code>
+       * @return Whether the c12 field is set.
+       */
+      public boolean hasC12() {
+        return ((bitField0_ & 0x00000800) != 0);
+      }
+      /**
+       * <code>required string c12 = 12;</code>
+       * @return The c12.
+       */
+      public java.lang.String getC12() {
+        java.lang.Object ref = c12_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c12_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c12 = 12;</code>
+       * @return The bytes for c12.
+       */
+      public com.google.protobuf.ByteString
+          getC12Bytes() {
+        java.lang.Object ref = c12_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c12_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c12 = 12;</code>
+       * @param value The c12 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC12(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c12_ = value;
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c12 = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC12() {
+        c12_ = getDefaultInstance().getC12();
+        bitField0_ = (bitField0_ & ~0x00000800);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c12 = 12;</code>
+       * @param value The bytes for c12 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC12Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c12_ = value;
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object c13_ = "";
+      /**
+       * <code>required string c13 = 13;</code>
+       * @return Whether the c13 field is set.
+       */
+      public boolean hasC13() {
+        return ((bitField0_ & 0x00001000) != 0);
+      }
+      /**
+       * <code>required string c13 = 13;</code>
+       * @return The c13.
+       */
+      public java.lang.String getC13() {
+        java.lang.Object ref = c13_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c13_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c13 = 13;</code>
+       * @return The bytes for c13.
+       */
+      public com.google.protobuf.ByteString
+          getC13Bytes() {
+        java.lang.Object ref = c13_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c13_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c13 = 13;</code>
+       * @param value The c13 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC13(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c13_ = value;
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c13 = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC13() {
+        c13_ = getDefaultInstance().getC13();
+        bitField0_ = (bitField0_ & ~0x00001000);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c13 = 13;</code>
+       * @param value The bytes for c13 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC13Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c13_ = value;
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return this;
+      }
+
+      private int c14_ ;
+      /**
+       * <code>required int32 c14 = 14;</code>
+       * @return Whether the c14 field is set.
+       */
+      @java.lang.Override
+      public boolean hasC14() {
+        return ((bitField0_ & 0x00002000) != 0);
+      }
+      /**
+       * <code>required int32 c14 = 14;</code>
+       * @return The c14.
+       */
+      @java.lang.Override
+      public int getC14() {
+        return c14_;
+      }
+      /**
+       * <code>required int32 c14 = 14;</code>
+       * @param value The c14 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC14(int value) {
+
+        c14_ = value;
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 c14 = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC14() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        c14_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<org.android.proto.CheckinBodyProto.C15> c15_ =
+        java.util.Collections.emptyList();
+      private void ensureC15IsMutable() {
+        if (!((bitField0_ & 0x00004000) != 0)) {
+          c15_ = new java.util.ArrayList<org.android.proto.CheckinBodyProto.C15>(c15_);
+          bitField0_ |= 0x00004000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          org.android.proto.CheckinBodyProto.C15, org.android.proto.CheckinBodyProto.C15.Builder, org.android.proto.CheckinBodyProto.C15OrBuilder> c15Builder_;
+
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public java.util.List<org.android.proto.CheckinBodyProto.C15> getC15List() {
+        if (c15Builder_ == null) {
+          return java.util.Collections.unmodifiableList(c15_);
+        } else {
+          return c15Builder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public int getC15Count() {
+        if (c15Builder_ == null) {
+          return c15_.size();
+        } else {
+          return c15Builder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public org.android.proto.CheckinBodyProto.C15 getC15(int index) {
+        if (c15Builder_ == null) {
+          return c15_.get(index);
+        } else {
+          return c15Builder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder setC15(
+          int index, org.android.proto.CheckinBodyProto.C15 value) {
+        if (c15Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureC15IsMutable();
+          c15_.set(index, value);
+          onChanged();
+        } else {
+          c15Builder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder setC15(
+          int index, org.android.proto.CheckinBodyProto.C15.Builder builderForValue) {
+        if (c15Builder_ == null) {
+          ensureC15IsMutable();
+          c15_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          c15Builder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder addC15(org.android.proto.CheckinBodyProto.C15 value) {
+        if (c15Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureC15IsMutable();
+          c15_.add(value);
+          onChanged();
+        } else {
+          c15Builder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder addC15(
+          int index, org.android.proto.CheckinBodyProto.C15 value) {
+        if (c15Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureC15IsMutable();
+          c15_.add(index, value);
+          onChanged();
+        } else {
+          c15Builder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder addC15(
+          org.android.proto.CheckinBodyProto.C15.Builder builderForValue) {
+        if (c15Builder_ == null) {
+          ensureC15IsMutable();
+          c15_.add(builderForValue.build());
+          onChanged();
+        } else {
+          c15Builder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder addC15(
+          int index, org.android.proto.CheckinBodyProto.C15.Builder builderForValue) {
+        if (c15Builder_ == null) {
+          ensureC15IsMutable();
+          c15_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          c15Builder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder addAllC15(
+          java.lang.Iterable<? extends org.android.proto.CheckinBodyProto.C15> values) {
+        if (c15Builder_ == null) {
+          ensureC15IsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, c15_);
+          onChanged();
+        } else {
+          c15Builder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder clearC15() {
+        if (c15Builder_ == null) {
+          c15_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00004000);
+          onChanged();
+        } else {
+          c15Builder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public Builder removeC15(int index) {
+        if (c15Builder_ == null) {
+          ensureC15IsMutable();
+          c15_.remove(index);
+          onChanged();
+        } else {
+          c15Builder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public org.android.proto.CheckinBodyProto.C15.Builder getC15Builder(
+          int index) {
+        return getC15FieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public org.android.proto.CheckinBodyProto.C15OrBuilder getC15OrBuilder(
+          int index) {
+        if (c15Builder_ == null) {
+          return c15_.get(index);  } else {
+          return c15Builder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public java.util.List<? extends org.android.proto.CheckinBodyProto.C15OrBuilder> 
+           getC15OrBuilderList() {
+        if (c15Builder_ != null) {
+          return c15Builder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(c15_);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public org.android.proto.CheckinBodyProto.C15.Builder addC15Builder() {
+        return getC15FieldBuilder().addBuilder(
+            org.android.proto.CheckinBodyProto.C15.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public org.android.proto.CheckinBodyProto.C15.Builder addC15Builder(
+          int index) {
+        return getC15FieldBuilder().addBuilder(
+            index, org.android.proto.CheckinBodyProto.C15.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.android.proto.C15 c15 = 15;</code>
+       */
+      public java.util.List<org.android.proto.CheckinBodyProto.C15.Builder> 
+           getC15BuilderList() {
+        return getC15FieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          org.android.proto.CheckinBodyProto.C15, org.android.proto.CheckinBodyProto.C15.Builder, org.android.proto.CheckinBodyProto.C15OrBuilder> 
+          getC15FieldBuilder() {
+        if (c15Builder_ == null) {
+          c15Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              org.android.proto.CheckinBodyProto.C15, org.android.proto.CheckinBodyProto.C15.Builder, org.android.proto.CheckinBodyProto.C15OrBuilder>(
+                  c15_,
+                  ((bitField0_ & 0x00004000) != 0),
+                  getParentForChildren(),
+                  isClean());
+          c15_ = null;
+        }
+        return c15Builder_;
+      }
+
+      private java.lang.Object c19_ = "";
+      /**
+       * <code>required string c19 = 19;</code>
+       * @return Whether the c19 field is set.
+       */
+      public boolean hasC19() {
+        return ((bitField0_ & 0x00008000) != 0);
+      }
+      /**
+       * <code>required string c19 = 19;</code>
+       * @return The c19.
+       */
+      public java.lang.String getC19() {
+        java.lang.Object ref = c19_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            c19_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string c19 = 19;</code>
+       * @return The bytes for c19.
+       */
+      public com.google.protobuf.ByteString
+          getC19Bytes() {
+        java.lang.Object ref = c19_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          c19_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string c19 = 19;</code>
+       * @param value The c19 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC19(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        c19_ = value;
+        bitField0_ |= 0x00008000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c19 = 19;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearC19() {
+        c19_ = getDefaultInstance().getC19();
+        bitField0_ = (bitField0_ & ~0x00008000);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string c19 = 19;</code>
+       * @param value The bytes for c19 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setC19Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        c19_ = value;
+        bitField0_ |= 0x00008000;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -8635,24 +11432,29 @@ public final class CheckinBodyProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rCheckin.proto\022\021org.android.proto\"\337\002\n\007C" +
-      "heckin\022\r\n\002a2\030\002 \001(\005:\0010\022\n\n\002a3\030\003 \002(\t\022!\n\002a4\030" +
-      "\004 \002(\0132\025.org.android.proto.A4\022\n\n\002a6\030\006 \002(\t" +
-      "\022\n\n\002a9\030\t \002(\t\022\013\n\003a10\030\n \002(\t\022#\n\003a11\030\013 \002(\0132\026" +
-      ".org.android.proto.A11\022\013\n\003a12\030\014 \002(\t\022\013\n\003a" +
-      "13\030\r \002(\006\022\013\n\003a14\030\016 \002(\005\022\013\n\003a15\030\017 \002(\t\022\013\n\003a1" +
-      "6\030\020 \002(\t\022#\n\003a18\030\022 \002(\0132\026.org.android.proto" +
-      ".A18\022\013\n\003a19\030\023 \002(\t\022\013\n\003a20\030\024 \002(\005\022\013\n\003a22\030\026 " +
-      "\002(\005\022\013\n\003a24\030\030 \002(\t\022\013\n\003a26\030\032 \002(\005\022\013\n\003a29\030\035 \002" +
-      "(\005\022\013\n\003a30\030\036 \002(\005\022\013\n\003a31\030\037 \002(\005\"\244\001\n\002A4\022!\n\002b" +
-      "1\030\001 \002(\0132\025.org.android.proto.B1\022\n\n\002b2\030\002 \002" +
-      "(\005\022\n\n\002b8\030\010 \002(\t\022\n\n\002b9\030\t \002(\005\022\013\n\003b14\030\016 \002(\005\022" +
-      "#\n\003b15\030\017 \002(\0132\026.org.android.proto.B15\022\013\n\003" +
-      "b18\030\022 \002(\005\022\013\n\003b19\030\023 \002(\t\022\013\n\003b20\030\024 \002(\005\"\005\n\003A" +
-      "18\"\005\n\003A11\"\004\n\002B1\"A\n\003B15\022\n\n\002e1\030\001 \002(\005\022\n\n\002e2" +
-      "\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022\n\n\002e4\030\004 \002(\t\022\n\n\002e5\030\005 \002" +
-      "(\005\"\005\n\003C15\"\005\n\003G26B%\n\021org.android.protoB\020C" +
-      "heckinBodyProto"
+      "\n\rCheckin.proto\022\021org.android.proto\"\334\002\n\007C" +
+      "heckin\022\n\n\002a2\030\002 \001(\005\022\n\n\002a3\030\003 \002(\t\022!\n\002a4\030\004 \002" +
+      "(\0132\025.org.android.proto.A4\022\n\n\002a6\030\006 \002(\t\022\n\n" +
+      "\002a9\030\t \002(\t\022\013\n\003a10\030\n \002(\t\022#\n\003a11\030\013 \002(\0132\026.or" +
+      "g.android.proto.A11\022\013\n\003a12\030\014 \002(\t\022\013\n\003a13\030" +
+      "\r \002(\006\022\013\n\003a14\030\016 \002(\005\022\013\n\003a15\030\017 \002(\t\022\013\n\003a16\030\020" +
+      " \002(\t\022#\n\003a18\030\022 \002(\0132\026.org.android.proto.A1" +
+      "8\022\013\n\003a19\030\023 \002(\t\022\013\n\003a20\030\024 \002(\005\022\013\n\003a22\030\026 \002(\005" +
+      "\022\013\n\003a24\030\030 \002(\t\022\013\n\003a26\030\032 \002(\005\022\013\n\003a29\030\035 \002(\005\022" +
+      "\013\n\003a30\030\036 \002(\005\022\013\n\003a31\030\037 \002(\005\"\244\001\n\002A4\022!\n\002b1\030\001" +
+      " \002(\0132\025.org.android.proto.B1\022\n\n\002b2\030\002 \002(\005\022" +
+      "\n\n\002b8\030\010 \002(\t\022\n\n\002b9\030\t \002(\005\022\013\n\003b14\030\016 \002(\005\022#\n\003" +
+      "b15\030\017 \002(\0132\026.org.android.proto.B15\022\013\n\003b18" +
+      "\030\022 \002(\005\022\013\n\003b19\030\023 \002(\t\022\013\n\003b20\030\024 \002(\005\"\005\n\003A18\"" +
+      "\005\n\003A11\"\343\001\n\002B1\022\n\n\002c1\030\001 \002(\t\022\n\n\002c2\030\002 \002(\t\022\n\n" +
+      "\002c3\030\003 \002(\t\022\n\n\002c4\030\004 \002(\t\022\n\n\002c5\030\005 \002(\t\022\n\n\002c6\030" +
+      "\006 \002(\t\022\n\n\002c7\030\007 \002(\005\022\n\n\002c8\030\010 \002(\005\022\n\n\002c9\030\t \002(" +
+      "\t\022\013\n\003c10\030\n \002(\005\022\013\n\003c11\030\013 \002(\t\022\013\n\003c12\030\014 \002(\t" +
+      "\022\013\n\003c13\030\r \002(\t\022\013\n\003c14\030\016 \002(\005\022#\n\003c15\030\017 \003(\0132" +
+      "\026.org.android.proto.C15\022\013\n\003c19\030\023 \002(\t\"A\n\003" +
+      "B15\022\n\n\002e1\030\001 \002(\005\022\n\n\002e2\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022" +
+      "\n\n\002e4\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\005\n\003C15\"\005\n\003G26B%\n" +
+      "\021org.android.protoB\020CheckinBodyProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -8687,7 +11489,7 @@ public final class CheckinBodyProto {
     internal_static_org_android_proto_B1_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_android_proto_B1_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C13", "C14", "C15", "C19", });
     internal_static_org_android_proto_B15_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_org_android_proto_B15_fieldAccessorTable = new

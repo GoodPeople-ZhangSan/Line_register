@@ -7,9 +7,8 @@ option java_package = "org.android.proto";
 // 生成的java文件的类名
 option java_outer_classname = "CheckinBodyProto";
 
-// required int32 value = 1 [(gogoproto.nullable) = false];
 message Checkin {
-  optional int32 a2 = 2[default = 0];
+  optional int32 a2 = 2;
   required string a3 = 3;
   required A4 a4 = 4;
   required string a6 = 6;
@@ -34,15 +33,15 @@ message Checkin {
 
 
 message A4{
-    required B1 b1 = 1;
-    required int32 b2 = 2;
-    required string b8 = 8;
-    required int32 b9 = 9;
-    required int32 b14 = 14;
-    required B15 b15 = 15;
-    required int32 b18 = 18;
-    required string b19 = 19;
-    required int32 b20 = 20;
+  required B1 b1 = 1;
+  required int32 b2 = 2;
+  required string b8 = 8;
+  required int32 b9 = 9;
+  required int32 b14 = 14;
+  required B15 b15 = 15;
+  required int32 b18 = 18;
+  required string b19 = 19;
+  required int32 b20 = 20;
 }
 
 message A18{
@@ -75,30 +74,30 @@ message A11{
 }
 
 message B1{
-  //  required string c1 = 1;
-  //  required string c2 = 2;
-  //  required string c3 = 3;
-  //  required string c4 = 4;
-  //  required string c5 = 5;
-  //  required string c6 = 6;
-  //  required int32 c7 = 7;
-  //  required int32 c8 = 8;
-  //  required string c9 = 9;
-  //  required int32 c10 = 10;
-  //  required string c11 = 11;
-  //  required string c12 = 12;
-  //  required string c13 = 13;
-  //  required int32 c14 = 14;
-  //  repeated C15 c15 = 15;
-  //  required string c19 = 19;
+  required string c1 = 1;
+  required string c2 = 2;
+  required string c3 = 3;
+  required string c4 = 4;
+  required string c5 = 5;
+  required string c6 = 6;
+  required int32 c7 = 7;
+  required int32 c8 = 8;
+  required string c9 = 9;
+  required int32 c10 = 10;
+  required string c11 = 11;
+  required string c12 = 12;
+  required string c13 = 13;
+  required int32 c14 = 14;
+  repeated C15 c15 = 15;
+  required string c19 = 19;
 }
 
 message B15{
-    required int32 e1 = 1;
-    required int32 e2 = 2;
-    required string e3 = 3;
-    required string e4 = 4;
-    required int32 e5 = 5;
+  required int32 e1 = 1;
+  required int32 e2 = 2;
+  required string e3 = 3;
+  required string e4 = 4;
+  required int32 e5 = 5;
 }
 
 message C15{

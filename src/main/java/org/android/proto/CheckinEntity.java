@@ -58,11 +58,23 @@ public class CheckinEntity {
 
         // 构造 A4 中所需的 B15
         CheckinBodyProto.B15.Builder b15 = CheckinBodyProto.B15.newBuilder();
+        b15.setE1(9).setE2(1)
+                .setE3("com.google.android.setupwizard")
+                .setE4("boa")
+                .setE5(1).build();
 
         // 构造需要返回的 A4
         CheckinBodyProto.A4.Builder a4 = CheckinBodyProto.A4.newBuilder();
+        a4.setB1(b1).setB2(0)
+                .setB8("WIFI::")
+                .setB9(0)
+                .setB14(2)
+                .setB15(b15)
+                .setB18(1)
+                .setB19("WIFI")
+                .setB20(2).build();
 
-
+        // 返回构造好的B4
         return a4;
     }
 }
