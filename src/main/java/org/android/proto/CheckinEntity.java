@@ -4,11 +4,14 @@ import com.google.protobuf.Int32Value;
 import org.android.line.ArgUtils;
 import org.android.line.DevicesEntity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CheckinEntity {
+    // 构造主protobuf文件
     public static byte[] getCheckBodyProto(DevicesEntity devicesEntity) {
-        // 构造一个空的 A11
+        // 构造一个 A11
         CheckinBodyProto.A11.Builder a11 = CheckinBodyProto.A11.newBuilder();
 
         // 构造 B4
@@ -52,9 +55,10 @@ public class CheckinEntity {
         return checkinByteArray;
     }
 
+    // 构造主proto 中的 A4
     private static CheckinBodyProto.A4.Builder getProtoA4(DevicesEntity devicesEntity) {
         // 构造 A4 中所需的 B1
-        CheckinBodyProto.B1.Builder b1 = CheckinBodyProto.B1.newBuilder();
+        CheckinBodyProto.B1.Builder b1 = getProtoB1(devicesEntity);
 
         // 构造 A4 中所需的 B15
         CheckinBodyProto.B15.Builder b15 = CheckinBodyProto.B15.newBuilder();
@@ -77,4 +81,39 @@ public class CheckinEntity {
         // 返回构造好的B4
         return a4;
     }
+
+    // 构造 A4 中的 B1
+    private static CheckinBodyProto.B1.Builder getProtoB1(DevicesEntity devicesEntity) {
+        // 构造B1中的 C15
+        CheckinBodyProto.C15 c15builder_1 = CheckinBodyProto.C15.newBuilder().setD1(1).setD2("android-google").build();
+        CheckinBodyProto.C15 c15builder_2 = CheckinBodyProto.C15.newBuilder().setD1(2).setD2("ms-android-google").build();
+        // 设置 C15 字段的值  repeated
+        List<CheckinBodyProto.C15> c15 =  new ArrayList<>();
+        c15.add(c15builder_1);
+        c15.add(c15builder_2);
+
+
+        // 构造B1
+        CheckinBodyProto.B1.Builder b1builder = CheckinBodyProto.B1.newBuilder();
+        b1builder.setC1(devicesEntity.proto_4_1_1)
+                .setC2("redfin")
+                .setC3("google")
+                .setC4(devicesEntity.proto_4_1_4)
+                .setC5(devicesEntity.proto_4_1_5)
+                .setC6("android-google")
+                .setC7((int) (System.currentTimeMillis()/1000)-10000)
+                .setC8(devicesEntity.proto_4_1_8)
+                .setC9("redfin")
+                .setC10(32)
+                .setC11(devicesEntity.iPhoneMode)
+                .setC12("Google")
+                .setC13("redfin")
+                .setC14(0)
+                .addAllC15(c15)
+                .setC19(devicesEntity.proto_4_1_19).build();
+
+        // 返回 B1
+        return b1builder;
+    }
+
 }

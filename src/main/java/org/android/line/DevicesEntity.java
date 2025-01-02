@@ -13,6 +13,15 @@ public class DevicesEntity {
     public final String iPhoneUA_1 = "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 5 Build/SQ3A.220705.003.A1)";
     public final String iPhoneUA_2 = " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)";
 
+    // 设置一些protobuf中需要的固定值
+    public final String proto_4_1_1 = "google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/release-keys";
+    public final String proto_4_1_4 = "g7250-00202-220422-B-8489468";
+    public final String proto_4_1_5 = "r3-0.4-8351081";
+    public final int proto_4_1_8 = 212423054;
+    // 补丁包发布时间
+    public final String proto_4_1_19= "2022-07-05";
+
+
     // 设置一些固定值
     public final String gcm_ver = "244738029";
     public final String app_ver = "142110270";

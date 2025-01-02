@@ -101,8 +101,8 @@ message B15{
 }
 
 message C15{
-  //  required int32  d1 = 1;
-  //  required string d2 = 2;
+    required int32  d1 = 1;
+    required string d2 = 2;
 }
 
 message G26{

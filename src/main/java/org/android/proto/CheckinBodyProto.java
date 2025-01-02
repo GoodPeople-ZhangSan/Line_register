@@ -7273,6 +7273,12 @@ public final class CheckinBodyProto {
         memoizedIsInitialized = 0;
         return false;
       }
+      for (int i = 0; i < getC15Count(); i++) {
+        if (!getC15(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -8008,6 +8014,11 @@ public final class CheckinBodyProto {
         }
         if (!hasC19()) {
           return false;
+        }
+        for (int i = 0; i < getC15Count(); i++) {
+          if (!getC15(i).isInitialized()) {
+            return false;
+          }
         }
         return true;
       }
@@ -10572,13 +10583,36 @@ public final class CheckinBodyProto {
   public interface C15OrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.android.proto.C15)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 d1 = 1;</code>
+     * @return Whether the d1 field is set.
+     */
+    boolean hasD1();
+    /**
+     * <code>required int32 d1 = 1;</code>
+     * @return The d1.
+     */
+    int getD1();
+
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return Whether the d2 field is set.
+     */
+    boolean hasD2();
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return The d2.
+     */
+    java.lang.String getD2();
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return The bytes for d2.
+     */
+    com.google.protobuf.ByteString
+        getD2Bytes();
   }
   /**
-   * <pre>
-   *  required int32  d1 = 1;
-   *  required string d2 = 2;
-   * </pre>
-   *
    * Protobuf type {@code org.android.proto.C15}
    */
   public static final class C15 extends
@@ -10591,6 +10625,7 @@ public final class CheckinBodyProto {
       super(builder);
     }
     private C15() {
+      d2_ = "";
     }
 
     @java.lang.Override
@@ -10613,6 +10648,75 @@ public final class CheckinBodyProto {
               org.android.proto.CheckinBodyProto.C15.class, org.android.proto.CheckinBodyProto.C15.Builder.class);
     }
 
+    private int bitField0_;
+    public static final int D1_FIELD_NUMBER = 1;
+    private int d1_ = 0;
+    /**
+     * <code>required int32 d1 = 1;</code>
+     * @return Whether the d1 field is set.
+     */
+    @java.lang.Override
+    public boolean hasD1() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>required int32 d1 = 1;</code>
+     * @return The d1.
+     */
+    @java.lang.Override
+    public int getD1() {
+      return d1_;
+    }
+
+    public static final int D2_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object d2_ = "";
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return Whether the d2 field is set.
+     */
+    @java.lang.Override
+    public boolean hasD2() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return The d2.
+     */
+    @java.lang.Override
+    public java.lang.String getD2() {
+      java.lang.Object ref = d2_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          d2_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string d2 = 2;</code>
+     * @return The bytes for d2.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getD2Bytes() {
+      java.lang.Object ref = d2_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        d2_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -10620,6 +10724,14 @@ public final class CheckinBodyProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
+      if (!hasD1()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasD2()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -10627,6 +10739,12 @@ public final class CheckinBodyProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeInt32(1, d1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, d2_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -10636,6 +10754,13 @@ public final class CheckinBodyProto {
       if (size != -1) return size;
 
       size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, d1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, d2_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -10651,6 +10776,16 @@ public final class CheckinBodyProto {
       }
       org.android.proto.CheckinBodyProto.C15 other = (org.android.proto.CheckinBodyProto.C15) obj;
 
+      if (hasD1() != other.hasD1()) return false;
+      if (hasD1()) {
+        if (getD1()
+            != other.getD1()) return false;
+      }
+      if (hasD2() != other.hasD2()) return false;
+      if (hasD2()) {
+        if (!getD2()
+            .equals(other.getD2())) return false;
+      }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -10662,6 +10797,14 @@ public final class CheckinBodyProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasD1()) {
+        hash = (37 * hash) + D1_FIELD_NUMBER;
+        hash = (53 * hash) + getD1();
+      }
+      if (hasD2()) {
+        hash = (37 * hash) + D2_FIELD_NUMBER;
+        hash = (53 * hash) + getD2().hashCode();
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -10760,11 +10903,6 @@ public final class CheckinBodyProto {
       return builder;
     }
     /**
-     * <pre>
-     *  required int32  d1 = 1;
-     *  required string d2 = 2;
-     * </pre>
-     *
      * Protobuf type {@code org.android.proto.C15}
      */
     public static final class Builder extends
@@ -10797,6 +10935,9 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        d1_ = 0;
+        d2_ = "";
         return this;
       }
 
@@ -10823,8 +10964,23 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public org.android.proto.CheckinBodyProto.C15 buildPartial() {
         org.android.proto.CheckinBodyProto.C15 result = new org.android.proto.CheckinBodyProto.C15(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(org.android.proto.CheckinBodyProto.C15 result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.d1_ = d1_;
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.d2_ = d2_;
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -10871,6 +11027,14 @@ public final class CheckinBodyProto {
 
       public Builder mergeFrom(org.android.proto.CheckinBodyProto.C15 other) {
         if (other == org.android.proto.CheckinBodyProto.C15.getDefaultInstance()) return this;
+        if (other.hasD1()) {
+          setD1(other.getD1());
+        }
+        if (other.hasD2()) {
+          d2_ = other.d2_;
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -10878,6 +11042,12 @@ public final class CheckinBodyProto {
 
       @java.lang.Override
       public final boolean isInitialized() {
+        if (!hasD1()) {
+          return false;
+        }
+        if (!hasD2()) {
+          return false;
+        }
         return true;
       }
 
@@ -10897,6 +11067,16 @@ public final class CheckinBodyProto {
               case 0:
                 done = true;
                 break;
+              case 8: {
+                d1_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 18: {
+                d2_ = input.readBytes();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -10910,6 +11090,127 @@ public final class CheckinBodyProto {
         } finally {
           onChanged();
         } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int d1_ ;
+      /**
+       * <code>required int32 d1 = 1;</code>
+       * @return Whether the d1 field is set.
+       */
+      @java.lang.Override
+      public boolean hasD1() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required int32 d1 = 1;</code>
+       * @return The d1.
+       */
+      @java.lang.Override
+      public int getD1() {
+        return d1_;
+      }
+      /**
+       * <code>required int32 d1 = 1;</code>
+       * @param value The d1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setD1(int value) {
+
+        d1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 d1 = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearD1() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        d1_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object d2_ = "";
+      /**
+       * <code>required string d2 = 2;</code>
+       * @return Whether the d2 field is set.
+       */
+      public boolean hasD2() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>required string d2 = 2;</code>
+       * @return The d2.
+       */
+      public java.lang.String getD2() {
+        java.lang.Object ref = d2_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            d2_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string d2 = 2;</code>
+       * @return The bytes for d2.
+       */
+      public com.google.protobuf.ByteString
+          getD2Bytes() {
+        java.lang.Object ref = d2_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          d2_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string d2 = 2;</code>
+       * @param value The d2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setD2(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        d2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string d2 = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearD2() {
+        d2_ = getDefaultInstance().getD2();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string d2 = 2;</code>
+       * @param value The bytes for d2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setD2Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        d2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -11453,8 +11754,9 @@ public final class CheckinBodyProto {
       "\022\013\n\003c13\030\r \002(\t\022\013\n\003c14\030\016 \002(\005\022#\n\003c15\030\017 \003(\0132" +
       "\026.org.android.proto.C15\022\013\n\003c19\030\023 \002(\t\"A\n\003" +
       "B15\022\n\n\002e1\030\001 \002(\005\022\n\n\002e2\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022" +
-      "\n\n\002e4\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\005\n\003C15\"\005\n\003G26B%\n" +
-      "\021org.android.protoB\020CheckinBodyProto"
+      "\n\n\002e4\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\035\n\003C15\022\n\n\002d1\030\001 \002" +
+      "(\005\022\n\n\002d2\030\002 \002(\t\"\005\n\003G26B%\n\021org.android.pro" +
+      "toB\020CheckinBodyProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -11501,7 +11803,7 @@ public final class CheckinBodyProto {
     internal_static_org_android_proto_C15_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_android_proto_C15_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "D1", "D2", });
     internal_static_org_android_proto_G26_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_org_android_proto_G26_fieldAccessorTable = new
