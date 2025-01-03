@@ -6,12 +6,13 @@ import java.util.UUID;
 
 public class DevicesEntity {
     // 一些手机版本的固定信息
-    public final String adbDevices = "16091FDD4000W9";
     public final String iPhoneVer = "12";
     public final String iPhoneMode = "Pixel 5";
     public final String iPhoneBuild = "SQ3A.220705.003.A1";
     public final String iPhoneUA_1 = "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 5 Build/SQ3A.220705.003.A1)";
     public final String iPhoneUA_2 = " (Linux; U; Android 12; zh_CN_#Hans; Pixel 5; Build/SQ3A.220705.003.A1; Cronet/132.0.6808.3)";
+    // adb Devices需要随机设置
+    private String adbDevices;
 
     // 设置一些protobuf中需要的固定值
     public final String proto_4_1_1 = "google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/release-keys";
@@ -19,7 +20,7 @@ public class DevicesEntity {
     public final String proto_4_1_5 = "r3-0.4-8351081";
     public final int proto_4_1_8 = 212423054;
     // 补丁包发布时间
-    public final String proto_4_1_19= "2022-07-05";
+    public final String proto_4_1_19 = "2022-07-05";
 
 
     // 设置一些固定值
@@ -75,6 +76,9 @@ public class DevicesEntity {
         // 设置fid
         setFid(ArgUtils.getFid());
 
+        // 设置adbDevices
+        setAdbDevices(ArgUtils.getAdbDevices());
+
         // 设置 Authorization
         setAuthorization(google_android_id + ":" + google_security_token);
 
@@ -85,6 +89,14 @@ public class DevicesEntity {
         System.out.println("生成的did：" + getDid());
         System.out.println("生成的tdid：" + getTdid());
         System.out.println("生成的tcid：" + getTcid());
+    }
+
+    public String getAdbDevices() {
+        return adbDevices;
+    }
+
+    public void setAdbDevices(String adbDevices) {
+        this.adbDevices = adbDevices;
     }
 
     public String getDid() {

@@ -149,6 +149,23 @@ public class ArgUtils {
         return sb.toString();
     }
 
+    // 生成指定长度的随机数字
+    public static String generateRandomNumberString(int length) {
+        if (length <= 0) {
+            throw new IllegalArgumentException("Length must be greater than 0");
+        }
+
+        StringBuilder sb = new StringBuilder(length);
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            int digit = random.nextInt(10); // 生成0到9之间的随机整数
+            sb.append(digit);
+        }
+
+        return sb.toString();
+    }
+
     // 将byte[] 转为 hex
     public static String bytesToHex(byte[] bytes) {
         StringBuilder sb = new StringBuilder();
@@ -156,5 +173,9 @@ public class ArgUtils {
             sb.append(String.format("%02X", b)); // %02X 表示将字节格式化为两位大写的十六进制数
         }
         return sb.toString();
+    }
+
+    public static String getAdbDevices() {
+        return "1"+generateRandomNumberString(3)+"1FDD400"+generateRandomNumberString(3);
     }
 }

@@ -32,7 +32,7 @@ public class CheckinEntity {
                 .setA13(0)
                 .setA14(3)
                 .setA15("null")
-                .setA16("null")
+                .setA16(devicesEntity.getAdbDevices())
                 .setA18(a18)
                 .setA19("wifi")
                 .setA20(0)
@@ -87,11 +87,27 @@ public class CheckinEntity {
         // 构造B1中的 C15
         CheckinBodyProto.C15 c15builder_1 = CheckinBodyProto.C15.newBuilder().setD1(1).setD2("android-google").build();
         CheckinBodyProto.C15 c15builder_2 = CheckinBodyProto.C15.newBuilder().setD1(2).setD2("ms-android-google").build();
+        CheckinBodyProto.C15 c15builder_3 = CheckinBodyProto.C15.newBuilder().setD1(3).setD2("ms-android-google").build();
+        CheckinBodyProto.C15 c15builder_4 = CheckinBodyProto.C15.newBuilder().setD1(4).setD2("gmm-android-google").build();
+        CheckinBodyProto.C15 c15builder_5 = CheckinBodyProto.C15.newBuilder().setD1(5).setD2("mvapp-android-google").build();
+        CheckinBodyProto.C15 c15builder_6 = CheckinBodyProto.C15.newBuilder().setD1(6).setD2("am-android-google").build();
+        CheckinBodyProto.C15 c15builder_9 = CheckinBodyProto.C15.newBuilder().setD1(9).setD2("ms-android-google").build();
+        CheckinBodyProto.C15 c15builder_10 = CheckinBodyProto.C15.newBuilder().setD1(10).setD2("play-ms-android-google").build();
+        CheckinBodyProto.C15 c15builder_11 = CheckinBodyProto.C15.newBuilder().setD1(11).setD2("play-ad-ms-android-google").build();
+        CheckinBodyProto.C15 c15builder_12 = CheckinBodyProto.C15.newBuilder().setD1(12).setD2("pg-android-google").build();
+
         // 设置 C15 字段的值  repeated
         List<CheckinBodyProto.C15> c15 =  new ArrayList<>();
         c15.add(c15builder_1);
         c15.add(c15builder_2);
-
+        c15.add(c15builder_3);
+        c15.add(c15builder_4);
+        c15.add(c15builder_5);
+        c15.add(c15builder_6);
+        c15.add(c15builder_9);
+        c15.add(c15builder_10);
+        c15.add(c15builder_11);
+        c15.add(c15builder_12);
 
         // 构造B1
         CheckinBodyProto.B1.Builder b1builder = CheckinBodyProto.B1.newBuilder();
