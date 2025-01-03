@@ -45,29 +45,29 @@ message A4{
 }
 
 message A18{
-  //  required int32 g1 = 1;
-  //  required int32 g2 = 2;
-  //  required int32 g3 = 3;
-  //  required int32 g4 = 4;
-  //  required int32 g5 = 5;
-  //  required int32 g6 = 6;
-  //  required int32 g7 = 7;
-  //  required int32 g8 = 8;
-  //  repeated  string g9 = 9;
-  //  repeated  string g10 = 10;
-  //  repeated  string g11 = 11;
-  //  required int32 g12 = 12;
-  //  required int32 g13 = 13;
-  //  repeated  string g14 = 14;
-  //  repeated  string g15 = 15;
-  //  required int32 g18 = 18;
-  //  required int32 g19 = 19;
-  //  required int32 g20 = 20;
-  //  required int32 g21 = 21;
-  //  repeated G26 g26 = 26;
-  //  required int32 g28 = 28;
-  //  required string g29 = 29;
-  //  required int32 g30 = 30;
+    required int32 g1 = 1;
+    required int32 g2 = 2;
+    required int32 g3 = 3;
+    required int32 g4 = 4;
+    required int32 g5 = 5;
+    required int32 g6 = 6;
+    required int32 g7 = 7;
+    required int32 g8 = 8;
+    repeated  string g9 = 9;
+    repeated  string g10 = 10;
+    repeated  string g11 = 11;
+    required int32 g12 = 12;
+    required int32 g13 = 13;
+    repeated  string g14 = 14;
+    repeated  string g15 = 15;
+    required int32 g18 = 18;
+    required int32 g19 = 19;
+    required int32 g20 = 20;
+    required int32 g21 = 21;
+    repeated G26 g26 = 26;
+    required int32 g28 = 28;
+    required string g29 = 29;
+    required int32 g30 = 30;
 }
 
 message A11{

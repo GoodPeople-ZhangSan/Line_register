@@ -1142,6 +1142,10 @@ public final class CheckinBodyProto {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!getA18().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2004,6 +2008,9 @@ public final class CheckinBodyProto {
           return false;
         }
         if (!getA4().isInitialized()) {
+          return false;
+        }
+        if (!getA18().isInitialized()) {
           return false;
         }
         return true;
@@ -5400,34 +5407,350 @@ public final class CheckinBodyProto {
   public interface A18OrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.android.proto.A18)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 g1 = 1;</code>
+     * @return Whether the g1 field is set.
+     */
+    boolean hasG1();
+    /**
+     * <code>required int32 g1 = 1;</code>
+     * @return The g1.
+     */
+    int getG1();
+
+    /**
+     * <code>required int32 g2 = 2;</code>
+     * @return Whether the g2 field is set.
+     */
+    boolean hasG2();
+    /**
+     * <code>required int32 g2 = 2;</code>
+     * @return The g2.
+     */
+    int getG2();
+
+    /**
+     * <code>required int32 g3 = 3;</code>
+     * @return Whether the g3 field is set.
+     */
+    boolean hasG3();
+    /**
+     * <code>required int32 g3 = 3;</code>
+     * @return The g3.
+     */
+    int getG3();
+
+    /**
+     * <code>required int32 g4 = 4;</code>
+     * @return Whether the g4 field is set.
+     */
+    boolean hasG4();
+    /**
+     * <code>required int32 g4 = 4;</code>
+     * @return The g4.
+     */
+    int getG4();
+
+    /**
+     * <code>required int32 g5 = 5;</code>
+     * @return Whether the g5 field is set.
+     */
+    boolean hasG5();
+    /**
+     * <code>required int32 g5 = 5;</code>
+     * @return The g5.
+     */
+    int getG5();
+
+    /**
+     * <code>required int32 g6 = 6;</code>
+     * @return Whether the g6 field is set.
+     */
+    boolean hasG6();
+    /**
+     * <code>required int32 g6 = 6;</code>
+     * @return The g6.
+     */
+    int getG6();
+
+    /**
+     * <code>required int32 g7 = 7;</code>
+     * @return Whether the g7 field is set.
+     */
+    boolean hasG7();
+    /**
+     * <code>required int32 g7 = 7;</code>
+     * @return The g7.
+     */
+    int getG7();
+
+    /**
+     * <code>required int32 g8 = 8;</code>
+     * @return Whether the g8 field is set.
+     */
+    boolean hasG8();
+    /**
+     * <code>required int32 g8 = 8;</code>
+     * @return The g8.
+     */
+    int getG8();
+
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @return A list containing the g9.
+     */
+    java.util.List<java.lang.String>
+        getG9List();
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @return The count of g9.
+     */
+    int getG9Count();
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @param index The index of the element to return.
+     * @return The g9 at the given index.
+     */
+    java.lang.String getG9(int index);
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g9 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getG9Bytes(int index);
+
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @return A list containing the g10.
+     */
+    java.util.List<java.lang.String>
+        getG10List();
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @return The count of g10.
+     */
+    int getG10Count();
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @param index The index of the element to return.
+     * @return The g10 at the given index.
+     */
+    java.lang.String getG10(int index);
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g10 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getG10Bytes(int index);
+
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @return A list containing the g11.
+     */
+    java.util.List<java.lang.String>
+        getG11List();
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @return The count of g11.
+     */
+    int getG11Count();
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @param index The index of the element to return.
+     * @return The g11 at the given index.
+     */
+    java.lang.String getG11(int index);
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g11 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getG11Bytes(int index);
+
+    /**
+     * <code>required int32 g12 = 12;</code>
+     * @return Whether the g12 field is set.
+     */
+    boolean hasG12();
+    /**
+     * <code>required int32 g12 = 12;</code>
+     * @return The g12.
+     */
+    int getG12();
+
+    /**
+     * <code>required int32 g13 = 13;</code>
+     * @return Whether the g13 field is set.
+     */
+    boolean hasG13();
+    /**
+     * <code>required int32 g13 = 13;</code>
+     * @return The g13.
+     */
+    int getG13();
+
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @return A list containing the g14.
+     */
+    java.util.List<java.lang.String>
+        getG14List();
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @return The count of g14.
+     */
+    int getG14Count();
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @param index The index of the element to return.
+     * @return The g14 at the given index.
+     */
+    java.lang.String getG14(int index);
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g14 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getG14Bytes(int index);
+
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @return A list containing the g15.
+     */
+    java.util.List<java.lang.String>
+        getG15List();
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @return The count of g15.
+     */
+    int getG15Count();
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @param index The index of the element to return.
+     * @return The g15 at the given index.
+     */
+    java.lang.String getG15(int index);
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g15 at the given index.
+     */
+    com.google.protobuf.ByteString
+        getG15Bytes(int index);
+
+    /**
+     * <code>required int32 g18 = 18;</code>
+     * @return Whether the g18 field is set.
+     */
+    boolean hasG18();
+    /**
+     * <code>required int32 g18 = 18;</code>
+     * @return The g18.
+     */
+    int getG18();
+
+    /**
+     * <code>required int32 g19 = 19;</code>
+     * @return Whether the g19 field is set.
+     */
+    boolean hasG19();
+    /**
+     * <code>required int32 g19 = 19;</code>
+     * @return The g19.
+     */
+    int getG19();
+
+    /**
+     * <code>required int32 g20 = 20;</code>
+     * @return Whether the g20 field is set.
+     */
+    boolean hasG20();
+    /**
+     * <code>required int32 g20 = 20;</code>
+     * @return The g20.
+     */
+    int getG20();
+
+    /**
+     * <code>required int32 g21 = 21;</code>
+     * @return Whether the g21 field is set.
+     */
+    boolean hasG21();
+    /**
+     * <code>required int32 g21 = 21;</code>
+     * @return The g21.
+     */
+    int getG21();
+
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    java.util.List<org.android.proto.CheckinBodyProto.G26> 
+        getG26List();
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    org.android.proto.CheckinBodyProto.G26 getG26(int index);
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    int getG26Count();
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    java.util.List<? extends org.android.proto.CheckinBodyProto.G26OrBuilder> 
+        getG26OrBuilderList();
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    org.android.proto.CheckinBodyProto.G26OrBuilder getG26OrBuilder(
+        int index);
+
+    /**
+     * <code>required int32 g28 = 28;</code>
+     * @return Whether the g28 field is set.
+     */
+    boolean hasG28();
+    /**
+     * <code>required int32 g28 = 28;</code>
+     * @return The g28.
+     */
+    int getG28();
+
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return Whether the g29 field is set.
+     */
+    boolean hasG29();
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return The g29.
+     */
+    java.lang.String getG29();
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return The bytes for g29.
+     */
+    com.google.protobuf.ByteString
+        getG29Bytes();
+
+    /**
+     * <code>required int32 g30 = 30;</code>
+     * @return Whether the g30 field is set.
+     */
+    boolean hasG30();
+    /**
+     * <code>required int32 g30 = 30;</code>
+     * @return The g30.
+     */
+    int getG30();
   }
   /**
-   * <pre>
-   *  required int32 g1 = 1;
-   *  required int32 g2 = 2;
-   *  required int32 g3 = 3;
-   *  required int32 g4 = 4;
-   *  required int32 g5 = 5;
-   *  required int32 g6 = 6;
-   *  required int32 g7 = 7;
-   *  required int32 g8 = 8;
-   *  repeated  string g9 = 9;
-   *  repeated  string g10 = 10;
-   *  repeated  string g11 = 11;
-   *  required int32 g12 = 12;
-   *  required int32 g13 = 13;
-   *  repeated  string g14 = 14;
-   *  repeated  string g15 = 15;
-   *  required int32 g18 = 18;
-   *  required int32 g19 = 19;
-   *  required int32 g20 = 20;
-   *  required int32 g21 = 21;
-   *  repeated G26 g26 = 26;
-   *  required int32 g28 = 28;
-   *  required string g29 = 29;
-   *  required int32 g30 = 30;
-   * </pre>
-   *
    * Protobuf type {@code org.android.proto.A18}
    */
   public static final class A18 extends
@@ -5440,6 +5763,18 @@ public final class CheckinBodyProto {
       super(builder);
     }
     private A18() {
+      g9_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      g10_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      g11_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      g14_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      g15_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      g26_ = java.util.Collections.emptyList();
+      g29_ = "";
     }
 
     @java.lang.Override
@@ -5462,6 +5797,586 @@ public final class CheckinBodyProto {
               org.android.proto.CheckinBodyProto.A18.class, org.android.proto.CheckinBodyProto.A18.Builder.class);
     }
 
+    private int bitField0_;
+    public static final int G1_FIELD_NUMBER = 1;
+    private int g1_ = 0;
+    /**
+     * <code>required int32 g1 = 1;</code>
+     * @return Whether the g1 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG1() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>required int32 g1 = 1;</code>
+     * @return The g1.
+     */
+    @java.lang.Override
+    public int getG1() {
+      return g1_;
+    }
+
+    public static final int G2_FIELD_NUMBER = 2;
+    private int g2_ = 0;
+    /**
+     * <code>required int32 g2 = 2;</code>
+     * @return Whether the g2 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG2() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>required int32 g2 = 2;</code>
+     * @return The g2.
+     */
+    @java.lang.Override
+    public int getG2() {
+      return g2_;
+    }
+
+    public static final int G3_FIELD_NUMBER = 3;
+    private int g3_ = 0;
+    /**
+     * <code>required int32 g3 = 3;</code>
+     * @return Whether the g3 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG3() {
+      return ((bitField0_ & 0x00000004) != 0);
+    }
+    /**
+     * <code>required int32 g3 = 3;</code>
+     * @return The g3.
+     */
+    @java.lang.Override
+    public int getG3() {
+      return g3_;
+    }
+
+    public static final int G4_FIELD_NUMBER = 4;
+    private int g4_ = 0;
+    /**
+     * <code>required int32 g4 = 4;</code>
+     * @return Whether the g4 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG4() {
+      return ((bitField0_ & 0x00000008) != 0);
+    }
+    /**
+     * <code>required int32 g4 = 4;</code>
+     * @return The g4.
+     */
+    @java.lang.Override
+    public int getG4() {
+      return g4_;
+    }
+
+    public static final int G5_FIELD_NUMBER = 5;
+    private int g5_ = 0;
+    /**
+     * <code>required int32 g5 = 5;</code>
+     * @return Whether the g5 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG5() {
+      return ((bitField0_ & 0x00000010) != 0);
+    }
+    /**
+     * <code>required int32 g5 = 5;</code>
+     * @return The g5.
+     */
+    @java.lang.Override
+    public int getG5() {
+      return g5_;
+    }
+
+    public static final int G6_FIELD_NUMBER = 6;
+    private int g6_ = 0;
+    /**
+     * <code>required int32 g6 = 6;</code>
+     * @return Whether the g6 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG6() {
+      return ((bitField0_ & 0x00000020) != 0);
+    }
+    /**
+     * <code>required int32 g6 = 6;</code>
+     * @return The g6.
+     */
+    @java.lang.Override
+    public int getG6() {
+      return g6_;
+    }
+
+    public static final int G7_FIELD_NUMBER = 7;
+    private int g7_ = 0;
+    /**
+     * <code>required int32 g7 = 7;</code>
+     * @return Whether the g7 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG7() {
+      return ((bitField0_ & 0x00000040) != 0);
+    }
+    /**
+     * <code>required int32 g7 = 7;</code>
+     * @return The g7.
+     */
+    @java.lang.Override
+    public int getG7() {
+      return g7_;
+    }
+
+    public static final int G8_FIELD_NUMBER = 8;
+    private int g8_ = 0;
+    /**
+     * <code>required int32 g8 = 8;</code>
+     * @return Whether the g8 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG8() {
+      return ((bitField0_ & 0x00000080) != 0);
+    }
+    /**
+     * <code>required int32 g8 = 8;</code>
+     * @return The g8.
+     */
+    @java.lang.Override
+    public int getG8() {
+      return g8_;
+    }
+
+    public static final int G9_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.LazyStringArrayList g9_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @return A list containing the g9.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getG9List() {
+      return g9_;
+    }
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @return The count of g9.
+     */
+    public int getG9Count() {
+      return g9_.size();
+    }
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @param index The index of the element to return.
+     * @return The g9 at the given index.
+     */
+    public java.lang.String getG9(int index) {
+      return g9_.get(index);
+    }
+    /**
+     * <code>repeated string g9 = 9;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g9 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getG9Bytes(int index) {
+      return g9_.getByteString(index);
+    }
+
+    public static final int G10_FIELD_NUMBER = 10;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.LazyStringArrayList g10_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @return A list containing the g10.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getG10List() {
+      return g10_;
+    }
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @return The count of g10.
+     */
+    public int getG10Count() {
+      return g10_.size();
+    }
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @param index The index of the element to return.
+     * @return The g10 at the given index.
+     */
+    public java.lang.String getG10(int index) {
+      return g10_.get(index);
+    }
+    /**
+     * <code>repeated string g10 = 10;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g10 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getG10Bytes(int index) {
+      return g10_.getByteString(index);
+    }
+
+    public static final int G11_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.LazyStringArrayList g11_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @return A list containing the g11.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getG11List() {
+      return g11_;
+    }
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @return The count of g11.
+     */
+    public int getG11Count() {
+      return g11_.size();
+    }
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @param index The index of the element to return.
+     * @return The g11 at the given index.
+     */
+    public java.lang.String getG11(int index) {
+      return g11_.get(index);
+    }
+    /**
+     * <code>repeated string g11 = 11;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g11 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getG11Bytes(int index) {
+      return g11_.getByteString(index);
+    }
+
+    public static final int G12_FIELD_NUMBER = 12;
+    private int g12_ = 0;
+    /**
+     * <code>required int32 g12 = 12;</code>
+     * @return Whether the g12 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG12() {
+      return ((bitField0_ & 0x00000100) != 0);
+    }
+    /**
+     * <code>required int32 g12 = 12;</code>
+     * @return The g12.
+     */
+    @java.lang.Override
+    public int getG12() {
+      return g12_;
+    }
+
+    public static final int G13_FIELD_NUMBER = 13;
+    private int g13_ = 0;
+    /**
+     * <code>required int32 g13 = 13;</code>
+     * @return Whether the g13 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG13() {
+      return ((bitField0_ & 0x00000200) != 0);
+    }
+    /**
+     * <code>required int32 g13 = 13;</code>
+     * @return The g13.
+     */
+    @java.lang.Override
+    public int getG13() {
+      return g13_;
+    }
+
+    public static final int G14_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.LazyStringArrayList g14_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @return A list containing the g14.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getG14List() {
+      return g14_;
+    }
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @return The count of g14.
+     */
+    public int getG14Count() {
+      return g14_.size();
+    }
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @param index The index of the element to return.
+     * @return The g14 at the given index.
+     */
+    public java.lang.String getG14(int index) {
+      return g14_.get(index);
+    }
+    /**
+     * <code>repeated string g14 = 14;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g14 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getG14Bytes(int index) {
+      return g14_.getByteString(index);
+    }
+
+    public static final int G15_FIELD_NUMBER = 15;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.LazyStringArrayList g15_ =
+        com.google.protobuf.LazyStringArrayList.emptyList();
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @return A list containing the g15.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getG15List() {
+      return g15_;
+    }
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @return The count of g15.
+     */
+    public int getG15Count() {
+      return g15_.size();
+    }
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @param index The index of the element to return.
+     * @return The g15 at the given index.
+     */
+    public java.lang.String getG15(int index) {
+      return g15_.get(index);
+    }
+    /**
+     * <code>repeated string g15 = 15;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the g15 at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getG15Bytes(int index) {
+      return g15_.getByteString(index);
+    }
+
+    public static final int G18_FIELD_NUMBER = 18;
+    private int g18_ = 0;
+    /**
+     * <code>required int32 g18 = 18;</code>
+     * @return Whether the g18 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG18() {
+      return ((bitField0_ & 0x00000400) != 0);
+    }
+    /**
+     * <code>required int32 g18 = 18;</code>
+     * @return The g18.
+     */
+    @java.lang.Override
+    public int getG18() {
+      return g18_;
+    }
+
+    public static final int G19_FIELD_NUMBER = 19;
+    private int g19_ = 0;
+    /**
+     * <code>required int32 g19 = 19;</code>
+     * @return Whether the g19 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG19() {
+      return ((bitField0_ & 0x00000800) != 0);
+    }
+    /**
+     * <code>required int32 g19 = 19;</code>
+     * @return The g19.
+     */
+    @java.lang.Override
+    public int getG19() {
+      return g19_;
+    }
+
+    public static final int G20_FIELD_NUMBER = 20;
+    private int g20_ = 0;
+    /**
+     * <code>required int32 g20 = 20;</code>
+     * @return Whether the g20 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG20() {
+      return ((bitField0_ & 0x00001000) != 0);
+    }
+    /**
+     * <code>required int32 g20 = 20;</code>
+     * @return The g20.
+     */
+    @java.lang.Override
+    public int getG20() {
+      return g20_;
+    }
+
+    public static final int G21_FIELD_NUMBER = 21;
+    private int g21_ = 0;
+    /**
+     * <code>required int32 g21 = 21;</code>
+     * @return Whether the g21 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG21() {
+      return ((bitField0_ & 0x00002000) != 0);
+    }
+    /**
+     * <code>required int32 g21 = 21;</code>
+     * @return The g21.
+     */
+    @java.lang.Override
+    public int getG21() {
+      return g21_;
+    }
+
+    public static final int G26_FIELD_NUMBER = 26;
+    @SuppressWarnings("serial")
+    private java.util.List<org.android.proto.CheckinBodyProto.G26> g26_;
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    @java.lang.Override
+    public java.util.List<org.android.proto.CheckinBodyProto.G26> getG26List() {
+      return g26_;
+    }
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends org.android.proto.CheckinBodyProto.G26OrBuilder> 
+        getG26OrBuilderList() {
+      return g26_;
+    }
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    @java.lang.Override
+    public int getG26Count() {
+      return g26_.size();
+    }
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    @java.lang.Override
+    public org.android.proto.CheckinBodyProto.G26 getG26(int index) {
+      return g26_.get(index);
+    }
+    /**
+     * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+     */
+    @java.lang.Override
+    public org.android.proto.CheckinBodyProto.G26OrBuilder getG26OrBuilder(
+        int index) {
+      return g26_.get(index);
+    }
+
+    public static final int G28_FIELD_NUMBER = 28;
+    private int g28_ = 0;
+    /**
+     * <code>required int32 g28 = 28;</code>
+     * @return Whether the g28 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG28() {
+      return ((bitField0_ & 0x00004000) != 0);
+    }
+    /**
+     * <code>required int32 g28 = 28;</code>
+     * @return The g28.
+     */
+    @java.lang.Override
+    public int getG28() {
+      return g28_;
+    }
+
+    public static final int G29_FIELD_NUMBER = 29;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object g29_ = "";
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return Whether the g29 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG29() {
+      return ((bitField0_ & 0x00008000) != 0);
+    }
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return The g29.
+     */
+    @java.lang.Override
+    public java.lang.String getG29() {
+      java.lang.Object ref = g29_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          g29_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string g29 = 29;</code>
+     * @return The bytes for g29.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getG29Bytes() {
+      java.lang.Object ref = g29_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        g29_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int G30_FIELD_NUMBER = 30;
+    private int g30_ = 0;
+    /**
+     * <code>required int32 g30 = 30;</code>
+     * @return Whether the g30 field is set.
+     */
+    @java.lang.Override
+    public boolean hasG30() {
+      return ((bitField0_ & 0x00010000) != 0);
+    }
+    /**
+     * <code>required int32 g30 = 30;</code>
+     * @return The g30.
+     */
+    @java.lang.Override
+    public int getG30() {
+      return g30_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -5469,6 +6384,74 @@ public final class CheckinBodyProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
+      if (!hasG1()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG2()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG3()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG4()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG5()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG6()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG7()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG8()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG12()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG13()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG18()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG19()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG20()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG21()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG28()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG29()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasG30()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -5476,6 +6459,75 @@ public final class CheckinBodyProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeInt32(1, g1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeInt32(2, g2_);
+      }
+      if (((bitField0_ & 0x00000004) != 0)) {
+        output.writeInt32(3, g3_);
+      }
+      if (((bitField0_ & 0x00000008) != 0)) {
+        output.writeInt32(4, g4_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        output.writeInt32(5, g5_);
+      }
+      if (((bitField0_ & 0x00000020) != 0)) {
+        output.writeInt32(6, g6_);
+      }
+      if (((bitField0_ & 0x00000040) != 0)) {
+        output.writeInt32(7, g7_);
+      }
+      if (((bitField0_ & 0x00000080) != 0)) {
+        output.writeInt32(8, g8_);
+      }
+      for (int i = 0; i < g9_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, g9_.getRaw(i));
+      }
+      for (int i = 0; i < g10_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, g10_.getRaw(i));
+      }
+      for (int i = 0; i < g11_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, g11_.getRaw(i));
+      }
+      if (((bitField0_ & 0x00000100) != 0)) {
+        output.writeInt32(12, g12_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        output.writeInt32(13, g13_);
+      }
+      for (int i = 0; i < g14_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, g14_.getRaw(i));
+      }
+      for (int i = 0; i < g15_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, g15_.getRaw(i));
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        output.writeInt32(18, g18_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        output.writeInt32(19, g19_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        output.writeInt32(20, g20_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        output.writeInt32(21, g21_);
+      }
+      for (int i = 0; i < g26_.size(); i++) {
+        output.writeMessage(26, g26_.get(i));
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        output.writeInt32(28, g28_);
+      }
+      if (((bitField0_ & 0x00008000) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 29, g29_);
+      }
+      if (((bitField0_ & 0x00010000) != 0)) {
+        output.writeInt32(30, g30_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -5485,6 +6537,117 @@ public final class CheckinBodyProto {
       if (size != -1) return size;
 
       size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, g1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, g2_);
+      }
+      if (((bitField0_ & 0x00000004) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, g3_);
+      }
+      if (((bitField0_ & 0x00000008) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, g4_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, g5_);
+      }
+      if (((bitField0_ & 0x00000020) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, g6_);
+      }
+      if (((bitField0_ & 0x00000040) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, g7_);
+      }
+      if (((bitField0_ & 0x00000080) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, g8_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < g9_.size(); i++) {
+          dataSize += computeStringSizeNoTag(g9_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getG9List().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < g10_.size(); i++) {
+          dataSize += computeStringSizeNoTag(g10_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getG10List().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < g11_.size(); i++) {
+          dataSize += computeStringSizeNoTag(g11_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getG11List().size();
+      }
+      if (((bitField0_ & 0x00000100) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, g12_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, g13_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < g14_.size(); i++) {
+          dataSize += computeStringSizeNoTag(g14_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getG14List().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < g15_.size(); i++) {
+          dataSize += computeStringSizeNoTag(g15_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getG15List().size();
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(18, g18_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(19, g19_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(20, g20_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(21, g21_);
+      }
+      for (int i = 0; i < g26_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(26, g26_.get(i));
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(28, g28_);
+      }
+      if (((bitField0_ & 0x00008000) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(29, g29_);
+      }
+      if (((bitField0_ & 0x00010000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(30, g30_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -5500,6 +6663,103 @@ public final class CheckinBodyProto {
       }
       org.android.proto.CheckinBodyProto.A18 other = (org.android.proto.CheckinBodyProto.A18) obj;
 
+      if (hasG1() != other.hasG1()) return false;
+      if (hasG1()) {
+        if (getG1()
+            != other.getG1()) return false;
+      }
+      if (hasG2() != other.hasG2()) return false;
+      if (hasG2()) {
+        if (getG2()
+            != other.getG2()) return false;
+      }
+      if (hasG3() != other.hasG3()) return false;
+      if (hasG3()) {
+        if (getG3()
+            != other.getG3()) return false;
+      }
+      if (hasG4() != other.hasG4()) return false;
+      if (hasG4()) {
+        if (getG4()
+            != other.getG4()) return false;
+      }
+      if (hasG5() != other.hasG5()) return false;
+      if (hasG5()) {
+        if (getG5()
+            != other.getG5()) return false;
+      }
+      if (hasG6() != other.hasG6()) return false;
+      if (hasG6()) {
+        if (getG6()
+            != other.getG6()) return false;
+      }
+      if (hasG7() != other.hasG7()) return false;
+      if (hasG7()) {
+        if (getG7()
+            != other.getG7()) return false;
+      }
+      if (hasG8() != other.hasG8()) return false;
+      if (hasG8()) {
+        if (getG8()
+            != other.getG8()) return false;
+      }
+      if (!getG9List()
+          .equals(other.getG9List())) return false;
+      if (!getG10List()
+          .equals(other.getG10List())) return false;
+      if (!getG11List()
+          .equals(other.getG11List())) return false;
+      if (hasG12() != other.hasG12()) return false;
+      if (hasG12()) {
+        if (getG12()
+            != other.getG12()) return false;
+      }
+      if (hasG13() != other.hasG13()) return false;
+      if (hasG13()) {
+        if (getG13()
+            != other.getG13()) return false;
+      }
+      if (!getG14List()
+          .equals(other.getG14List())) return false;
+      if (!getG15List()
+          .equals(other.getG15List())) return false;
+      if (hasG18() != other.hasG18()) return false;
+      if (hasG18()) {
+        if (getG18()
+            != other.getG18()) return false;
+      }
+      if (hasG19() != other.hasG19()) return false;
+      if (hasG19()) {
+        if (getG19()
+            != other.getG19()) return false;
+      }
+      if (hasG20() != other.hasG20()) return false;
+      if (hasG20()) {
+        if (getG20()
+            != other.getG20()) return false;
+      }
+      if (hasG21() != other.hasG21()) return false;
+      if (hasG21()) {
+        if (getG21()
+            != other.getG21()) return false;
+      }
+      if (!getG26List()
+          .equals(other.getG26List())) return false;
+      if (hasG28() != other.hasG28()) return false;
+      if (hasG28()) {
+        if (getG28()
+            != other.getG28()) return false;
+      }
+      if (hasG29() != other.hasG29()) return false;
+      if (hasG29()) {
+        if (!getG29()
+            .equals(other.getG29())) return false;
+      }
+      if (hasG30() != other.hasG30()) return false;
+      if (hasG30()) {
+        if (getG30()
+            != other.getG30()) return false;
+      }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -5511,6 +6771,98 @@ public final class CheckinBodyProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasG1()) {
+        hash = (37 * hash) + G1_FIELD_NUMBER;
+        hash = (53 * hash) + getG1();
+      }
+      if (hasG2()) {
+        hash = (37 * hash) + G2_FIELD_NUMBER;
+        hash = (53 * hash) + getG2();
+      }
+      if (hasG3()) {
+        hash = (37 * hash) + G3_FIELD_NUMBER;
+        hash = (53 * hash) + getG3();
+      }
+      if (hasG4()) {
+        hash = (37 * hash) + G4_FIELD_NUMBER;
+        hash = (53 * hash) + getG4();
+      }
+      if (hasG5()) {
+        hash = (37 * hash) + G5_FIELD_NUMBER;
+        hash = (53 * hash) + getG5();
+      }
+      if (hasG6()) {
+        hash = (37 * hash) + G6_FIELD_NUMBER;
+        hash = (53 * hash) + getG6();
+      }
+      if (hasG7()) {
+        hash = (37 * hash) + G7_FIELD_NUMBER;
+        hash = (53 * hash) + getG7();
+      }
+      if (hasG8()) {
+        hash = (37 * hash) + G8_FIELD_NUMBER;
+        hash = (53 * hash) + getG8();
+      }
+      if (getG9Count() > 0) {
+        hash = (37 * hash) + G9_FIELD_NUMBER;
+        hash = (53 * hash) + getG9List().hashCode();
+      }
+      if (getG10Count() > 0) {
+        hash = (37 * hash) + G10_FIELD_NUMBER;
+        hash = (53 * hash) + getG10List().hashCode();
+      }
+      if (getG11Count() > 0) {
+        hash = (37 * hash) + G11_FIELD_NUMBER;
+        hash = (53 * hash) + getG11List().hashCode();
+      }
+      if (hasG12()) {
+        hash = (37 * hash) + G12_FIELD_NUMBER;
+        hash = (53 * hash) + getG12();
+      }
+      if (hasG13()) {
+        hash = (37 * hash) + G13_FIELD_NUMBER;
+        hash = (53 * hash) + getG13();
+      }
+      if (getG14Count() > 0) {
+        hash = (37 * hash) + G14_FIELD_NUMBER;
+        hash = (53 * hash) + getG14List().hashCode();
+      }
+      if (getG15Count() > 0) {
+        hash = (37 * hash) + G15_FIELD_NUMBER;
+        hash = (53 * hash) + getG15List().hashCode();
+      }
+      if (hasG18()) {
+        hash = (37 * hash) + G18_FIELD_NUMBER;
+        hash = (53 * hash) + getG18();
+      }
+      if (hasG19()) {
+        hash = (37 * hash) + G19_FIELD_NUMBER;
+        hash = (53 * hash) + getG19();
+      }
+      if (hasG20()) {
+        hash = (37 * hash) + G20_FIELD_NUMBER;
+        hash = (53 * hash) + getG20();
+      }
+      if (hasG21()) {
+        hash = (37 * hash) + G21_FIELD_NUMBER;
+        hash = (53 * hash) + getG21();
+      }
+      if (getG26Count() > 0) {
+        hash = (37 * hash) + G26_FIELD_NUMBER;
+        hash = (53 * hash) + getG26List().hashCode();
+      }
+      if (hasG28()) {
+        hash = (37 * hash) + G28_FIELD_NUMBER;
+        hash = (53 * hash) + getG28();
+      }
+      if (hasG29()) {
+        hash = (37 * hash) + G29_FIELD_NUMBER;
+        hash = (53 * hash) + getG29().hashCode();
+      }
+      if (hasG30()) {
+        hash = (37 * hash) + G30_FIELD_NUMBER;
+        hash = (53 * hash) + getG30();
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -5609,32 +6961,6 @@ public final class CheckinBodyProto {
       return builder;
     }
     /**
-     * <pre>
-     *  required int32 g1 = 1;
-     *  required int32 g2 = 2;
-     *  required int32 g3 = 3;
-     *  required int32 g4 = 4;
-     *  required int32 g5 = 5;
-     *  required int32 g6 = 6;
-     *  required int32 g7 = 7;
-     *  required int32 g8 = 8;
-     *  repeated  string g9 = 9;
-     *  repeated  string g10 = 10;
-     *  repeated  string g11 = 11;
-     *  required int32 g12 = 12;
-     *  required int32 g13 = 13;
-     *  repeated  string g14 = 14;
-     *  repeated  string g15 = 15;
-     *  required int32 g18 = 18;
-     *  required int32 g19 = 19;
-     *  required int32 g20 = 20;
-     *  required int32 g21 = 21;
-     *  repeated G26 g26 = 26;
-     *  required int32 g28 = 28;
-     *  required string g29 = 29;
-     *  required int32 g30 = 30;
-     * </pre>
-     *
      * Protobuf type {@code org.android.proto.A18}
      */
     public static final class Builder extends
@@ -5667,6 +6993,41 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        g1_ = 0;
+        g2_ = 0;
+        g3_ = 0;
+        g4_ = 0;
+        g5_ = 0;
+        g6_ = 0;
+        g7_ = 0;
+        g8_ = 0;
+        g9_ =
+            com.google.protobuf.LazyStringArrayList.emptyList();
+        g10_ =
+            com.google.protobuf.LazyStringArrayList.emptyList();
+        g11_ =
+            com.google.protobuf.LazyStringArrayList.emptyList();
+        g12_ = 0;
+        g13_ = 0;
+        g14_ =
+            com.google.protobuf.LazyStringArrayList.emptyList();
+        g15_ =
+            com.google.protobuf.LazyStringArrayList.emptyList();
+        g18_ = 0;
+        g19_ = 0;
+        g20_ = 0;
+        g21_ = 0;
+        if (g26Builder_ == null) {
+          g26_ = java.util.Collections.emptyList();
+        } else {
+          g26_ = null;
+          g26Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        g28_ = 0;
+        g29_ = "";
+        g30_ = 0;
         return this;
       }
 
@@ -5693,8 +7054,116 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public org.android.proto.CheckinBodyProto.A18 buildPartial() {
         org.android.proto.CheckinBodyProto.A18 result = new org.android.proto.CheckinBodyProto.A18(this);
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(org.android.proto.CheckinBodyProto.A18 result) {
+        if (g26Builder_ == null) {
+          if (((bitField0_ & 0x00080000) != 0)) {
+            g26_ = java.util.Collections.unmodifiableList(g26_);
+            bitField0_ = (bitField0_ & ~0x00080000);
+          }
+          result.g26_ = g26_;
+        } else {
+          result.g26_ = g26Builder_.build();
+        }
+      }
+
+      private void buildPartial0(org.android.proto.CheckinBodyProto.A18 result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.g1_ = g1_;
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.g2_ = g2_;
+          to_bitField0_ |= 0x00000002;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.g3_ = g3_;
+          to_bitField0_ |= 0x00000004;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.g4_ = g4_;
+          to_bitField0_ |= 0x00000008;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.g5_ = g5_;
+          to_bitField0_ |= 0x00000010;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.g6_ = g6_;
+          to_bitField0_ |= 0x00000020;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.g7_ = g7_;
+          to_bitField0_ |= 0x00000040;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.g8_ = g8_;
+          to_bitField0_ |= 0x00000080;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          g9_.makeImmutable();
+          result.g9_ = g9_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          g10_.makeImmutable();
+          result.g10_ = g10_;
+        }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          g11_.makeImmutable();
+          result.g11_ = g11_;
+        }
+        if (((from_bitField0_ & 0x00000800) != 0)) {
+          result.g12_ = g12_;
+          to_bitField0_ |= 0x00000100;
+        }
+        if (((from_bitField0_ & 0x00001000) != 0)) {
+          result.g13_ = g13_;
+          to_bitField0_ |= 0x00000200;
+        }
+        if (((from_bitField0_ & 0x00002000) != 0)) {
+          g14_.makeImmutable();
+          result.g14_ = g14_;
+        }
+        if (((from_bitField0_ & 0x00004000) != 0)) {
+          g15_.makeImmutable();
+          result.g15_ = g15_;
+        }
+        if (((from_bitField0_ & 0x00008000) != 0)) {
+          result.g18_ = g18_;
+          to_bitField0_ |= 0x00000400;
+        }
+        if (((from_bitField0_ & 0x00010000) != 0)) {
+          result.g19_ = g19_;
+          to_bitField0_ |= 0x00000800;
+        }
+        if (((from_bitField0_ & 0x00020000) != 0)) {
+          result.g20_ = g20_;
+          to_bitField0_ |= 0x00001000;
+        }
+        if (((from_bitField0_ & 0x00040000) != 0)) {
+          result.g21_ = g21_;
+          to_bitField0_ |= 0x00002000;
+        }
+        if (((from_bitField0_ & 0x00100000) != 0)) {
+          result.g28_ = g28_;
+          to_bitField0_ |= 0x00004000;
+        }
+        if (((from_bitField0_ & 0x00200000) != 0)) {
+          result.g29_ = g29_;
+          to_bitField0_ |= 0x00008000;
+        }
+        if (((from_bitField0_ & 0x00400000) != 0)) {
+          result.g30_ = g30_;
+          to_bitField0_ |= 0x00010000;
+        }
+        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -5741,6 +7210,135 @@ public final class CheckinBodyProto {
 
       public Builder mergeFrom(org.android.proto.CheckinBodyProto.A18 other) {
         if (other == org.android.proto.CheckinBodyProto.A18.getDefaultInstance()) return this;
+        if (other.hasG1()) {
+          setG1(other.getG1());
+        }
+        if (other.hasG2()) {
+          setG2(other.getG2());
+        }
+        if (other.hasG3()) {
+          setG3(other.getG3());
+        }
+        if (other.hasG4()) {
+          setG4(other.getG4());
+        }
+        if (other.hasG5()) {
+          setG5(other.getG5());
+        }
+        if (other.hasG6()) {
+          setG6(other.getG6());
+        }
+        if (other.hasG7()) {
+          setG7(other.getG7());
+        }
+        if (other.hasG8()) {
+          setG8(other.getG8());
+        }
+        if (!other.g9_.isEmpty()) {
+          if (g9_.isEmpty()) {
+            g9_ = other.g9_;
+            bitField0_ |= 0x00000100;
+          } else {
+            ensureG9IsMutable();
+            g9_.addAll(other.g9_);
+          }
+          onChanged();
+        }
+        if (!other.g10_.isEmpty()) {
+          if (g10_.isEmpty()) {
+            g10_ = other.g10_;
+            bitField0_ |= 0x00000200;
+          } else {
+            ensureG10IsMutable();
+            g10_.addAll(other.g10_);
+          }
+          onChanged();
+        }
+        if (!other.g11_.isEmpty()) {
+          if (g11_.isEmpty()) {
+            g11_ = other.g11_;
+            bitField0_ |= 0x00000400;
+          } else {
+            ensureG11IsMutable();
+            g11_.addAll(other.g11_);
+          }
+          onChanged();
+        }
+        if (other.hasG12()) {
+          setG12(other.getG12());
+        }
+        if (other.hasG13()) {
+          setG13(other.getG13());
+        }
+        if (!other.g14_.isEmpty()) {
+          if (g14_.isEmpty()) {
+            g14_ = other.g14_;
+            bitField0_ |= 0x00002000;
+          } else {
+            ensureG14IsMutable();
+            g14_.addAll(other.g14_);
+          }
+          onChanged();
+        }
+        if (!other.g15_.isEmpty()) {
+          if (g15_.isEmpty()) {
+            g15_ = other.g15_;
+            bitField0_ |= 0x00004000;
+          } else {
+            ensureG15IsMutable();
+            g15_.addAll(other.g15_);
+          }
+          onChanged();
+        }
+        if (other.hasG18()) {
+          setG18(other.getG18());
+        }
+        if (other.hasG19()) {
+          setG19(other.getG19());
+        }
+        if (other.hasG20()) {
+          setG20(other.getG20());
+        }
+        if (other.hasG21()) {
+          setG21(other.getG21());
+        }
+        if (g26Builder_ == null) {
+          if (!other.g26_.isEmpty()) {
+            if (g26_.isEmpty()) {
+              g26_ = other.g26_;
+              bitField0_ = (bitField0_ & ~0x00080000);
+            } else {
+              ensureG26IsMutable();
+              g26_.addAll(other.g26_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.g26_.isEmpty()) {
+            if (g26Builder_.isEmpty()) {
+              g26Builder_.dispose();
+              g26Builder_ = null;
+              g26_ = other.g26_;
+              bitField0_ = (bitField0_ & ~0x00080000);
+              g26Builder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getG26FieldBuilder() : null;
+            } else {
+              g26Builder_.addAllMessages(other.g26_);
+            }
+          }
+        }
+        if (other.hasG28()) {
+          setG28(other.getG28());
+        }
+        if (other.hasG29()) {
+          g29_ = other.g29_;
+          bitField0_ |= 0x00200000;
+          onChanged();
+        }
+        if (other.hasG30()) {
+          setG30(other.getG30());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -5748,6 +7346,57 @@ public final class CheckinBodyProto {
 
       @java.lang.Override
       public final boolean isInitialized() {
+        if (!hasG1()) {
+          return false;
+        }
+        if (!hasG2()) {
+          return false;
+        }
+        if (!hasG3()) {
+          return false;
+        }
+        if (!hasG4()) {
+          return false;
+        }
+        if (!hasG5()) {
+          return false;
+        }
+        if (!hasG6()) {
+          return false;
+        }
+        if (!hasG7()) {
+          return false;
+        }
+        if (!hasG8()) {
+          return false;
+        }
+        if (!hasG12()) {
+          return false;
+        }
+        if (!hasG13()) {
+          return false;
+        }
+        if (!hasG18()) {
+          return false;
+        }
+        if (!hasG19()) {
+          return false;
+        }
+        if (!hasG20()) {
+          return false;
+        }
+        if (!hasG21()) {
+          return false;
+        }
+        if (!hasG28()) {
+          return false;
+        }
+        if (!hasG29()) {
+          return false;
+        }
+        if (!hasG30()) {
+          return false;
+        }
         return true;
       }
 
@@ -5767,6 +7416,134 @@ public final class CheckinBodyProto {
               case 0:
                 done = true;
                 break;
+              case 8: {
+                g1_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                g2_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                g3_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                g4_ = input.readInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                g5_ = input.readInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                g6_ = input.readInt32();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
+              case 56: {
+                g7_ = input.readInt32();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                g8_ = input.readInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 64
+              case 74: {
+                com.google.protobuf.ByteString bs = input.readBytes();
+                ensureG9IsMutable();
+                g9_.add(bs);
+                break;
+              } // case 74
+              case 82: {
+                com.google.protobuf.ByteString bs = input.readBytes();
+                ensureG10IsMutable();
+                g10_.add(bs);
+                break;
+              } // case 82
+              case 90: {
+                com.google.protobuf.ByteString bs = input.readBytes();
+                ensureG11IsMutable();
+                g11_.add(bs);
+                break;
+              } // case 90
+              case 96: {
+                g12_ = input.readInt32();
+                bitField0_ |= 0x00000800;
+                break;
+              } // case 96
+              case 104: {
+                g13_ = input.readInt32();
+                bitField0_ |= 0x00001000;
+                break;
+              } // case 104
+              case 114: {
+                com.google.protobuf.ByteString bs = input.readBytes();
+                ensureG14IsMutable();
+                g14_.add(bs);
+                break;
+              } // case 114
+              case 122: {
+                com.google.protobuf.ByteString bs = input.readBytes();
+                ensureG15IsMutable();
+                g15_.add(bs);
+                break;
+              } // case 122
+              case 144: {
+                g18_ = input.readInt32();
+                bitField0_ |= 0x00008000;
+                break;
+              } // case 144
+              case 152: {
+                g19_ = input.readInt32();
+                bitField0_ |= 0x00010000;
+                break;
+              } // case 152
+              case 160: {
+                g20_ = input.readInt32();
+                bitField0_ |= 0x00020000;
+                break;
+              } // case 160
+              case 168: {
+                g21_ = input.readInt32();
+                bitField0_ |= 0x00040000;
+                break;
+              } // case 168
+              case 210: {
+                org.android.proto.CheckinBodyProto.G26 m =
+                    input.readMessage(
+                        org.android.proto.CheckinBodyProto.G26.PARSER,
+                        extensionRegistry);
+                if (g26Builder_ == null) {
+                  ensureG26IsMutable();
+                  g26_.add(m);
+                } else {
+                  g26Builder_.addMessage(m);
+                }
+                break;
+              } // case 210
+              case 224: {
+                g28_ = input.readInt32();
+                bitField0_ |= 0x00100000;
+                break;
+              } // case 224
+              case 234: {
+                g29_ = input.readBytes();
+                bitField0_ |= 0x00200000;
+                break;
+              } // case 234
+              case 240: {
+                g30_ = input.readInt32();
+                bitField0_ |= 0x00400000;
+                break;
+              } // case 240
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -5780,6 +7557,1517 @@ public final class CheckinBodyProto {
         } finally {
           onChanged();
         } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int g1_ ;
+      /**
+       * <code>required int32 g1 = 1;</code>
+       * @return Whether the g1 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG1() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required int32 g1 = 1;</code>
+       * @return The g1.
+       */
+      @java.lang.Override
+      public int getG1() {
+        return g1_;
+      }
+      /**
+       * <code>required int32 g1 = 1;</code>
+       * @param value The g1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG1(int value) {
+
+        g1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g1 = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG1() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        g1_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g2_ ;
+      /**
+       * <code>required int32 g2 = 2;</code>
+       * @return Whether the g2 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG2() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>required int32 g2 = 2;</code>
+       * @return The g2.
+       */
+      @java.lang.Override
+      public int getG2() {
+        return g2_;
+      }
+      /**
+       * <code>required int32 g2 = 2;</code>
+       * @param value The g2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG2(int value) {
+
+        g2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g2 = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG2() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        g2_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g3_ ;
+      /**
+       * <code>required int32 g3 = 3;</code>
+       * @return Whether the g3 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG3() {
+        return ((bitField0_ & 0x00000004) != 0);
+      }
+      /**
+       * <code>required int32 g3 = 3;</code>
+       * @return The g3.
+       */
+      @java.lang.Override
+      public int getG3() {
+        return g3_;
+      }
+      /**
+       * <code>required int32 g3 = 3;</code>
+       * @param value The g3 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG3(int value) {
+
+        g3_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g3 = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG3() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        g3_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g4_ ;
+      /**
+       * <code>required int32 g4 = 4;</code>
+       * @return Whether the g4 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG4() {
+        return ((bitField0_ & 0x00000008) != 0);
+      }
+      /**
+       * <code>required int32 g4 = 4;</code>
+       * @return The g4.
+       */
+      @java.lang.Override
+      public int getG4() {
+        return g4_;
+      }
+      /**
+       * <code>required int32 g4 = 4;</code>
+       * @param value The g4 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG4(int value) {
+
+        g4_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g4 = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG4() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        g4_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g5_ ;
+      /**
+       * <code>required int32 g5 = 5;</code>
+       * @return Whether the g5 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG5() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>required int32 g5 = 5;</code>
+       * @return The g5.
+       */
+      @java.lang.Override
+      public int getG5() {
+        return g5_;
+      }
+      /**
+       * <code>required int32 g5 = 5;</code>
+       * @param value The g5 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG5(int value) {
+
+        g5_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g5 = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG5() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        g5_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g6_ ;
+      /**
+       * <code>required int32 g6 = 6;</code>
+       * @return Whether the g6 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG6() {
+        return ((bitField0_ & 0x00000020) != 0);
+      }
+      /**
+       * <code>required int32 g6 = 6;</code>
+       * @return The g6.
+       */
+      @java.lang.Override
+      public int getG6() {
+        return g6_;
+      }
+      /**
+       * <code>required int32 g6 = 6;</code>
+       * @param value The g6 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG6(int value) {
+
+        g6_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g6 = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG6() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        g6_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g7_ ;
+      /**
+       * <code>required int32 g7 = 7;</code>
+       * @return Whether the g7 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG7() {
+        return ((bitField0_ & 0x00000040) != 0);
+      }
+      /**
+       * <code>required int32 g7 = 7;</code>
+       * @return The g7.
+       */
+      @java.lang.Override
+      public int getG7() {
+        return g7_;
+      }
+      /**
+       * <code>required int32 g7 = 7;</code>
+       * @param value The g7 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG7(int value) {
+
+        g7_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g7 = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG7() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        g7_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g8_ ;
+      /**
+       * <code>required int32 g8 = 8;</code>
+       * @return Whether the g8 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG8() {
+        return ((bitField0_ & 0x00000080) != 0);
+      }
+      /**
+       * <code>required int32 g8 = 8;</code>
+       * @return The g8.
+       */
+      @java.lang.Override
+      public int getG8() {
+        return g8_;
+      }
+      /**
+       * <code>required int32 g8 = 8;</code>
+       * @param value The g8 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG8(int value) {
+
+        g8_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g8 = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG8() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        g8_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringArrayList g9_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      private void ensureG9IsMutable() {
+        if (!g9_.isModifiable()) {
+          g9_ = new com.google.protobuf.LazyStringArrayList(g9_);
+        }
+        bitField0_ |= 0x00000100;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @return A list containing the g9.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getG9List() {
+        g9_.makeImmutable();
+        return g9_;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @return The count of g9.
+       */
+      public int getG9Count() {
+        return g9_.size();
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param index The index of the element to return.
+       * @return The g9 at the given index.
+       */
+      public java.lang.String getG9(int index) {
+        return g9_.get(index);
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the g9 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getG9Bytes(int index) {
+        return g9_.getByteString(index);
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The g9 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG9(
+          int index, java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG9IsMutable();
+        g9_.set(index, value);
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param value The g9 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG9(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG9IsMutable();
+        g9_.add(value);
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param values The g9 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllG9(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureG9IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, g9_);
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG9() {
+        g9_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000100);;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g9 = 9;</code>
+       * @param value The bytes of the g9 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG9Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG9IsMutable();
+        g9_.add(value);
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringArrayList g10_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      private void ensureG10IsMutable() {
+        if (!g10_.isModifiable()) {
+          g10_ = new com.google.protobuf.LazyStringArrayList(g10_);
+        }
+        bitField0_ |= 0x00000200;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @return A list containing the g10.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getG10List() {
+        g10_.makeImmutable();
+        return g10_;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @return The count of g10.
+       */
+      public int getG10Count() {
+        return g10_.size();
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param index The index of the element to return.
+       * @return The g10 at the given index.
+       */
+      public java.lang.String getG10(int index) {
+        return g10_.get(index);
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the g10 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getG10Bytes(int index) {
+        return g10_.getByteString(index);
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param index The index to set the value at.
+       * @param value The g10 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG10(
+          int index, java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG10IsMutable();
+        g10_.set(index, value);
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param value The g10 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG10(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG10IsMutable();
+        g10_.add(value);
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param values The g10 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllG10(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureG10IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, g10_);
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG10() {
+        g10_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000200);;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g10 = 10;</code>
+       * @param value The bytes of the g10 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG10Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG10IsMutable();
+        g10_.add(value);
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringArrayList g11_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      private void ensureG11IsMutable() {
+        if (!g11_.isModifiable()) {
+          g11_ = new com.google.protobuf.LazyStringArrayList(g11_);
+        }
+        bitField0_ |= 0x00000400;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @return A list containing the g11.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getG11List() {
+        g11_.makeImmutable();
+        return g11_;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @return The count of g11.
+       */
+      public int getG11Count() {
+        return g11_.size();
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param index The index of the element to return.
+       * @return The g11 at the given index.
+       */
+      public java.lang.String getG11(int index) {
+        return g11_.get(index);
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the g11 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getG11Bytes(int index) {
+        return g11_.getByteString(index);
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param index The index to set the value at.
+       * @param value The g11 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG11(
+          int index, java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG11IsMutable();
+        g11_.set(index, value);
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param value The g11 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG11(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG11IsMutable();
+        g11_.add(value);
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param values The g11 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllG11(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureG11IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, g11_);
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG11() {
+        g11_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000400);;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g11 = 11;</code>
+       * @param value The bytes of the g11 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG11Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG11IsMutable();
+        g11_.add(value);
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+
+      private int g12_ ;
+      /**
+       * <code>required int32 g12 = 12;</code>
+       * @return Whether the g12 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG12() {
+        return ((bitField0_ & 0x00000800) != 0);
+      }
+      /**
+       * <code>required int32 g12 = 12;</code>
+       * @return The g12.
+       */
+      @java.lang.Override
+      public int getG12() {
+        return g12_;
+      }
+      /**
+       * <code>required int32 g12 = 12;</code>
+       * @param value The g12 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG12(int value) {
+
+        g12_ = value;
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g12 = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG12() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        g12_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g13_ ;
+      /**
+       * <code>required int32 g13 = 13;</code>
+       * @return Whether the g13 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG13() {
+        return ((bitField0_ & 0x00001000) != 0);
+      }
+      /**
+       * <code>required int32 g13 = 13;</code>
+       * @return The g13.
+       */
+      @java.lang.Override
+      public int getG13() {
+        return g13_;
+      }
+      /**
+       * <code>required int32 g13 = 13;</code>
+       * @param value The g13 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG13(int value) {
+
+        g13_ = value;
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g13 = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG13() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        g13_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringArrayList g14_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      private void ensureG14IsMutable() {
+        if (!g14_.isModifiable()) {
+          g14_ = new com.google.protobuf.LazyStringArrayList(g14_);
+        }
+        bitField0_ |= 0x00002000;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @return A list containing the g14.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getG14List() {
+        g14_.makeImmutable();
+        return g14_;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @return The count of g14.
+       */
+      public int getG14Count() {
+        return g14_.size();
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param index The index of the element to return.
+       * @return The g14 at the given index.
+       */
+      public java.lang.String getG14(int index) {
+        return g14_.get(index);
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the g14 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getG14Bytes(int index) {
+        return g14_.getByteString(index);
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The g14 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG14(
+          int index, java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG14IsMutable();
+        g14_.set(index, value);
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param value The g14 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG14(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG14IsMutable();
+        g14_.add(value);
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param values The g14 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllG14(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureG14IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, g14_);
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG14() {
+        g14_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00002000);;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g14 = 14;</code>
+       * @param value The bytes of the g14 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG14Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG14IsMutable();
+        g14_.add(value);
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringArrayList g15_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+      private void ensureG15IsMutable() {
+        if (!g15_.isModifiable()) {
+          g15_ = new com.google.protobuf.LazyStringArrayList(g15_);
+        }
+        bitField0_ |= 0x00004000;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @return A list containing the g15.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getG15List() {
+        g15_.makeImmutable();
+        return g15_;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @return The count of g15.
+       */
+      public int getG15Count() {
+        return g15_.size();
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param index The index of the element to return.
+       * @return The g15 at the given index.
+       */
+      public java.lang.String getG15(int index) {
+        return g15_.get(index);
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the g15 at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getG15Bytes(int index) {
+        return g15_.getByteString(index);
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param index The index to set the value at.
+       * @param value The g15 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG15(
+          int index, java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG15IsMutable();
+        g15_.set(index, value);
+        bitField0_ |= 0x00004000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param value The g15 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG15(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG15IsMutable();
+        g15_.add(value);
+        bitField0_ |= 0x00004000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param values The g15 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllG15(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureG15IsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, g15_);
+        bitField0_ |= 0x00004000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG15() {
+        g15_ =
+          com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00004000);;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string g15 = 15;</code>
+       * @param value The bytes of the g15 to add.
+       * @return This builder for chaining.
+       */
+      public Builder addG15Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        ensureG15IsMutable();
+        g15_.add(value);
+        bitField0_ |= 0x00004000;
+        onChanged();
+        return this;
+      }
+
+      private int g18_ ;
+      /**
+       * <code>required int32 g18 = 18;</code>
+       * @return Whether the g18 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG18() {
+        return ((bitField0_ & 0x00008000) != 0);
+      }
+      /**
+       * <code>required int32 g18 = 18;</code>
+       * @return The g18.
+       */
+      @java.lang.Override
+      public int getG18() {
+        return g18_;
+      }
+      /**
+       * <code>required int32 g18 = 18;</code>
+       * @param value The g18 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG18(int value) {
+
+        g18_ = value;
+        bitField0_ |= 0x00008000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g18 = 18;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG18() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        g18_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g19_ ;
+      /**
+       * <code>required int32 g19 = 19;</code>
+       * @return Whether the g19 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG19() {
+        return ((bitField0_ & 0x00010000) != 0);
+      }
+      /**
+       * <code>required int32 g19 = 19;</code>
+       * @return The g19.
+       */
+      @java.lang.Override
+      public int getG19() {
+        return g19_;
+      }
+      /**
+       * <code>required int32 g19 = 19;</code>
+       * @param value The g19 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG19(int value) {
+
+        g19_ = value;
+        bitField0_ |= 0x00010000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g19 = 19;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG19() {
+        bitField0_ = (bitField0_ & ~0x00010000);
+        g19_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g20_ ;
+      /**
+       * <code>required int32 g20 = 20;</code>
+       * @return Whether the g20 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG20() {
+        return ((bitField0_ & 0x00020000) != 0);
+      }
+      /**
+       * <code>required int32 g20 = 20;</code>
+       * @return The g20.
+       */
+      @java.lang.Override
+      public int getG20() {
+        return g20_;
+      }
+      /**
+       * <code>required int32 g20 = 20;</code>
+       * @param value The g20 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG20(int value) {
+
+        g20_ = value;
+        bitField0_ |= 0x00020000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g20 = 20;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG20() {
+        bitField0_ = (bitField0_ & ~0x00020000);
+        g20_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g21_ ;
+      /**
+       * <code>required int32 g21 = 21;</code>
+       * @return Whether the g21 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG21() {
+        return ((bitField0_ & 0x00040000) != 0);
+      }
+      /**
+       * <code>required int32 g21 = 21;</code>
+       * @return The g21.
+       */
+      @java.lang.Override
+      public int getG21() {
+        return g21_;
+      }
+      /**
+       * <code>required int32 g21 = 21;</code>
+       * @param value The g21 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG21(int value) {
+
+        g21_ = value;
+        bitField0_ |= 0x00040000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g21 = 21;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG21() {
+        bitField0_ = (bitField0_ & ~0x00040000);
+        g21_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<org.android.proto.CheckinBodyProto.G26> g26_ =
+        java.util.Collections.emptyList();
+      private void ensureG26IsMutable() {
+        if (!((bitField0_ & 0x00080000) != 0)) {
+          g26_ = new java.util.ArrayList<org.android.proto.CheckinBodyProto.G26>(g26_);
+          bitField0_ |= 0x00080000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          org.android.proto.CheckinBodyProto.G26, org.android.proto.CheckinBodyProto.G26.Builder, org.android.proto.CheckinBodyProto.G26OrBuilder> g26Builder_;
+
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public java.util.List<org.android.proto.CheckinBodyProto.G26> getG26List() {
+        if (g26Builder_ == null) {
+          return java.util.Collections.unmodifiableList(g26_);
+        } else {
+          return g26Builder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public int getG26Count() {
+        if (g26Builder_ == null) {
+          return g26_.size();
+        } else {
+          return g26Builder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public org.android.proto.CheckinBodyProto.G26 getG26(int index) {
+        if (g26Builder_ == null) {
+          return g26_.get(index);
+        } else {
+          return g26Builder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder setG26(
+          int index, org.android.proto.CheckinBodyProto.G26 value) {
+        if (g26Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureG26IsMutable();
+          g26_.set(index, value);
+          onChanged();
+        } else {
+          g26Builder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder setG26(
+          int index, org.android.proto.CheckinBodyProto.G26.Builder builderForValue) {
+        if (g26Builder_ == null) {
+          ensureG26IsMutable();
+          g26_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          g26Builder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder addG26(org.android.proto.CheckinBodyProto.G26 value) {
+        if (g26Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureG26IsMutable();
+          g26_.add(value);
+          onChanged();
+        } else {
+          g26Builder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder addG26(
+          int index, org.android.proto.CheckinBodyProto.G26 value) {
+        if (g26Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureG26IsMutable();
+          g26_.add(index, value);
+          onChanged();
+        } else {
+          g26Builder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder addG26(
+          org.android.proto.CheckinBodyProto.G26.Builder builderForValue) {
+        if (g26Builder_ == null) {
+          ensureG26IsMutable();
+          g26_.add(builderForValue.build());
+          onChanged();
+        } else {
+          g26Builder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder addG26(
+          int index, org.android.proto.CheckinBodyProto.G26.Builder builderForValue) {
+        if (g26Builder_ == null) {
+          ensureG26IsMutable();
+          g26_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          g26Builder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder addAllG26(
+          java.lang.Iterable<? extends org.android.proto.CheckinBodyProto.G26> values) {
+        if (g26Builder_ == null) {
+          ensureG26IsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, g26_);
+          onChanged();
+        } else {
+          g26Builder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder clearG26() {
+        if (g26Builder_ == null) {
+          g26_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00080000);
+          onChanged();
+        } else {
+          g26Builder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public Builder removeG26(int index) {
+        if (g26Builder_ == null) {
+          ensureG26IsMutable();
+          g26_.remove(index);
+          onChanged();
+        } else {
+          g26Builder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public org.android.proto.CheckinBodyProto.G26.Builder getG26Builder(
+          int index) {
+        return getG26FieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public org.android.proto.CheckinBodyProto.G26OrBuilder getG26OrBuilder(
+          int index) {
+        if (g26Builder_ == null) {
+          return g26_.get(index);  } else {
+          return g26Builder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public java.util.List<? extends org.android.proto.CheckinBodyProto.G26OrBuilder> 
+           getG26OrBuilderList() {
+        if (g26Builder_ != null) {
+          return g26Builder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(g26_);
+        }
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public org.android.proto.CheckinBodyProto.G26.Builder addG26Builder() {
+        return getG26FieldBuilder().addBuilder(
+            org.android.proto.CheckinBodyProto.G26.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public org.android.proto.CheckinBodyProto.G26.Builder addG26Builder(
+          int index) {
+        return getG26FieldBuilder().addBuilder(
+            index, org.android.proto.CheckinBodyProto.G26.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.android.proto.G26 g26 = 26;</code>
+       */
+      public java.util.List<org.android.proto.CheckinBodyProto.G26.Builder> 
+           getG26BuilderList() {
+        return getG26FieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          org.android.proto.CheckinBodyProto.G26, org.android.proto.CheckinBodyProto.G26.Builder, org.android.proto.CheckinBodyProto.G26OrBuilder> 
+          getG26FieldBuilder() {
+        if (g26Builder_ == null) {
+          g26Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              org.android.proto.CheckinBodyProto.G26, org.android.proto.CheckinBodyProto.G26.Builder, org.android.proto.CheckinBodyProto.G26OrBuilder>(
+                  g26_,
+                  ((bitField0_ & 0x00080000) != 0),
+                  getParentForChildren(),
+                  isClean());
+          g26_ = null;
+        }
+        return g26Builder_;
+      }
+
+      private int g28_ ;
+      /**
+       * <code>required int32 g28 = 28;</code>
+       * @return Whether the g28 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG28() {
+        return ((bitField0_ & 0x00100000) != 0);
+      }
+      /**
+       * <code>required int32 g28 = 28;</code>
+       * @return The g28.
+       */
+      @java.lang.Override
+      public int getG28() {
+        return g28_;
+      }
+      /**
+       * <code>required int32 g28 = 28;</code>
+       * @param value The g28 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG28(int value) {
+
+        g28_ = value;
+        bitField0_ |= 0x00100000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g28 = 28;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG28() {
+        bitField0_ = (bitField0_ & ~0x00100000);
+        g28_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object g29_ = "";
+      /**
+       * <code>required string g29 = 29;</code>
+       * @return Whether the g29 field is set.
+       */
+      public boolean hasG29() {
+        return ((bitField0_ & 0x00200000) != 0);
+      }
+      /**
+       * <code>required string g29 = 29;</code>
+       * @return The g29.
+       */
+      public java.lang.String getG29() {
+        java.lang.Object ref = g29_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            g29_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string g29 = 29;</code>
+       * @return The bytes for g29.
+       */
+      public com.google.protobuf.ByteString
+          getG29Bytes() {
+        java.lang.Object ref = g29_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          g29_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string g29 = 29;</code>
+       * @param value The g29 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG29(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        g29_ = value;
+        bitField0_ |= 0x00200000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string g29 = 29;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG29() {
+        g29_ = getDefaultInstance().getG29();
+        bitField0_ = (bitField0_ & ~0x00200000);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string g29 = 29;</code>
+       * @param value The bytes for g29 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG29Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        g29_ = value;
+        bitField0_ |= 0x00200000;
+        onChanged();
+        return this;
+      }
+
+      private int g30_ ;
+      /**
+       * <code>required int32 g30 = 30;</code>
+       * @return Whether the g30 field is set.
+       */
+      @java.lang.Override
+      public boolean hasG30() {
+        return ((bitField0_ & 0x00400000) != 0);
+      }
+      /**
+       * <code>required int32 g30 = 30;</code>
+       * @return The g30.
+       */
+      @java.lang.Override
+      public int getG30() {
+        return g30_;
+      }
+      /**
+       * <code>required int32 g30 = 30;</code>
+       * @param value The g30 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setG30(int value) {
+
+        g30_ = value;
+        bitField0_ |= 0x00400000;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 g30 = 30;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearG30() {
+        bitField0_ = (bitField0_ & ~0x00400000);
+        g30_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -11746,17 +15034,25 @@ public final class CheckinBodyProto {
       " \002(\0132\025.org.android.proto.B1\022\n\n\002b2\030\002 \002(\005\022" +
       "\n\n\002b8\030\010 \002(\t\022\n\n\002b9\030\t \002(\005\022\013\n\003b14\030\016 \002(\005\022#\n\003" +
       "b15\030\017 \002(\0132\026.org.android.proto.B15\022\013\n\003b18" +
-      "\030\022 \002(\005\022\013\n\003b19\030\023 \002(\t\022\013\n\003b20\030\024 \002(\005\"\005\n\003A18\"" +
-      "\005\n\003A11\"\343\001\n\002B1\022\n\n\002c1\030\001 \002(\t\022\n\n\002c2\030\002 \002(\t\022\n\n" +
-      "\002c3\030\003 \002(\t\022\n\n\002c4\030\004 \002(\t\022\n\n\002c5\030\005 \002(\t\022\n\n\002c6\030" +
-      "\006 \002(\t\022\n\n\002c7\030\007 \002(\005\022\n\n\002c8\030\010 \002(\005\022\n\n\002c9\030\t \002(" +
-      "\t\022\013\n\003c10\030\n \002(\005\022\013\n\003c11\030\013 \002(\t\022\013\n\003c12\030\014 \002(\t" +
-      "\022\013\n\003c13\030\r \002(\t\022\013\n\003c14\030\016 \002(\005\022#\n\003c15\030\017 \003(\0132" +
-      "\026.org.android.proto.C15\022\013\n\003c19\030\023 \002(\t\"A\n\003" +
-      "B15\022\n\n\002e1\030\001 \002(\005\022\n\n\002e2\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022" +
-      "\n\n\002e4\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\035\n\003C15\022\n\n\002d1\030\001 \002" +
-      "(\005\022\n\n\002d2\030\002 \002(\t\"\005\n\003G26B%\n\021org.android.pro" +
-      "toB\020CheckinBodyProto"
+      "\030\022 \002(\005\022\013\n\003b19\030\023 \002(\t\022\013\n\003b20\030\024 \002(\005\"\277\002\n\003A18" +
+      "\022\n\n\002g1\030\001 \002(\005\022\n\n\002g2\030\002 \002(\005\022\n\n\002g3\030\003 \002(\005\022\n\n\002" +
+      "g4\030\004 \002(\005\022\n\n\002g5\030\005 \002(\005\022\n\n\002g6\030\006 \002(\005\022\n\n\002g7\030\007" +
+      " \002(\005\022\n\n\002g8\030\010 \002(\005\022\n\n\002g9\030\t \003(\t\022\013\n\003g10\030\n \003(" +
+      "\t\022\013\n\003g11\030\013 \003(\t\022\013\n\003g12\030\014 \002(\005\022\013\n\003g13\030\r \002(\005" +
+      "\022\013\n\003g14\030\016 \003(\t\022\013\n\003g15\030\017 \003(\t\022\013\n\003g18\030\022 \002(\005\022" +
+      "\013\n\003g19\030\023 \002(\005\022\013\n\003g20\030\024 \002(\005\022\013\n\003g21\030\025 \002(\005\022#" +
+      "\n\003g26\030\032 \003(\0132\026.org.android.proto.G26\022\013\n\003g" +
+      "28\030\034 \002(\005\022\013\n\003g29\030\035 \002(\t\022\013\n\003g30\030\036 \002(\005\"\005\n\003A1" +
+      "1\"\343\001\n\002B1\022\n\n\002c1\030\001 \002(\t\022\n\n\002c2\030\002 \002(\t\022\n\n\002c3\030\003" +
+      " \002(\t\022\n\n\002c4\030\004 \002(\t\022\n\n\002c5\030\005 \002(\t\022\n\n\002c6\030\006 \002(\t" +
+      "\022\n\n\002c7\030\007 \002(\005\022\n\n\002c8\030\010 \002(\005\022\n\n\002c9\030\t \002(\t\022\013\n\003" +
+      "c10\030\n \002(\005\022\013\n\003c11\030\013 \002(\t\022\013\n\003c12\030\014 \002(\t\022\013\n\003c" +
+      "13\030\r \002(\t\022\013\n\003c14\030\016 \002(\005\022#\n\003c15\030\017 \003(\0132\026.org" +
+      ".android.proto.C15\022\013\n\003c19\030\023 \002(\t\"A\n\003B15\022\n" +
+      "\n\002e1\030\001 \002(\005\022\n\n\002e2\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022\n\n\002e4" +
+      "\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\035\n\003C15\022\n\n\002d1\030\001 \002(\005\022\n\n" +
+      "\002d2\030\002 \002(\t\"\005\n\003G26B%\n\021org.android.protoB\020C" +
+      "heckinBodyProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -11779,7 +15075,7 @@ public final class CheckinBodyProto {
     internal_static_org_android_proto_A18_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_android_proto_A18_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "G14", "G15", "G18", "G19", "G20", "G21", "G26", "G28", "G29", "G30", });
     internal_static_org_android_proto_A11_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_org_android_proto_A11_fieldAccessorTable = new
