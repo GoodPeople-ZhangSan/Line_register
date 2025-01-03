@@ -14,10 +14,11 @@ public class CheckinEntity {
         // 构造一个 A11
         CheckinBodyProto.A11.Builder a11 = CheckinBodyProto.A11.newBuilder();
 
-        // 构造 B4
+        // 构造 A4
         CheckinBodyProto.A4.Builder a4 = getProtoA4(devicesEntity);
 
-        CheckinBodyProto.A18.Builder a18 = CheckinBodyProto.A18.newBuilder();
+        // 构造 A18
+        CheckinBodyProto.A18.Builder a18 = getProtoA18();
 
         // 构造主 proto
         CheckinBodyProto.Checkin.Builder checkinBuild = CheckinBodyProto.Checkin.newBuilder();
@@ -97,7 +98,7 @@ public class CheckinEntity {
         CheckinBodyProto.C15 c15builder_12 = CheckinBodyProto.C15.newBuilder().setD1(12).setD2("pg-android-google").build();
 
         // 设置 C15 字段的值  repeated
-        List<CheckinBodyProto.C15> c15 =  new ArrayList<>();
+        List<CheckinBodyProto.C15> c15 = new ArrayList<>();
         c15.add(c15builder_1);
         c15.add(c15builder_2);
         c15.add(c15builder_3);
@@ -117,7 +118,7 @@ public class CheckinEntity {
                 .setC4(devicesEntity.proto_4_1_4)
                 .setC5(devicesEntity.proto_4_1_5)
                 .setC6("android-google")
-                .setC7((int) (System.currentTimeMillis()/1000)-10000)
+                .setC7((int) (System.currentTimeMillis() / 1000) - 10000)
                 .setC8(devicesEntity.proto_4_1_8)
                 .setC9("redfin")
                 .setC10(32)
@@ -132,4 +133,46 @@ public class CheckinEntity {
         return b1builder;
     }
 
+    private static CheckinBodyProto.A18.Builder getProtoA18() {
+        //
+        // 构造A18中所需的G11,使用 Arrays.asList 赋值多个字符串
+        List<String> stringsG9 = Arrays.asList("string1", "string2", "string3");
+        List<String> stringsG10 = Arrays.asList("string1", "string2", "string3");
+        List<String> stringsG11 = Arrays.asList("arm64-v8a", "armeabi-v7a", "armeabi");
+        List<String> stringsG14 = Arrays.asList("string1", "string2", "string3");
+        List<String> stringsG15 = Arrays.asList("string1", "string2", "string3");
+
+        // 构造A18中所需的G26
+        CheckinBodyProto.G26.Builder g26builder = CheckinBodyProto.G26.newBuilder();
+
+
+        // 构造主A18
+        CheckinBodyProto.A18.Builder a18builder = CheckinBodyProto.A18.newBuilder();
+        a18builder.setG1(3)
+                .setG2(1)
+                .setG3(1)
+                .setG4(2)
+                .setG5(0)
+                .setG6(0)
+                .setG7(440)
+                .setG8(196610)
+                .addAllG9(stringsG9)
+                .addAllG10(stringsG10)
+                .addAllG11(stringsG11)
+                .setG12(1080)
+                .setG13(2340)
+                .addAllG14(stringsG14)
+                .addAllG15(stringsG15)
+                .setG18(392)
+                .setG19(0)
+                .setG20(0)
+                .setG21(8)
+                .addG26(g26builder)
+                .setG28(0)
+                .setG29("G5NZ6")
+                .setG30(2)
+                .build();
+
+        return a18builder;
+    }
 }
