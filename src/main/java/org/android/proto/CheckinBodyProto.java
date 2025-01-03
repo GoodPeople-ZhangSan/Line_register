@@ -6452,6 +6452,12 @@ public final class CheckinBodyProto {
         memoizedIsInitialized = 0;
         return false;
       }
+      for (int i = 0; i < getG26Count(); i++) {
+        if (!getG26(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -7396,6 +7402,11 @@ public final class CheckinBodyProto {
         }
         if (!hasG30()) {
           return false;
+        }
+        for (int i = 0; i < getG26Count(); i++) {
+          if (!getG26(i).isInitialized()) {
+            return false;
+          }
         }
         return true;
       }
@@ -14568,13 +14579,36 @@ public final class CheckinBodyProto {
   public interface G26OrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.android.proto.G26)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return Whether the h1 field is set.
+     */
+    boolean hasH1();
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return The h1.
+     */
+    java.lang.String getH1();
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return The bytes for h1.
+     */
+    com.google.protobuf.ByteString
+        getH1Bytes();
+
+    /**
+     * <code>required int32 h2 = 2;</code>
+     * @return Whether the h2 field is set.
+     */
+    boolean hasH2();
+    /**
+     * <code>required int32 h2 = 2;</code>
+     * @return The h2.
+     */
+    int getH2();
   }
   /**
-   * <pre>
-   *  required string h1 = 1;
-   *  required int32 h2 = 2;
-   * </pre>
-   *
    * Protobuf type {@code org.android.proto.G26}
    */
   public static final class G26 extends
@@ -14587,6 +14621,7 @@ public final class CheckinBodyProto {
       super(builder);
     }
     private G26() {
+      h1_ = "";
     }
 
     @java.lang.Override
@@ -14609,6 +14644,75 @@ public final class CheckinBodyProto {
               org.android.proto.CheckinBodyProto.G26.class, org.android.proto.CheckinBodyProto.G26.Builder.class);
     }
 
+    private int bitField0_;
+    public static final int H1_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object h1_ = "";
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return Whether the h1 field is set.
+     */
+    @java.lang.Override
+    public boolean hasH1() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return The h1.
+     */
+    @java.lang.Override
+    public java.lang.String getH1() {
+      java.lang.Object ref = h1_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          h1_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string h1 = 1;</code>
+     * @return The bytes for h1.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getH1Bytes() {
+      java.lang.Object ref = h1_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        h1_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int H2_FIELD_NUMBER = 2;
+    private int h2_ = 0;
+    /**
+     * <code>required int32 h2 = 2;</code>
+     * @return Whether the h2 field is set.
+     */
+    @java.lang.Override
+    public boolean hasH2() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>required int32 h2 = 2;</code>
+     * @return The h2.
+     */
+    @java.lang.Override
+    public int getH2() {
+      return h2_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -14616,6 +14720,14 @@ public final class CheckinBodyProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
+      if (!hasH1()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasH2()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -14623,6 +14735,12 @@ public final class CheckinBodyProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, h1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeInt32(2, h2_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -14632,6 +14750,13 @@ public final class CheckinBodyProto {
       if (size != -1) return size;
 
       size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, h1_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, h2_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -14647,6 +14772,16 @@ public final class CheckinBodyProto {
       }
       org.android.proto.CheckinBodyProto.G26 other = (org.android.proto.CheckinBodyProto.G26) obj;
 
+      if (hasH1() != other.hasH1()) return false;
+      if (hasH1()) {
+        if (!getH1()
+            .equals(other.getH1())) return false;
+      }
+      if (hasH2() != other.hasH2()) return false;
+      if (hasH2()) {
+        if (getH2()
+            != other.getH2()) return false;
+      }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -14658,6 +14793,14 @@ public final class CheckinBodyProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasH1()) {
+        hash = (37 * hash) + H1_FIELD_NUMBER;
+        hash = (53 * hash) + getH1().hashCode();
+      }
+      if (hasH2()) {
+        hash = (37 * hash) + H2_FIELD_NUMBER;
+        hash = (53 * hash) + getH2();
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -14756,11 +14899,6 @@ public final class CheckinBodyProto {
       return builder;
     }
     /**
-     * <pre>
-     *  required string h1 = 1;
-     *  required int32 h2 = 2;
-     * </pre>
-     *
      * Protobuf type {@code org.android.proto.G26}
      */
     public static final class Builder extends
@@ -14793,6 +14931,9 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        h1_ = "";
+        h2_ = 0;
         return this;
       }
 
@@ -14819,8 +14960,23 @@ public final class CheckinBodyProto {
       @java.lang.Override
       public org.android.proto.CheckinBodyProto.G26 buildPartial() {
         org.android.proto.CheckinBodyProto.G26 result = new org.android.proto.CheckinBodyProto.G26(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(org.android.proto.CheckinBodyProto.G26 result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.h1_ = h1_;
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.h2_ = h2_;
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -14867,6 +15023,14 @@ public final class CheckinBodyProto {
 
       public Builder mergeFrom(org.android.proto.CheckinBodyProto.G26 other) {
         if (other == org.android.proto.CheckinBodyProto.G26.getDefaultInstance()) return this;
+        if (other.hasH1()) {
+          h1_ = other.h1_;
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        if (other.hasH2()) {
+          setH2(other.getH2());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -14874,6 +15038,12 @@ public final class CheckinBodyProto {
 
       @java.lang.Override
       public final boolean isInitialized() {
+        if (!hasH1()) {
+          return false;
+        }
+        if (!hasH2()) {
+          return false;
+        }
         return true;
       }
 
@@ -14893,6 +15063,16 @@ public final class CheckinBodyProto {
               case 0:
                 done = true;
                 break;
+              case 10: {
+                h1_ = input.readBytes();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 16: {
+                h2_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -14906,6 +15086,127 @@ public final class CheckinBodyProto {
         } finally {
           onChanged();
         } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object h1_ = "";
+      /**
+       * <code>required string h1 = 1;</code>
+       * @return Whether the h1 field is set.
+       */
+      public boolean hasH1() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>required string h1 = 1;</code>
+       * @return The h1.
+       */
+      public java.lang.String getH1() {
+        java.lang.Object ref = h1_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            h1_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string h1 = 1;</code>
+       * @return The bytes for h1.
+       */
+      public com.google.protobuf.ByteString
+          getH1Bytes() {
+        java.lang.Object ref = h1_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          h1_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string h1 = 1;</code>
+       * @param value The h1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setH1(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        h1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string h1 = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearH1() {
+        h1_ = getDefaultInstance().getH1();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string h1 = 1;</code>
+       * @param value The bytes for h1 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setH1Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        h1_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private int h2_ ;
+      /**
+       * <code>required int32 h2 = 2;</code>
+       * @return Whether the h2 field is set.
+       */
+      @java.lang.Override
+      public boolean hasH2() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>required int32 h2 = 2;</code>
+       * @return The h2.
+       */
+      @java.lang.Override
+      public int getH2() {
+        return h2_;
+      }
+      /**
+       * <code>required int32 h2 = 2;</code>
+       * @param value The h2 to set.
+       * @return This builder for chaining.
+       */
+      public Builder setH2(int value) {
+
+        h2_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 h2 = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearH2() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        h2_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -15051,8 +15352,8 @@ public final class CheckinBodyProto {
       ".android.proto.C15\022\013\n\003c19\030\023 \002(\t\"A\n\003B15\022\n" +
       "\n\002e1\030\001 \002(\005\022\n\n\002e2\030\002 \002(\005\022\n\n\002e3\030\003 \002(\t\022\n\n\002e4" +
       "\030\004 \002(\t\022\n\n\002e5\030\005 \002(\005\"\035\n\003C15\022\n\n\002d1\030\001 \002(\005\022\n\n" +
-      "\002d2\030\002 \002(\t\"\005\n\003G26B%\n\021org.android.protoB\020C" +
-      "heckinBodyProto"
+      "\002d2\030\002 \002(\t\"\035\n\003G26\022\n\n\002h1\030\001 \002(\t\022\n\n\002h2\030\002 \002(\005" +
+      "B%\n\021org.android.protoB\020CheckinBodyProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -15105,7 +15406,7 @@ public final class CheckinBodyProto {
     internal_static_org_android_proto_G26_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_org_android_proto_G26_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "H1", "H2", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
