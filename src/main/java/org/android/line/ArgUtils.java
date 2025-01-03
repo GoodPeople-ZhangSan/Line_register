@@ -175,7 +175,13 @@ public class ArgUtils {
         return sb.toString();
     }
 
+    // 生成的随机 adb devices
     public static String getAdbDevices() {
         return "1"+generateRandomNumberString(3)+"1FDD400"+generateRandomNumberString(3);
+    }
+
+    // 生成随机的IMEI
+    public static String getIMEI() {
+        return "355660115"+generateRandomNumberString(6);
     }
 }

@@ -26,7 +26,7 @@ public class CheckinEntity {
                 .setA4(a4)
                 .setA6("zh-Hans-CN")
                 .setA9("null")
-                .setA10("null")
+                .setA10(devicesEntity.getIMEI())
                 .setA11(a11)
                 .setA12("Asia/Shanghai")
                 .setA13(0)
